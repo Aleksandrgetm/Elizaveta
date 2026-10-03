@@ -1,0 +1,100 @@
+[
+  {
+    "source": "бантик.jpg",
+    "file": "objects/pink-bow.webp",
+    "width": 420,
+    "height": 262,
+    "bytes": 39704
+  },
+  {
+    "source": "губы.jpg",
+    "file": "stickers/lip-print.webp",
+    "width": 300,
+    "height": 228,
+    "bytes": 44904
+  },
+  {
+    "source": "диск.jpg",
+    "file": "vinyl/pink-vinyl.webp",
+    "width": 1066,
+    "height": 1065,
+    "bytes": 291572
+  },
+  {
+    "source": "звездочка.jpg",
+    "file": "stars/star-handdrawn.webp",
+    "width": 220,
+    "height": 207,
+    "bytes": 14334
+  },
+  {
+    "source": "звездочки.jpg",
+    "file": "stars/star-trio.webp",
+    "width": 280,
+    "height": 249,
+    "bytes": 18074
+  },
+  {
+    "source": "зеркало.jpg",
+    "file": "objects/ornate-mirror.webp",
+    "width": 248,
+    "height": 400,
+    "bytes": 31976
+  },
+  {
+    "source": "камера.jpg",
+    "file": "objects/silver-camera.webp",
+    "width": 500,
+    "height": 337,
+    "bytes": 41160
+  },
+  {
+    "source": "касета.jpg",
+    "file": "objects/pink-cassette.webp",
+    "width": 366,
+    "height": 232,
+    "bytes": 19984
+  },
+  {
+    "source": "кисточка.jpg",
+    "file": "objects/makeup-brush.webp",
+    "width": 73,
+    "height": 350,
+    "bytes": 9482
+  },
+  {
+    "source": "наушники.png",
+    "file": "objects/wired-earphones.webp",
+    "width": 458,
+    "height": 840,
+    "bytes": 45842
+  },
+  {
+    "source": "ромбики.jpg",
+    "file": "stars/diamond-sparkles.webp",
+    "width": 223,
+    "height": 240,
+    "bytes": 12940
+  },
+  {
+    "source": "сердечки.jpg",
+    "file": "hearts/heart-doodles.webp",
+    "width": 220,
+    "height": 202,
+    "bytes": 13404
+  },
+  {
+    "source": "телефон 1.jpg",
+    "file": "objects/retro-phone.webp",
+    "width": 402,
+    "height": 680,
+    "bytes": 108898
+  },
+  {
+    "source": "тэйп.jpg",
+    "file": "stickers/paper-tape.webp",
+    "width": 400,
+    "height": 119,
+    "bytes": 17298
+  }
+]

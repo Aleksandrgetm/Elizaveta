@@ -1,0 +1,122 @@
+[
+  {
+    "name": "restaurant-640",
+    "size": [
+      640,
+      360
+    ],
+    "bytes": 56820
+  },
+  {
+    "name": "restaurant-960",
+    "size": [
+      960,
+      540
+    ],
+    "bytes": 99598
+  },
+  {
+    "name": "restaurant-1280",
+    "size": [
+      1280,
+      720
+    ],
+    "bytes": 149024
+  },
+  {
+    "name": "flower-portrait",
+    "size": [
+      750,
+      1000
+    ],
+    "bytes": 63314
+  },
+  {
+    "name": "beauty",
+    "size": [
+      480,
+      640
+    ],
+    "bytes": 90670
+  },
+  {
+    "name": "lifestyle",
+    "size": [
+      480,
+      640
+    ],
+    "bytes": 44684
+  },
+  {
+    "name": "fashion",
+    "size": [
+      480,
+      640
+    ],
+    "bytes": 45514
+  },
+  {
+    "name": "travel",
+    "size": [
+      360,
+      640
+    ],
+    "bytes": 24278
+  },
+  {
+    "name": "wellness",
+    "size": [
+      480,
+      640
+    ],
+    "bytes": 59970
+  },
+  {
+    "name": "fawn",
+    "size": [
+      183,
+      320
+    ],
+    "bytes": 14310
+  },
+  {
+    "name": "wax-seal",
+    "size": [
+      300,
+      298
+    ],
+    "bytes": 18288
+  },
+  {
+    "name": "ribbon-key",
+    "size": [
+      324,
+      440
+    ],
+    "bytes": 36318
+  },
+  {
+    "name": "rose-petals",
+    "size": [
+      399,
+      400
+    ],
+    "bytes": 50450
+  },
+  {
+    "name": "flower-stamp",
+    "size": [
+      320,
+      227
+    ],
+    "bytes": 32792
+  },
+  {
+    "name": "pink-star-confetti",
+    "size": [
+      291,
+      300
+    ],
+    "bytes": 17788
+  }
+]
