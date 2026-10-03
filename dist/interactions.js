@@ -51,9 +51,8 @@ export function initReveals(){
   });
   g.from('.strawberry-mascot',{y:12,rotation:-7,autoAlpha:0,duration:.9,ease:'back.out(1.4)',scrollTrigger:once('.orbit-lifestyle')});
   g.to('.hero-camera',{y:-amplitude,rotation:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.7}});
-  g.from('.about-portrait',{y:50,rotation:12,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-grid')});
-  g.from('.about-paper',{x:-25,y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-paper')});
-  g.from('.about-quote strong',{clipPath:'inset(0 100% 0 0)',duration:1,ease:'power2.out',scrollTrigger:once('.about-quote')});
+  g.from('.about-collage',{y:40,autoAlpha:0,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-layout')});
+  g.from('.about-copy',{y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-copy')});
   g.to('.bridge-film',{x:desktop?70:24,ease:'none',scrollTrigger:{trigger:'.about',start:'center center',end:'bottom top',scrub:.8}});
   g.from('.record-lift',{scale:.86,x:35,autoAlpha:0,duration:1.25,ease:'power3.out',scrollTrigger:once('.record-object')});
   g.fromTo('.record-spin',{rotation:-35},{rotation:115,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.contents',start:'top bottom',end:'bottom top',scrub:.65}});
