@@ -52,9 +52,8 @@ export function initReveals(){
   g.fromTo('.record-spin',{rotation:-35},{rotation:115,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.contents',start:'top bottom',end:'bottom top',scrub:.65}});
   g.to('.record-object',{y:-amplitude,ease:'none',scrollTrigger:{trigger:'.contents',start:'top bottom',end:'bottom top',scrub:.8}});
   g.from('.tracklist a',{x:-25,autoAlpha:0,stagger:.09,duration:.65,scrollTrigger:once('.tracklist')});
-  g.from('.niche-fashion',{clipPath:'inset(0 0 100% 0)',duration:1.1,scrollTrigger:once('.niche-cutouts')});
-  g.from('.niche-beauty',{y:40,rotation:16,autoAlpha:0,duration:1,scrollTrigger:once('.niche-cutouts')});
-  g.utils.toArray('.niche-row').forEach(row=>g.from(row,{x:25,autoAlpha:0,duration:.65,scrollTrigger:once(row)}));
+  g.from('.niche-portrait',{y:25,autoAlpha:0,duration:1,ease:'power3.out',scrollTrigger:once('.directions-map')});
+  g.utils.toArray('.niche-orbit').forEach(orbit=>g.from(orbit,{y:18,autoAlpha:0,duration:.7,scrollTrigger:once(orbit)}));
   const cards=g.utils.toArray('.video-card'),columns=desktop?4:3;
   for(let i=0;i<cards.length;i+=columns)g.from(cards.slice(i,i+columns),{y:32,autoAlpha:0,stagger:.1,duration:.75,ease:'power3.out',scrollTrigger:once(cards[i])});
   g.from('.services-center',{y:40,rotation:-4,scale:.93,duration:1,scrollTrigger:once('.services-board')});

@@ -13,8 +13,8 @@ export const photos = {
 export const niches = [
   {name:'BEAUTY', description:'Косметика, уход, макияж и забота о себе', photo:'flowers'},
   {name:'FASHION', description:'Одежда, аксессуары, примерки и стилизация', photo:'mirror'},
-  {name:'LIFESTYLE', description:'Влоги, рутина и красота повседневности', photo:'cafe'},
-  {name:'WELLNESS', description:'', photo:'summer'},
+  {name:'LIFESTYLE', description:'Влоги, рутина, товары для дома и повседневной жизни', photo:'cafe'},
+  {name:'WELLNESS', description:'Забота о себе, здоровье, спорт и баланс', photo:'summer'},
   {name:'TRAVEL', description:'Путешествия, места, отели и новые впечатления', photo:'fashion'},
 ];
 // Draft titles describe the intended slots, not completed or published projects.
