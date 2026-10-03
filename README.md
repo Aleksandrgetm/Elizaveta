@@ -14,7 +14,7 @@ npm run dev
 ## Архитектура
 
 - `dist/index.html` — обложка, навигация, meta, native dialog.
-- `dist/components.js` — About, Contents, Niches, Work, Services, Gallery, Contact.
+- `dist/components.js` — About, Contents, Niches, Work, Contact.
 - `dist/content.js` — все изменяемые фото, направления, видео, услуги и контакты.
 - `dist/interactions.js` — welcome, scroll reveals, media dialog, focus/keyboard handling.
 - `dist/styles.css` — дизайн-токены, mobile-first композиция и breakpoints.
@@ -39,14 +39,13 @@ npm run dev
 ## Что ещё заменить
 
 - 12 видео, их финальные подписи и индивидуальные постеры.
-- Описание WELLNESS в `niches` (сейчас пустое).
 - Уточнённые тексты, если Лиза пришлёт следующую редакцию.
 
 Контакты взяты из приложенного брифа. Никаких цен, брендов, отзывов и статистики не добавлено. Прилагаемый MP4 и Canva — референсы, чужие работы на сайте не используются.
 
 ## Motion и доступность
 
-Intro 3.4 секунды, пропуск, sessionStorage, пропуск при deep link и reduced motion. Scroll reveals отключаются при reduced motion; нативный scroll сохранён. Пластинка вращается от −35° до 115° через ScrollTrigger с `scrub: .65`, ссылки находятся вне вращающегося слоя. Секции имеют разные появления и небольшой parallax. Reduced motion отключает GSAP-сцены через matchMedia, а CSS фиксирует диск. Фото открываются в просмотрщике. Фон не скроллится под диалогом.
+Intro 3.4 секунды, пропуск, sessionStorage, пропуск при deep link и reduced motion. Scroll reveals отключаются при reduced motion; нативный scroll сохранён. Пластинка вращается от −35° до 115° через ScrollTrigger с `scrub: .65`, ссылки находятся вне вращающегося слоя. Секции имеют разные появления и небольшой parallax. Reduced motion отключает GSAP-сцены через matchMedia, а CSS фиксирует диск. Превью работ открываются в просмотрщике. Фон не скроллится под диалогом.
 
 ## Публикация
 
@@ -55,3 +54,5 @@ Sites identity хранится в `.openai/hosting.json`, статически�
 ## Второй дизайн-проход
 
 См. `docs/art-direction-v2.md`, `docs/assets-v2.md`, `docs/verification-v2.md`. Шрифтовые OFL-лицензии сохранены рядом с WOFF2. Видео по-прежнему являются 12 честно отмеченными placeholders.
+
+Последние правки: `docs/revision-doodles-motion.md`. Services и Gallery удалены со страницы по запросу; исходные фотографии и данные сохранены. SVG-декор управляется `dist/decorations.js` и `dist/assets/doodles.svg`.

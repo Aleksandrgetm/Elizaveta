@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<!-- Original pen doodles, deliberately asymmetrical. All coordinates hand-authored. -->
+<symbol id="star-01" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M30 7 Q32 25 33 55 M8 31 Q30 29 57 32 M14 14 Q30 32 48 50 M51 12 Q36 26 14 52"/><path d="M31 12 30 25" stroke-width=".8"/></g></symbol>
+<symbol id="star-02" viewBox="0 0 64 64"><path d="M29 5 Q34 27 56 32 Q36 32 34 58 Q28 37 7 35 Q26 30 29 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="star-03" viewBox="0 0 64 64"><path d="m29 5 8 19 21-3-17 16 7 23-19-14-21 9 10-22L4 20l22 5Z M29 5l-1 39 30-23M4 20l44 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+<symbol id="heart-01" viewBox="0 0 64 64"><path d="M31 52C22 44 7 32 10 20 13 6 28 9 32 23 36 9 52 8 54 23 56 33 40 48 31 55" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="heart-02" viewBox="0 0 64 64"><path d="M27 54C22 43 12 23 20 16 26 11 34 19 35 27 42 11 55 13 53 26 50 39 37 49 27 54Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m24 23 8 19m-4-22 6 16m7-9-5 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></symbol>
+<symbol id="spark-01" viewBox="0 0 64 64"><path d="m18 12 6 15m26-15-9 15M7 42l17-4m29 8-12-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="arrow-01" viewBox="0 0 100 70"><path pathLength="1" d="M5 14C38-4 57 25 32 36 9 47 23 65 60 51l31-20M75 32l17-4-4 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="loop-01" viewBox="0 0 100 64"><path d="M5 47C24 13 43 5 41 24 38 48 13 54 23 30 40-4 66 3 61 26 53 55 37 61 46 35 55 8 81 9 91 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</svg>

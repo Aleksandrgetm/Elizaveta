@@ -2,7 +2,7 @@ import {readFileSync,existsSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
 import assert from 'node:assert/strict';
 import {videos,photos,gallery,socials} from '../dist/content.js';
-for(const file of ['app.js','components.js','content.js','interactions.js']) {
+for(const file of ['app.js','components.js','content.js','interactions.js','decorations.js']) {
   const result=spawnSync(process.execPath,['--check',`dist/${file}`],{stdio:'inherit'});
   assert.equal(result.status,0,`${file} syntax`);
 }

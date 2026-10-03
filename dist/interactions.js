@@ -38,11 +38,22 @@ export function initReveals(){
   const amplitude=desktop&&!light?28:12;
   const once=(trigger)=>({trigger,start:'top 92%',once:true});
   const hero=g.timeline({defaults:{ease:'power3.out'}});
-  hero.from('.hero h1',{clipPath:'inset(0 0 100% 0)',y:30,duration:1.05})
-    .from('.hero-main',{y:45,rotation:2,autoAlpha:0,duration:1.1},.1)
+  hero.from('.hero-main',{y:45,rotation:2,autoAlpha:0,duration:1.1},.1)
     .from('.hero-film',{x:35,y:35,rotation:18,autoAlpha:0,duration:1},.25)
     .from('.hero-ticket',{y:30,autoAlpha:0,duration:.75},.4)
     .from('.hero-caption,.hero-sign',{autoAlpha:0,duration:.6,stagger:.15},.65);
+  // Reveal the existing calligraphy along individual pen trajectories.
+  const pen=g.utils.toArray('.signature-stroke');
+  g.set('.signature-complete',{opacity:0});g.set(pen,{strokeDasharray:1,strokeDashoffset:1});
+  const writing=g.timeline({delay:.15,onComplete:()=>g.set('.signature-complete',{opacity:1})});
+  pen.forEach((path,i)=>writing.to(path,{strokeDashoffset:0,duration:[1.15,.48,.4,.48,.4,.55,.5,.55,.42][i]||.45,ease:'none'},i===0?0:'>-.04'));
+  g.utils.toArray('[data-decor-motion]').forEach(mark=>{
+   const kind=mark.dataset.decorMotion;
+   if(kind==='draw'){g.fromTo(mark.querySelector('svg'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,ease:'power1.inOut',scrollTrigger:once(mark)})}
+   else if(kind==='pulse'){g.from(mark,{scale:.8,duration:.8,ease:'back.out(1.8)',scrollTrigger:once(mark)})}
+   else{g.from(mark,{rotation:-18,scale:.85,duration:.9,ease:'power2.out',scrollTrigger:once(mark)})}
+  });
+  g.from('.strawberry-mascot',{y:12,rotation:-7,autoAlpha:0,duration:.9,ease:'back.out(1.4)',scrollTrigger:once('.orbit-lifestyle')});
   g.to('.hero-camera',{y:-amplitude,rotation:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.7}});
   g.from('.about-portrait',{y:50,rotation:12,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-grid')});
   g.from('.about-paper',{x:-25,y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-paper')});
@@ -56,12 +67,6 @@ export function initReveals(){
   g.utils.toArray('.niche-orbit').forEach(orbit=>g.from(orbit,{y:18,autoAlpha:0,duration:.7,scrollTrigger:once(orbit)}));
   const cards=g.utils.toArray('.video-card'),columns=desktop?4:3;
   for(let i=0;i<cards.length;i+=columns)g.from(cards.slice(i,i+columns),{y:32,autoAlpha:0,stagger:.1,duration:.75,ease:'power3.out',scrollTrigger:once(cards[i])});
-  g.from('.services-center',{y:40,rotation:-4,scale:.93,duration:1,scrollTrigger:once('.services-board')});
-  g.utils.toArray('.service-note').forEach((note,i)=>g.from(note,{x:i%2?20:-20,y:20,autoAlpha:0,duration:.8,scrollTrigger:once(note)}));
-  g.utils.toArray('.gallery-item').forEach((item,i)=>{
-   g.from(item,{autoAlpha:0,y:35,duration:.9,scrollTrigger:once(item)});
-   if(!light)g.to(item.querySelector('.gallery-mount'),{y:i%2?-amplitude:amplitude,ease:'none',scrollTrigger:{trigger:item,start:'top bottom',end:'bottom top',scrub:1}});
-  });
   g.from('.contact-letter',{y:50,rotation:1,autoAlpha:0,duration:1.1,ease:'power3.out',scrollTrigger:once('.contact-letter')});
   const lift=document.querySelector('.record-lift');
   const enter=()=>g.to(lift,{scale:1.025,duration:.35,overwrite:'auto'}),leave=()=>g.to(lift,{scale:1,duration:.45,overwrite:'auto'});
