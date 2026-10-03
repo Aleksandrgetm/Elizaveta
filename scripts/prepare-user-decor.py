@@ -4,11 +4,13 @@ from pathlib import Path
 from collections import deque
 import json
 root=Path(__file__).resolve().parents[1]
-items=[('бантик.jpg','objects/pink-bow',420,'checker'),('губы.jpg','stickers/lip-print',300,'checker'),('диск.jpg','vinyl/pink-vinyl',1078,'disc'),('звездочка.jpg','stars/star-handdrawn',220,'ink'),('звездочки.jpg','stars/star-trio',280,'ink'),('зеркало.jpg','objects/ornate-mirror',400,'white'),('камера.jpg','objects/silver-camera',500,'white'),('касета.jpg','objects/pink-cassette',564,'white'),('кисточка.jpg','objects/makeup-brush',350,'checker'),('наушники.jpg','objects/wired-earphones',680,'white'),('ромбики.jpg','stars/diamond-sparkles',240,'ink'),('сердечки.jpg','hearts/heart-doodles',220,'ink'),('телефон 1.jpg','objects/retro-phone',680,'white'),('тэйп.jpg','stickers/paper-tape',400,'checker')]
+items=[('бантик.jpg','objects/pink-bow',420,'checker'),('губы.jpg','stickers/lip-print',300,'checker'),('диск.jpg','vinyl/pink-vinyl',1078,'disc'),('звездочка.jpg','stars/star-handdrawn',220,'ink'),('звездочки.jpg','stars/star-trio',280,'ink'),('зеркало.jpg','objects/ornate-mirror',400,'white'),('камера.jpg','objects/silver-camera',500,'white'),('касета.jpg','objects/pink-cassette',564,'white'),('кисточка.jpg','objects/makeup-brush',350,'checker'),('наушники.png','objects/wired-earphones',840,'alpha'),('ромбики.jpg','stars/diamond-sparkles',240,'ink'),('сердечки.jpg','hearts/heart-doodles',220,'ink'),('телефон 1.jpg','objects/retro-phone',680,'white'),('тэйп.jpg','stickers/paper-tape',400,'checker')]
 report=[]
 for src,name,size,mode in items:
  im=Image.open(root/'assets/decor'/src).convert('RGBA');w,h=im.size;rgb=im.convert('RGB');pix=rgb.load();mask=Image.new('L',(w,h),255)
- if mode=='disc':
+ if mode=='alpha':
+  mask=im.getchannel('A')
+ elif mode=='disc':
   mask=Image.new('L',(w,h));ImageDraw.Draw(mask).ellipse((8,5,w-9,h-6),fill=255);mask=mask.filter(ImageFilter.GaussianBlur(.5))
  elif mode=='ink':
   mask=rgb.convert('L').point(lambda x: min(255,max(0,int((200-x)*255/140))))
@@ -21,7 +23,7 @@ for src,name,size,mode in items:
    if p[x,y] and min(r,g,b)>(175 if mode=='checker' else 242 if 'наушники' in src else 222) and max(r,g,b)-min(r,g,b)<(14 if mode=='checker' else 23):p[x,y]=0;q.append((x,y))
   for x in range(w):add(x,0);add(x,h-1)
   for y in range(h):add(0,y);add(w-1,y)
-  if 'наушники' in src:
+  if 'наушники' in src and mode!='alpha':
    for x,y in [(240,205),(210,264),(275,313),(285,345),(250,450),(390,415),(410,450),(425,517),(550,330),(122,455),(122,373),(158,355),(235,518),(387,510),(427,365)]:add(x,y)
   while q:
    x,y=q.popleft()
@@ -29,7 +31,7 @@ for src,name,size,mode in items:
    if x+1<w:add(x+1,y)
    if y:add(x,y-1)
    if y+1<h:add(x,y+1)
- if 'наушники' in src:
+ if 'наушники' in src and mode!='alpha':
   m=mask.load()
   for y in range(225,h):
    for x in range(w):

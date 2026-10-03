@@ -72,3 +72,6 @@
 @media(max-width:359px){.vinyl-navigation .link-2{left:1%}}
 @media(min-width:600px){.vinyl-stage .prop-stars-d{left:24%;right:auto;top:51%;bottom:auto;width:3.8%;opacity:.65}}
 @media(max-width:599px){.vinyl-link small{font-size:max(8px,.36em)}}
+/* New portrait earphones cutout: preserve its proportions and the existing right-hand placement. */
+.vinyl-stage .prop-earphones{width:22%;right:-4%;bottom:30px}
+@media(min-width:600px){.vinyl-stage .prop-earphones{width:14%;right:3%;bottom:18%}}
