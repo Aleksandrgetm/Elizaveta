@@ -13,7 +13,7 @@ export const photos = {
 export const niches = [
   {name:'BEAUTY', imageAlt:'Косметика e.l.f. на столе', description:'Косметика, уход, макияж и self-care', photo:'flowers'},
   {name:'FASHION', imageAlt:'Девушка в светло-розовой блузке', description:'Одежда, аксессуары, примерки и стилизация', photo:'mirror'},
-  {name:'LIFESTYLE', imageAlt:'Лиза с розовыми бигудями и розовым косметическим продуктом', description:'Влоги, рутина, товары для дома и повседневной жизни', photo:'cafe'},
+  {name:'LIFESTYLE', imageAlt:'Лиза с розовыми бигудями', description:'Влоги, рутина, товары для дома и повседневной жизни', photo:'cafe'},
   {name:'WELLNESS', imageAlt:'Розовый спортивный коврик, бутылка и аксессуары для тренировок', description:'Забота о себе, здоровье, спорт и баланс', photo:'summer'},
   {name:'TRAVEL', imageAlt:'Крыло самолёта и небо за иллюминатором', description:'Путешествия, места, отели и новые впечатления', photo:'fashion'},
 ];

@@ -1,6 +1,6 @@
-import {mountDecorations} from './decorations.js';
-import {mountSections} from './components.js';
-import {initWelcome,initReveals,initMediaDialog} from './interactions.js';
+import {mountDecorations} from './decorations.js?v=20261004-corrections';
+import {mountSections} from './components.js?v=20261004-corrections';
+import {initWelcome,initReveals,initMediaDialog} from './interactions.js?v=20261004-corrections';
 mountSections(document.querySelector('#sections'));
 mountDecorations();
 initMediaDialog();

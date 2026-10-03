@@ -1,5 +1,5 @@
-import {videos,gallery,photos} from './content.js';
-import {photo} from './components.js';
+import {videos,gallery,photos} from './content.js?v=20261004-corrections';
+import {photo} from './components.js?v=20261004-corrections';
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 export function initWelcome({force=false}={}){
  let seen=false;try{seen=sessionStorage.getItem('liza-letter-v2')==='seen'}catch{}

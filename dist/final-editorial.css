@@ -10,7 +10,7 @@
 .cover-footer{position:absolute;bottom:24px;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;font:400 10px/1.5 var(--sans);color:#fff8ed}
 .cover-footer a{padding-block:10px}.cover-footer a:nth-child(2){display:none}.cover-footer a:focus-visible{outline-color:#fff8ed}
 .about-original .section-topline{justify-content:flex-start}.about-original .about-stamp{font:italic 27px/.9 var(--serif)}.about-original .about-stamp i{font:inherit}.about-photo{padding-bottom:16px}.about-key{right:-25px;bottom:0;width:85px;height:130px}.about-caption{bottom:-33px}.about-copy h2 em{font-weight:400}
-.contents.vinyl-section{background:var(--editorial-pink);color:#38251f}.vinyl-stage h2{color:#38251f}.vinyl-stage :is(.prop-heart,.prop-stars-a,.prop-stars-b,.prop-stars-c,.prop-stars-d){filter:none;opacity:.7}
+.contents.vinyl-section{background:var(--paper);color:#38251f}.vinyl-stage h2{color:#38251f}.vinyl-stage :is(.prop-heart,.prop-stars-a,.prop-stars-b,.prop-stars-c,.prop-stars-d){filter:none;opacity:.7}
 .vinyl-link,.vinyl-navigation .link-2{font-size:clamp(18px,5.2cqw,34px);text-shadow:none;line-height:1.04}.vinyl-link small{font:400 max(12px,.58em)/1 var(--serif);letter-spacing:0;margin-bottom:5px}.vinyl-navigation .link-2{left:2%;top:42%}.vinyl-navigation .link-4{top:76%;left:31%}.vinyl-physical{filter:drop-shadow(0 14px 18px #87485c30)}
 .niches.section{background:var(--editorial-pink);padding-top:70px;padding-bottom:85px}.directions-title h2{font-size:clamp(34px,8vw,72px);line-height:1;letter-spacing:-.04em}.niches .eyebrow{margin-bottom:20px}
 .directions-map{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto auto auto auto;gap:24px 14px;margin-top:28px}
@@ -27,6 +27,10 @@
 @media(min-width:1000px){.hero.photo-cover{min-height:620px}.cover-photo{object-position:50% 43%}.cover-title{left:20%;right:20%;top:60%}.photo-cover .cover-signature{max-height:290px}.cover-subtitle{font-size:16px;letter-spacing:.23em;margin-top:0}.cover-footer{left:5%;right:5%;bottom:25px;font-size:12px}.site-header nav{font-size:13px;gap:36px}.header-caption{font-size:10px}.niches.section{padding-block:100px}.directions-title h2{font-size:70px}.directions-map{max-width:1180px;grid-template-columns:1fr 1.03fr 1fr;grid-template-rows:215px 215px 190px;gap:12px 30px;margin-top:42px}.niche-portrait{grid-column:2;grid-row:1/3;width:100%;max-width:350px;align-self:center;margin:0}.niche-orbit{height:190px;min-height:0;padding:25px 24px;gap:17px}.orbit-beauty{grid-column:1;grid-row:1;transform:rotate(-4deg)}.orbit-fashion{grid-column:1;grid-row:2;transform:rotate(3deg)}.orbit-wellness{grid-column:3;grid-row:1;transform:rotate(4deg)}.orbit-travel{grid-column:3;grid-row:2;transform:rotate(-3deg)}.orbit-lifestyle{grid-column:2;grid-row:3;width:116%;height:185px;transform:rotate(-2deg);padding:25px}.orbit-photo{width:88px;height:125px}.orbit-lifestyle .orbit-photo{width:90px;height:120px}.orbit-copy h3{font-size:29px}.orbit-copy p{font-size:14px}.connections-desktop{display:block}.connections-mobile{display:none}.directions-fawn{left:19%;top:auto;bottom:0;width:94px;height:125px}.directions-petals{right:18%;top:auto;bottom:30px;width:105px;height:110px}.directions-star{left:5%;top:10px}.contact-wax{right:27%;top:55px;width:78px;height:78px}}
 @media(prefers-reduced-motion:reduce){.cover-photo,.cover-title,.cover-subtitle,.niche-portrait,.niche-orbit{transform:none}.niche-connections path{stroke-dashoffset:0}}
 /* Verification pass: independent footer space, legible indices and quiet accents. */
-.vinyl-link small{font-size:clamp(14px,3.8cqw,23px)}
+.vinyl-link small{font:500 clamp(24px,8cqw,48px)/.88 var(--serif);letter-spacing:-.04em;margin-bottom:7px}
+.vinyl-navigation .link-1{left:65%;top:20%}
+.vinyl-navigation .link-2{left:1.5%;top:41%}
+.vinyl-navigation .link-4{left:31%;top:76%}
+@media(max-width:359px){.vinyl-navigation .link-2{left:1%;font-size:17px}}
 .directions-star{left:2%;top:-30px}
 @media(min-width:1000px){.cover-title{top:auto;bottom:12%}.photo-cover .cover-signature{max-height:clamp(160px,25svh,230px)}.directions-star{left:5%;top:4px}}

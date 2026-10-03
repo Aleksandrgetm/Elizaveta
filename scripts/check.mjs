@@ -13,7 +13,7 @@ for(const p of Object.values(photos))for(const w of [480,960,1440])assert.ok(exi
 for(const p of gallery)assert.ok(photos[p],'gallery photo');
 assert.equal(socials.length,3);
 const html=readFileSync('dist/index.html','utf8');assert.ok(html.includes('lang="ru"'));
-for(const match of html.matchAll(/(?:src|href)="(\/[^"#]*)"/g))assert.ok(existsSync(`dist${match[1]}`),match[1]);
+for(const match of html.matchAll(/(?:src|href)="(\/[^"#]*)"/g))assert.ok(existsSync(`dist${match[1].split('?')[0]}`),match[1]);
 const css=readFileSync('dist/assets/fonts/fonts.css','utf8');assert.ok(css.includes('U+0400'),'Cyrillic font subset');
 for(const m of css.matchAll(/url\(\.\/([^)]+)\)/g))assert.ok(existsSync(`dist/assets/fonts/${m[1]}`),'font asset');
 console.log('PASS: JavaScript syntax, 12 editable videos, all photos/fonts, local references, metadata. Static site is ready; no compile step required.');
