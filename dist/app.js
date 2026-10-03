@@ -1,7 +1,7 @@
-// Page sections and interactive controllers are kept separate from editable content.
-import { mountSections } from './components.js';
-import { initWelcome, initReveals, initMediaDialog } from './interactions.js';
+import {mountSections} from './components.js';
+import {initWelcome,initReveals,initMediaDialog} from './interactions.js';
 mountSections(document.querySelector('#sections'));
-initWelcome();
-initReveals();
 initMediaDialog();
+document.querySelector('#replay-intro').addEventListener('click',()=>initWelcome({force:true}));
+await initWelcome();
+initReveals();

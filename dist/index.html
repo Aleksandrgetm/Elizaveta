@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f0e6">
+  <meta name="theme-color" content="#fbf6ea">
   <title>Лиза — lifestyle & UGC creator</title>
   <meta name="description" content="Живой, эстетичный и нативный контент о красоте, стиле и повседневной жизни. UGC-портфолио Лизы — @waniloow.">
   <meta property="og:type" content="website">
@@ -16,35 +16,29 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="preload" as="image" href="/assets/photos/liza-2681-960.webp" imagesrcset="/assets/photos/liza-2681-480.webp 480w, /assets/photos/liza-2681-960.webp 960w, /assets/photos/liza-2681-1440.webp 1440w" imagesizes="(min-width: 800px) 44vw, 75vw">
+  <link rel="preload" as="image" href="/assets/photos/liza-2688-960.webp" imagesrcset="/assets/photos/liza-2688-480.webp 480w, /assets/photos/liza-2688-960.webp 960w, /assets/photos/liza-2688-1440.webp 1440w" imagesizes="(min-width: 900px) 44vw, 90vw">
+  <script defer src="/vendor/gsap.min.js"></script>
+  <script defer src="/vendor/ScrollTrigger.min.js"></script>
   <script type="module" src="/app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <header class="site-header wrap">
-    <a class="wordmark" href="#home" aria-label="Лиза — на главную">лиза<span aria-hidden="true">*</span></a>
-    <span class="header-caption micro">LIFESTYLE & UGC CREATOR</span>
-    <nav aria-label="Основная навигация"><a href="#about">Обо мне</a><a href="#work">Работы</a><a href="#contact">Связаться</a></nav>
-  </header>
-  <main id="main">
-    <section class="hero wrap" id="home" aria-labelledby="hero-title">
-      <div class="hero-topline micro"><span>ЛИЧНЫЙ ВЗГЛЯД. ЖИВОЙ КОНТЕНТ.</span><span>PORTFOLIO / VOL. 01</span></div>
-      <div class="hero-stage">
-        <p class="hero-kicker micro">LIFESTYLE<br>CREATOR & UGC</p>
-        <h1 id="hero-title">Лиза<span class="hero-asterisk" aria-hidden="true">✳</span></h1>
-        <figure class="hero-portrait"><img src="/assets/photos/liza-2681-960.webp" srcset="/assets/photos/liza-2681-480.webp 480w, /assets/photos/liza-2681-960.webp 960w, /assets/photos/liza-2681-1440.webp 1440w" sizes="(min-width: 800px) 44vw, 75vw" width="1200" height="1600" alt="Лиза в бордовой рубашке, портрет в естественном свете" fetchpriority="high"></figure>
-        <figure class="hero-snapshot"><img src="/assets/photos/liza-5712-480.webp" width="900" height="1600" alt="Лиза в очках на прогулке"><figcaption class="handwritten">немного моей жизни</figcaption></figure>
-        <span class="hero-sticker">made with<br><i>feeling</i></span>
-        <p class="hero-note handwritten">приятно познакомиться!</p>
-        <div class="hero-copy"><p>Контент, который хочется<br><em>смотреть, сохранять</em><br>и примерять на себя.</p><a class="button" href="#work">Смотреть работы <span aria-hidden="true">✳</span></a></div>
-        <span class="hero-margin micro">BEAUTY · FASHION · EVERYDAY LIFE</span>
-      </div>
-      <div class="hero-bottom micro"><span>ЭСТЕТИКА В ОБЫЧНОМ</span><span>ЛИСТАЙТЕ, ЗДЕСЬ МНОГО ЛИЧНОГО</span><span aria-hidden="true">( 01 — 08 )</span></div>
-    </section>
-    <div class="ticker" aria-hidden="true"><span>LIFESTYLE <b>✳</b> BEAUTY <b>✳</b> FASHION <b>✳</b> REAL MOMENTS <b>✳</b> LIFESTYLE <b>✳</b> BEAUTY <b>✳</b> FASHION <b>✳</b> REAL MOMENTS <b>✳</b></span></div>
-    <div id="sections"></div>
-  </main>
-  <noscript><section class="wrap no-script"><h2>Давайте создадим что-то классное</h2><p>Для просмотра полного портфолио включите JavaScript.</p><a href="mailto:lbritakina@gmail.com">lbritakina@gmail.com</a> · <a href="https://t.me/waniloow">Telegram @waniloow</a></section></noscript>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header wrap"><a class="wordmark" href="#home" aria-label="Лиза — на главную">Л.</a><span class="header-caption micro">ЛИЧНЫЙ СЪЁМОЧНЫЙ ДНЕВНИК</span><nav aria-label="Основная навигация"><a href="#about">Обо мне</a><a href="#work">Работы</a><a href="#contact">Контакты</a></nav></header>
+<main id="main">
+<section class="hero" id="home" aria-labelledby="hero-title"><div class="wrap hero-inner">
+<div class="hero-edition micro"><span>UGC PORTFOLIO</span><span>ЛИЧНОЕ. НАСТОЯЩЕЕ. МОЁ.</span></div>
+<div class="hero-title-wrap"><h1 id="hero-title">Лиза</h1><span class="hero-sign handwritten">за кадром и в кадре</span></div>
+<div class="hero-scene">
+<figure class="hero-main"><img src="/assets/photos/liza-2688-960.webp" srcset="/assets/photos/liza-2688-480.webp 480w, /assets/photos/liza-2688-960.webp 960w, /assets/photos/liza-2688-1440.webp 1440w" sizes="(min-width: 900px) 44vw, 90vw" width="1280" height="959" alt="Лиза с букетом белых цветов" fetchpriority="high"><figcaption class="micro">01 / ЛОВЛЮ МОМЕНТЫ</figcaption><span class="tape" aria-hidden="true"></span></figure>
+<div class="hero-film film" aria-label="Небольшие кадры из жизни Лизы"><span class="micro">LIZA / EVERYDAY LIFE</span><img src="/assets/photos/liza-8470-480.webp" width="480" height="640" alt="Лиза снимает образ в зеркале"><img src="/assets/photos/liza-5712-480.webp" width="480" height="854" alt="Лиза на прогулке"><span class="micro">02A &nbsp; 03A</span></div>
+<p class="hero-caption handwritten">красивое —<br>в обычном</p><img class="hero-camera" src="/assets/camera.webp" width="1100" height="734" alt="" aria-hidden="true">
+<div class="hero-ticket"><span class="micro">LIFESTYLE CREATOR & UGC</span><p>Контент, который хочется<br>смотреть, сохранять<br>и примерять на себя.</p><a class="button" href="#work">Смотреть работы</a></div>
+</div>
+<div class="hero-bottom micro"><span>LIFESTYLE / BEAUTY / FASHION / EVERYDAY LIFE</span><a href="#about">Знакомство ниже</a></div>
+</div></section>
+<div id="sections"></div>
+</main>
+<noscript><section class="wrap no-script"><h2>Давайте создадим что-то классное</h2><p>Для полного портфолио включите JavaScript.</p><a href="mailto:lbritakina@gmail.com">lbritakina@gmail.com</a></section></noscript>
   <dialog id="media-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="micro" id="dialog-meta"></span><button class="icon-button" id="close-dialog" aria-label="Закрыть просмотр">×</button></div><div id="dialog-media"></div><div class="dialog-caption"><h2 id="dialog-title"></h2><p id="dialog-description"></p></div><div class="dialog-controls"><button id="previous-media" aria-label="Предыдущая работа">Предыдущая</button><span id="dialog-counter" class="micro"></span><button id="next-media" aria-label="Следующая работа">Следующая</button></div></dialog>
 </body>
 </html>

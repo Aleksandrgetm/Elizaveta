@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+const events=[];
+globalThis.matchMedia=()=>({matches:true});
+globalThis.sessionStorage={getItem:()=>null};
+globalThis.location={hash:''};
+globalThis.window={gsap:{registerPlugin(){},matchMedia(){return{add(queries,callback){assert.ok(queries.reduce.includes('prefers-reduced-motion'));callback({conditions:{reduce:true}})}}}},ScrollTrigger:{refresh(){events.push('refresh')}},addEventListener(){}};
+globalThis.document={fonts:{ready:Promise.resolve()},addEventListener(){},createElement(){throw new Error('Reduced motion must skip welcome')}};
+const {initWelcome,initReveals}=await import('../dist/interactions.js');
+await initWelcome();
+initReveals();
+await Promise.resolve();
+assert.ok(events.includes('refresh'));
+console.log('PASS: reduced-motion skips intro and exits before creating any GSAP animation.');
