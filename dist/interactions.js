@@ -49,24 +49,19 @@ export function initReveals(){
    else if(kind==='pop'){g.from(mark,{scale:.8,duration:.8,ease:'back.out(1.8)',scrollTrigger:once(mark)})}
    else{g.from(mark,{rotation:-18,scale:.85,duration:.9,ease:'power2.out',scrollTrigger:once(mark)})}
   });
-  g.from('.strawberry-mascot',{y:12,rotation:-7,autoAlpha:0,duration:.9,ease:'back.out(1.4)',scrollTrigger:once('.orbit-lifestyle')});
   g.to('.hero-camera',{y:-amplitude,rotation:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.7}});
   g.from('.about-collage',{y:40,autoAlpha:0,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-layout')});
   g.from('.about-copy',{y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-copy')});
   g.to('.bridge-film',{x:desktop?70:24,ease:'none',scrollTrigger:{trigger:'.about',start:'center center',end:'bottom top',scrub:.8}});
-  g.from('.record-lift',{scale:.86,x:35,autoAlpha:0,duration:1.25,ease:'power3.out',scrollTrigger:once('.record-object')});
-  g.fromTo('.record-spin',{rotation:-35},{rotation:115,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.contents',start:'top bottom',end:'bottom top',scrub:.65}});
-  g.to('.record-object',{y:-amplitude,ease:'none',scrollTrigger:{trigger:'.contents',start:'top bottom',end:'bottom top',scrub:.8}});
-  g.from('.tracklist a',{x:-25,autoAlpha:0,stagger:.09,duration:.65,scrollTrigger:once('.tracklist')});
+  g.fromTo('.vinyl-physical',{rotation:-25},{rotation:95,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.vinyl-section',start:'top bottom',end:'bottom top',scrub:.8}});
+  const layers=[['.prop-phone',-20,-5],['.prop-earphones',16,3],['.prop-bow',-12,2],['.prop-cassette',22,-3],['.prop-stars-a',-8,4],['.prop-stars-d',6,-3]];
+  layers.forEach(([target,y,rotation])=>g.to(target,{y:desktop?y:y*.45,rotation,ease:'none',scrollTrigger:{trigger:'.vinyl-stage',start:'top bottom',end:'bottom top',scrub:1}}));
   g.from('.niche-portrait',{y:25,autoAlpha:0,duration:1,ease:'power3.out',scrollTrigger:once('.directions-map')});
   g.utils.toArray('.niche-orbit').forEach(orbit=>g.from(orbit,{y:18,autoAlpha:0,duration:.7,scrollTrigger:once(orbit)}));
   const cards=g.utils.toArray('.video-card'),columns=desktop?4:3;
   for(let i=0;i<cards.length;i+=columns)g.from(cards.slice(i,i+columns),{y:32,autoAlpha:0,stagger:.1,duration:.75,ease:'power3.out',scrollTrigger:once(cards[i])});
   g.from('.contact-letter',{y:50,rotation:1,autoAlpha:0,duration:1.1,ease:'power3.out',scrollTrigger:once('.contact-letter')});
-  const lift=document.querySelector('.record-lift');
-  const enter=()=>g.to(lift,{scale:1.025,duration:.35,overwrite:'auto'}),leave=()=>g.to(lift,{scale:1,duration:.45,overwrite:'auto'});
-  const nav=document.querySelector('.tracklist');nav.addEventListener('pointerenter',enter);nav.addEventListener('pointerleave',leave);nav.addEventListener('focusin',enter);nav.addEventListener('focusout',leave);
-  return()=>{nav.removeEventListener('pointerenter',enter);nav.removeEventListener('pointerleave',leave);nav.removeEventListener('focusin',enter);nav.removeEventListener('focusout',leave);g.killTweensOf(lift)};
+
  });
  document.fonts.ready.then(()=>ST.refresh());
  window.addEventListener('load',()=>ST.refresh(),{once:true});
