@@ -4,15 +4,15 @@ export function Decoration(file,{className='',size=30,turn=0,motion=''}={}){
 }
 export function mountDecorations(){
  const placements=[
- ['.hero-title-wrap','stars/star-handdrawn','hero-doodle-a',31,-13,'turn'],
- ['.hero-title-wrap','stars/star-trio','hero-doodle-b',36,9,''],
- ['.directions-map','stars/star-trio','niche-doodle-a',40,-10,'pop'],
- ['.directions-map','stars/star-handdrawn','niche-doodle-b',27,12,''],
- ['.directions-title','stars/diamond-sparkles','niche-doodle-c desktop-doodle',45,-6,''],
+ ['.about-collage','../editorial/ribbon-key','about-key',100,12,'turn'],
+ ['.directions-map','../editorial/fawn','directions-fawn',94,-6,'pop'],
+ ['.directions-map','../editorial/rose-petals','directions-petals',90,14,'turn'],
+ ['.directions-title','stars/star-handdrawn','directions-star',25,-8,''],
  ['.work-heading','stars/diamond-sparkles','work-doodle-a',37,8,''],
  ['.work-heading','objects/pink-bow','work-doodle-b',65,-7,'pop'],
- ['.contact-letter','stickers/lip-print','contact-doodle-a',50,-8,'pop'],
- ['.contact-photo','stars/star-handdrawn','contact-doodle-b',31,14,'']
+ ['.content-formats','../editorial/pink-star-confetti','formats-confetti',70,10,''],
+ ['.contact-letter','../editorial/wax-seal','contact-wax',72,-8,'pop'],
+ ['.contact-photo','../editorial/flower-stamp','contact-flower-stamp',75,10,'']
  ];
  placements.forEach(([target,file,className,size,turn,motion])=>document.querySelector(target)?.insertAdjacentHTML('beforeend',Decoration(file,{className,size,turn,motion})));
 }

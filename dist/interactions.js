@@ -38,26 +38,34 @@ export function initReveals(){
   const amplitude=desktop&&!light?28:12;
   const once=(trigger)=>({trigger,start:'top 92%',once:true});
   const hero=g.timeline({defaults:{ease:'power3.out'}});
-  hero.from('.hero h1',{clipPath:'inset(0 0 100% 0)',y:30,duration:1.05})
-    .from('.hero-main',{y:45,rotation:2,autoAlpha:0,duration:1.1},.1)
-    .from('.hero-film',{x:35,y:35,rotation:18,autoAlpha:0,duration:1},.25)
-    .from('.hero-ticket',{y:30,autoAlpha:0,duration:.75},.4)
-    .from('.hero-caption,.hero-sign',{autoAlpha:0,duration:.6,stagger:.15},.65);
+  hero.from('.cover-photo',{scale:1.03,duration:1.5},0)
+   .from('.cover-title h1',{clipPath:'inset(0 0 100% 0)',autoAlpha:0,y:14,duration:1.1},.2)
+   .from('.cover-subtitle',{y:9,autoAlpha:0,duration:.7},.65);
   g.utils.toArray('[data-decor-motion]').forEach(mark=>{
    const kind=mark.dataset.decorMotion;
    if(kind==='draw'){g.fromTo(mark.querySelector('svg'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,ease:'power1.inOut',scrollTrigger:once(mark)})}
    else if(kind==='pop'){g.from(mark,{scale:.8,duration:.8,ease:'back.out(1.8)',scrollTrigger:once(mark)})}
    else{g.from(mark,{rotation:-18,scale:.85,duration:.9,ease:'power2.out',scrollTrigger:once(mark)})}
   });
-  g.to('.hero-camera',{y:-amplitude,rotation:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.7}});
   g.from('.about-collage',{y:40,autoAlpha:0,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-layout')});
   g.from('.about-copy',{y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-copy')});
   g.to('.bridge-film',{x:desktop?70:24,ease:'none',scrollTrigger:{trigger:'.about',start:'center center',end:'bottom top',scrub:.8}});
   g.fromTo('.vinyl-physical',{rotation:-16},{rotation:58,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.vinyl-section',start:'top bottom',end:'bottom top',scrub:1.25}});
   const layers=[['.prop-phone',-12,-2],['.prop-earphones',9,1.5],['.prop-bow',-4,.8],['.prop-cassette',-8,-1.5],['.prop-stars-a',-4,2],['.prop-stars-b',3,-1],['.prop-stars-c',-3,1],['.prop-stars-d',4,-2],['.prop-heart',-3,1]];
   layers.forEach(([target,y,rotation])=>g.to(target,{y:desktop?y:y*.45,rotation:`+=${rotation}`,ease:'none',scrollTrigger:{trigger:'.vinyl-stage',start:'top bottom',end:'bottom top',scrub:1}}));
-  g.from('.niche-portrait',{y:25,autoAlpha:0,duration:1,ease:'power3.out',scrollTrigger:once('.directions-map')});
-  g.utils.toArray('.niche-orbit').forEach(orbit=>g.from(orbit,{y:18,autoAlpha:0,duration:.7,scrollTrigger:once(orbit)}));
+  const directions=g.timeline({defaults:{ease:'power2.out'},scrollTrigger:once('.niches')});
+  directions.from('.niches .eyebrow',{autoAlpha:0,y:10,duration:.3},0)
+   .from('.directions-title h2',{autoAlpha:0,y:14,duration:.45},.12)
+   .from('.niche-face',{autoAlpha:0,y:12,duration:.5},.3)
+   .from('.lace-frame',{autoAlpha:0,scale:.94,duration:.5},.42);
+  ['beauty','fashion','wellness','travel','lifestyle'].forEach((name,i)=>{
+   const t=.6+i*.16;
+   directions.fromTo(`.niche-connections [data-line="${i}"]`,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.4},t)
+    .set(`.niche-connections [data-line="${i}"]`,{strokeDasharray:'.005 .008'},t+.4)
+    .from(`.orbit-${name}`,{autoAlpha:0,y:12,duration:.4},t+.15)
+    .from(`.orbit-${name} .orbit-photo`,{autoAlpha:0,scale:.94,duration:.35},t+.25)
+    .from(`.orbit-${name} .orbit-copy`,{autoAlpha:0,y:5,duration:.3},t+.3);
+  });
   const cards=g.utils.toArray('.video-card'),columns=desktop?4:3;
   for(let i=0;i<cards.length;i+=columns)g.from(cards.slice(i,i+columns),{y:32,autoAlpha:0,stagger:.1,duration:.75,ease:'power3.out',scrollTrigger:once(cards[i])});
   g.from('.contact-letter',{y:50,rotation:1,autoAlpha:0,duration:1.1,ease:'power3.out',scrollTrigger:once('.contact-letter')});

@@ -11,11 +11,11 @@ export const photos = {
   flowers: { id: '2688', alt: 'Лиза с букетом белых цветов' },
 };
 export const niches = [
-  {name:'BEAUTY', imageAlt:'Косметика и уход — тематический кадр', description:'Косметика, уход, макияж и забота о себе', photo:'flowers'},
-  {name:'FASHION', imageAlt:'Сумка и аксессуары — тематический кадр', description:'Одежда, аксессуары, примерки и стилизация', photo:'mirror'},
-  {name:'LIFESTYLE', imageAlt:'Кофе и уют дома — тематический кадр', description:'Влоги, рутина, товары для дома и повседневной жизни', photo:'cafe'},
-  {name:'WELLNESS', imageAlt:'Матча — тематический кадр', description:'Забота о себе, здоровье, спорт и баланс', photo:'summer'},
-  {name:'TRAVEL', imageAlt:'Путешествия — тематический кадр', description:'Путешествия, места, отели и новые впечатления', photo:'fashion'},
+  {name:'BEAUTY', imageAlt:'Косметика e.l.f. на столе', description:'Косметика, уход, макияж и self-care', photo:'flowers'},
+  {name:'FASHION', imageAlt:'Девушка в светло-розовой блузке', description:'Одежда, аксессуары, примерки и стилизация', photo:'mirror'},
+  {name:'LIFESTYLE', imageAlt:'Лиза с розовыми бигудями и розовым косметическим продуктом', description:'Влоги, рутина, товары для дома и повседневной жизни', photo:'cafe'},
+  {name:'WELLNESS', imageAlt:'Розовый спортивный коврик, бутылка и аксессуары для тренировок', description:'Забота о себе, здоровье, спорт и баланс', photo:'summer'},
+  {name:'TRAVEL', imageAlt:'Крыло самолёта и небо за иллюминатором', description:'Путешествия, места, отели и новые впечатления', photo:'fashion'},
 ];
 // Draft titles describe the intended slots, not completed or published projects.
 export const videos = [
