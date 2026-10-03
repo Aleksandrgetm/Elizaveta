@@ -53,9 +53,9 @@ export function initReveals(){
   g.from('.about-collage',{y:40,autoAlpha:0,duration:1.2,ease:'power3.out',scrollTrigger:once('.about-layout')});
   g.from('.about-copy',{y:35,autoAlpha:0,duration:1,scrollTrigger:once('.about-copy')});
   g.to('.bridge-film',{x:desktop?70:24,ease:'none',scrollTrigger:{trigger:'.about',start:'center center',end:'bottom top',scrub:.8}});
-  g.fromTo('.vinyl-physical',{rotation:-25},{rotation:95,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.vinyl-section',start:'top bottom',end:'bottom top',scrub:.8}});
-  const layers=[['.prop-phone',-20,-5],['.prop-earphones',16,3],['.prop-bow',-12,2],['.prop-cassette',22,-3],['.prop-stars-a',-8,4],['.prop-stars-d',6,-3]];
-  layers.forEach(([target,y,rotation])=>g.to(target,{y:desktop?y:y*.45,rotation,ease:'none',scrollTrigger:{trigger:'.vinyl-stage',start:'top bottom',end:'bottom top',scrub:1}}));
+  g.fromTo('.vinyl-physical',{rotation:-16},{rotation:58,ease:'none',scrollTrigger:{id:'vinyl-scroll',trigger:'.vinyl-section',start:'top bottom',end:'bottom top',scrub:1.25}});
+  const layers=[['.prop-phone',-12,-2],['.prop-earphones',9,1.5],['.prop-bow',-4,.8],['.prop-cassette',-8,-1.5],['.prop-stars-a',-4,2],['.prop-stars-b',3,-1],['.prop-stars-c',-3,1],['.prop-stars-d',4,-2],['.prop-heart',-3,1]];
+  layers.forEach(([target,y,rotation])=>g.to(target,{y:desktop?y:y*.45,rotation:`+=${rotation}`,ease:'none',scrollTrigger:{trigger:'.vinyl-stage',start:'top bottom',end:'bottom top',scrub:1}}));
   g.from('.niche-portrait',{y:25,autoAlpha:0,duration:1,ease:'power3.out',scrollTrigger:once('.directions-map')});
   g.utils.toArray('.niche-orbit').forEach(orbit=>g.from(orbit,{y:18,autoAlpha:0,duration:.7,scrollTrigger:once(orbit)}));
   const cards=g.utils.toArray('.video-card'),columns=desktop?4:3;

@@ -27,3 +27,48 @@
 @media(min-width:600px){.contents.vinyl-section{padding-top:195px;padding-bottom:50px}.vinyl-stage{height:auto;aspect-ratio:1.79}.vinyl-stage h2{left:3%;top:11%;font-size:clamp(40px,5.2vw,86px)}.vinyl-disc{width:46%;left:27%;top:8%}.vinyl-link{font-size:clamp(23px,2.7vw,46px)}.vinyl-link small{font-size:clamp(12px,1.4vw,23px)}.link-2{font-size:clamp(21px,2.5vw,41px);left:4%}.link-4{left:29%}.prop-phone{width:18%;left:4%;bottom:-15%;transform:rotate(18deg)}.prop-earphones{width:24%;right:-4%;bottom:7%}.prop-cassette{width:21%;right:18%;bottom:-8%}.prop-bow{width:13%;right:6%;top:0}.prop-heart{width:5%;left:24%;bottom:4%}.prop-stars-a{width:10%;left:14%;top:28%}.prop-stars-b{width:3%;left:65%;top:1%}.prop-stars-c{width:6%;right:20%;top:14%}.prop-stars-d{width:9%;right:29%;bottom:4%}.vinyl-edge{display:block;position:absolute;right:1%;top:8%;writing-mode:vertical-rl;color:var(--paper);font-size:8px}.hero-user-camera{width:145px;height:110px;bottom:40px}.content-formats ul{gap:18px 35px}}
 @media(min-width:1000px){.contents.vinyl-section{padding-top:230px;padding-bottom:70px}.hero-user-camera{left:6%;bottom:15px;width:165px;height:125px}.vinyl-edge{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.vinyl-physical{will-change:auto}.vinyl-link{transition:none}}
+
+/* Focused CONTENTS refinement: height-aware desktop canvas and independent phone layout. */
+.contents.vinyl-section{padding:132px 0 0}
+.vinyl-stage{height:490px}
+.vinyl-stage h2{left:6%;top:16px;font-size:36px}
+.vinyl-disc{container-type:inline-size;width:92%;left:4%;top:82px}
+.vinyl-link,.link-2{font-size:clamp(19px,5.7cqw,26px);line-height:1.03;letter-spacing:-.035em;padding:2px;min-height:44px}
+.vinyl-link small{font-size:.36em;line-height:1;margin-bottom:5px;letter-spacing:.025em}
+.link-0{left:20%;top:16%}.link-1{left:61%;top:26%}.link-2{left:3%;top:44%}.link-3{left:72%;top:51%}.link-4{left:31%;top:77%}
+.prop-phone{width:24%;left:-5%;bottom:-32px}
+.prop-earphones{width:31%;right:-10%;bottom:36px}
+.prop-cassette{width:29%;right:10%;bottom:-17px}
+.prop-bow{width:15%;right:8%;top:18px}
+.prop-heart{width:9%;left:24%;bottom:16px}
+.prop-stars-a{width:9%;left:7%;top:60px}.prop-stars-b{width:4%;left:58%;top:37px}.prop-stars-c{width:7%;right:3%;top:71px}.prop-stars-d{width:7%;right:33%;bottom:20px}
+.vinyl-stage :is(.prop-heart,.prop-stars-a,.prop-stars-b,.prop-stars-c,.prop-stars-d){filter:brightness(0) saturate(100%) invert(88%) sepia(13%) saturate(419%) hue-rotate(312deg) brightness(103%) contrast(93%);opacity:.82}
+@media(max-width:359px){.vinyl-stage{height:437px}.vinyl-stage h2{font-size:32px}.vinyl-disc{top:80px}.prop-bow{width:14%;top:18px}.prop-earphones{bottom:36px}.prop-stars-d{display:none}}
+@media(min-width:375px) and (max-width:389px){.vinyl-stage{height:487px}.vinyl-disc{top:82px}.vinyl-stage h2{font-size:36px}}
+@media(min-width:390px) and (max-width:429px){.vinyl-stage{height:505px}.vinyl-disc{top:84px}.vinyl-stage h2{font-size:37px}}
+@media(min-width:430px) and (max-width:599px){.vinyl-stage{height:550px}.vinyl-disc{top:87px}.vinyl-stage h2{font-size:41px}.prop-earphones{bottom:46px}}
+@media(min-width:600px){
+ .contents.vinyl-section{--vinyl-top:155px;height:98svh;min-height:630px;max-height:1000px;padding:var(--vinyl-top) 0 0}
+ .vinyl-stage{height:100%;aspect-ratio:auto;width:min(100%,calc((98svh - var(--vinyl-top))*1.95));max-width:1500px}
+ .vinyl-stage h2{left:5%;top:9%;font-size:clamp(39px,4.7vw,70px)}
+ .vinyl-disc{width:44%;left:29%;top:4%}
+ .vinyl-link,.link-2{font-size:clamp(20px,5.5cqw,36px)}
+ .vinyl-link small{font-size:.35em;margin-bottom:7px}
+ .link-2{left:3%}.link-4{left:30%}
+ .prop-phone{width:17%;left:5%;bottom:-14%}
+ .prop-earphones{width:22%;right:-2%;bottom:19%}
+ .prop-cassette{width:21%;right:17%;bottom:-7%}
+ .prop-bow{width:12%;right:7%;top:1%}
+ .prop-heart{width:4.8%;left:23%;bottom:12%}
+ .prop-stars-a{width:8%;left:17%;top:29%}
+ .prop-stars-b{width:2.7%;left:64%;top:0}
+ .prop-stars-c{width:5.5%;right:19%;top:17%}
+ .prop-stars-d{display:block;width:7%;right:30%;bottom:10%}
+ .vinyl-edge{right:2.5%;top:8%;font-size:8px;line-height:1.4;letter-spacing:.16em;opacity:.55}
+}
+@media(min-width:600px) and (max-width:999px){.contents.vinyl-section{height:auto;min-height:0;max-height:none;padding-top:165px}.vinyl-stage{width:100%;height:56vw;min-height:410px}.vinyl-disc{width:46%;left:28%;top:5%}.vinyl-stage h2{font-size:5.2vw;left:4%}.prop-earphones{bottom:20%}}
+@media(min-width:1000px) and (max-height:740px){.contents.vinyl-section{--vinyl-top:135px;min-height:580px}.vinyl-stage h2{font-size:clamp(37px,4.3vw,56px)}}
+/* Second comparison pass: protect the hub at 320px; separate the final star cluster from cassette. */
+@media(max-width:359px){.vinyl-navigation .link-2{left:1%}}
+@media(min-width:600px){.vinyl-stage .prop-stars-d{left:24%;right:auto;top:51%;bottom:auto;width:3.8%;opacity:.65}}
+@media(max-width:599px){.vinyl-link small{font-size:max(8px,.36em)}}
