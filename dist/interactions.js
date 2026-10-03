@@ -38,19 +38,15 @@ export function initReveals(){
   const amplitude=desktop&&!light?28:12;
   const once=(trigger)=>({trigger,start:'top 92%',once:true});
   const hero=g.timeline({defaults:{ease:'power3.out'}});
-  hero.from('.hero-main',{y:45,rotation:2,autoAlpha:0,duration:1.1},.1)
+  hero.from('.hero h1',{clipPath:'inset(0 0 100% 0)',y:30,duration:1.05})
+    .from('.hero-main',{y:45,rotation:2,autoAlpha:0,duration:1.1},.1)
     .from('.hero-film',{x:35,y:35,rotation:18,autoAlpha:0,duration:1},.25)
     .from('.hero-ticket',{y:30,autoAlpha:0,duration:.75},.4)
     .from('.hero-caption,.hero-sign',{autoAlpha:0,duration:.6,stagger:.15},.65);
-  // Reveal the existing calligraphy along individual pen trajectories.
-  const pen=g.utils.toArray('.signature-stroke');
-  g.set('.signature-complete',{opacity:0});g.set(pen,{strokeDasharray:1,strokeDashoffset:1});
-  const writing=g.timeline({delay:.15,onComplete:()=>g.set('.signature-complete',{opacity:1})});
-  pen.forEach((path,i)=>writing.to(path,{strokeDashoffset:0,duration:[1.15,.48,.4,.48,.4,.55,.5,.55,.42][i]||.45,ease:'none'},i===0?0:'>-.04'));
   g.utils.toArray('[data-decor-motion]').forEach(mark=>{
    const kind=mark.dataset.decorMotion;
    if(kind==='draw'){g.fromTo(mark.querySelector('svg'),{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,ease:'power1.inOut',scrollTrigger:once(mark)})}
-   else if(kind==='pulse'){g.from(mark,{scale:.8,duration:.8,ease:'back.out(1.8)',scrollTrigger:once(mark)})}
+   else if(kind==='pop'){g.from(mark,{scale:.8,duration:.8,ease:'back.out(1.8)',scrollTrigger:once(mark)})}
    else{g.from(mark,{rotation:-18,scale:.85,duration:.9,ease:'power2.out',scrollTrigger:once(mark)})}
   });
   g.from('.strawberry-mascot',{y:12,rotation:-7,autoAlpha:0,duration:.9,ease:'back.out(1.4)',scrollTrigger:once('.orbit-lifestyle')});

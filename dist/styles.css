@@ -52,3 +52,11 @@
 /* Keep the crossing film above the next section's background. */
 .about{z-index:2}.contents{z-index:1}
 .work-doodle-b{--d-size:42px!important;bottom:-51px}.work-draft{padding-left:52px}
+/* Continuous film: eight frames and offscreen buffers cover the full scroll travel. */
+.bridge-film{left:-80px;right:-80px;justify-content:flex-start;padding-inline:12px}.bridge-film img{width:110px;min-width:110px;flex-basis:110px}.bridge-film>.micro{display:none}
+.contents{padding-bottom:115px}.record-doodle-d{right:3%;top:30%;color:var(--paper)}.niche-doodle-d{left:3%;bottom:15%}.hero-doodle-d{left:1%;bottom:2%}
+.niche-orbit::before{background:#fffaf140;border-color:#b9a18d;box-shadow:inset 0 0 0 4px #fbf6ea}.orbit-photo{width:62px;height:72px;box-shadow:0 3px 8px #5e382319;transform:rotate(-4deg)}.orbit-photo img{object-position:center;filter:saturate(.84)}.orbit-copy p{line-height:1.45}.orbit-fashion .orbit-photo,.orbit-travel .orbit-photo{transform:rotate(5deg)}.orbit-lifestyle .orbit-photo{width:74px;height:95px}.contact-doodle-a{width:36px;height:36px}
+@media(min-width:600px){.bridge-film{left:-100px;right:-100px;padding-inline:18px}.bridge-film img{width:160px;min-width:160px;flex-basis:160px}.orbit-photo{width:75px;height:105px}.contents{padding-bottom:140px}}
+@media(min-width:1000px){.bridge-film{left:-190px;right:-190px;padding-inline:25px}.bridge-film img{width:210px;min-width:210px;flex-basis:210px}.record-object{height:auto;min-height:580px;aspect-ratio:1/1.36}.contents{padding-bottom:165px}.orbit-photo{width:94px;height:132px}.orbit-lifestyle .orbit-photo{width:90px;height:117px}.niche-orbit{gap:18px;padding-inline:23px}.orbit-copy h3{font-size:25px}.orbit-copy p{font-size:14px}.directions-map{column-gap:30px}.niche-portrait{max-width:325px}}
+@media(max-width:359px){.orbit-photo{width:52px;height:64px}.niche-orbit{min-height:220px}.orbit-lifestyle{min-height:155px}.orbit-lifestyle .orbit-photo{width:66px;height:88px}}
+.orbit-fashion .orbit-photo img{object-position:50% 70%}.orbit-wellness .orbit-photo img{object-position:50% 65%}.orbit-lifestyle .orbit-photo img{object-position:45% 65%}
