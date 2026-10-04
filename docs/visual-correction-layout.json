@@ -1,0 +1,2831 @@
+[
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -6673.73828125,
+          "height": 421.328125,
+          "left": 33.42121124267578,
+          "right": 278.1256790161133,
+          "top": -7095.06640625,
+          "width": 244.7044677734375,
+          "x": 33.42121124267578,
+          "y": -7095.06640625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -7020.4541015625,
+          "height": 84.41552734375,
+          "left": 16.480419158935547,
+          "right": 100.89582443237305,
+          "top": -7104.86962890625,
+          "width": 84.4154052734375,
+          "x": 16.480419158935547,
+          "y": -7104.86962890625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -1170.26025390625,
+          "height": 289.1669921875,
+          "left": 80.5616455078125,
+          "right": 292.3680419921875,
+          "top": -1459.42724609375,
+          "width": 211.806396484375,
+          "x": 80.5616455078125,
+          "y": -1459.42724609375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1402.9935302734375,
+          "height": 88.6851806640625,
+          "left": 77.17767333984375,
+          "right": 155.64974975585938,
+          "top": -1491.6787109375,
+          "width": 78.47207641601562,
+          "x": 77.17767333984375,
+          "y": -1491.6787109375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1153.6505126953125,
+          "height": 84,
+          "left": 221.66421508789065,
+          "right": 285.6642150878906,
+          "top": -1237.6505126953125,
+          "width": 64,
+          "x": 221.66421508789065,
+          "y": -1237.6505126953125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "18px",
+        "lineHeight": "24.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 507.4782104492187,
+          "height": 77.16485595703125,
+          "left": 38.8968505859375,
+          "right": 285.7250671386719,
+          "top": 430.3133544921875,
+          "width": 246.8282165527344,
+          "x": 38.8968505859375,
+          "y": 430.3133544921875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 676.6304931640625,
+          "height": 155.18157958984375,
+          "left": 165.3922119140625,
+          "right": 283.15216064453125,
+          "top": 521.4489135742188,
+          "width": 117.75994873046876,
+          "x": 165.3922119140625,
+          "y": 521.4489135742188
+        }
+      }
+    ],
+    "scrollWidth": 320,
+    "scrollY": 8090,
+    "width": 320,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 667.108642578125,
+          "height": 488.2072143554687,
+          "left": 35.449737548828125,
+          "right": 329.6440124511719,
+          "top": 178.90142822265625,
+          "width": 294.19427490234375,
+          "x": 35.449737548828125,
+          "y": 178.90142822265625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 260.75677490234375,
+          "height": 85.43437194824219,
+          "left": 18.30875015258789,
+          "right": 103.74313735961914,
+          "top": 175.32240295410156,
+          "width": 85.43438720703125,
+          "x": 18.30875015258789,
+          "y": 175.32240295410156
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 6293.99267578125,
+          "height": 335.0634765625,
+          "left": 98.01272583007812,
+          "right": 345.8935241699219,
+          "top": 5958.92919921875,
+          "width": 247.88079833984375,
+          "x": 98.01272583007812,
+          "y": 5958.92919921875
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6015.36328125,
+          "height": 88.685546875,
+          "left": 98.39688110351562,
+          "right": 176.86895751953125,
+          "top": 5926.677734375,
+          "width": 78.47207641601562,
+          "x": 98.39688110351562,
+          "y": 5926.677734375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6310.6025390625,
+          "height": 84.00048828125,
+          "left": 271.42156982421875,
+          "right": 335.42156982421875,
+          "top": 6226.60205078125,
+          "width": 64,
+          "x": 271.42156982421875,
+          "y": 6226.60205078125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.125px",
+        "lineHeight": "25.8188px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7983.99658203125,
+          "height": 87.65087890625,
+          "left": 33.46268844604492,
+          "right": 329.9861259460449,
+          "top": 7896.345703125,
+          "width": 296.5234375,
+          "x": 33.46268844604492,
+          "y": 7896.345703125
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8171.48046875,
+          "height": 178.5234375,
+          "left": 198.8319091796875,
+          "right": 331.1565856933594,
+          "top": 7992.95703125,
+          "width": 132.32467651367188,
+          "x": 198.8319091796875,
+          "y": 7992.95703125
+        }
+      }
+    ],
+    "scrollWidth": 375,
+    "scrollY": 817,
+    "width": 375,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -4966.51220703125,
+          "height": 484.2802734375,
+          "left": 39.497093200683594,
+          "right": 325.59664154052734,
+          "top": -5450.79248046875,
+          "width": 286.09954833984375,
+          "x": 39.497093200683594,
+          "y": -5450.79248046875
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5373.58056640625,
+          "height": 84.41552734375,
+          "left": 22.556299209594727,
+          "right": 106.97170448303224,
+          "top": -5457.99609375,
+          "width": 84.4154052734375,
+          "x": 22.556299209594727,
+          "y": -5457.99609375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 666.4925537109375,
+          "height": 335.0632629394531,
+          "left": 98.01272583007812,
+          "right": 345.8935241699219,
+          "top": 331.4292907714844,
+          "width": 247.88079833984375,
+          "x": 98.01272583007812,
+          "y": 331.4292907714844
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 387.8630676269531,
+          "height": 88.68521118164062,
+          "left": 98.39688110351562,
+          "right": 176.86895751953125,
+          "top": 299.1778564453125,
+          "width": 78.47207641601562,
+          "x": 98.39688110351562,
+          "y": 299.1778564453125
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 683.102294921875,
+          "height": 84,
+          "left": 271.42156982421875,
+          "right": 335.42156982421875,
+          "top": 599.102294921875,
+          "width": 64,
+          "x": 271.42156982421875,
+          "y": 599.102294921875
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.125px",
+        "lineHeight": "25.8188px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2356.49658203125,
+          "height": 87.65087890625,
+          "left": 33.46268844604492,
+          "right": 329.9861259460449,
+          "top": 2268.845703125,
+          "width": 296.5234375,
+          "x": 33.46268844604492,
+          "y": 2268.845703125
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2543.980224609375,
+          "height": 178.52294921875,
+          "left": 198.8319091796875,
+          "right": 331.1565856933594,
+          "top": 2365.457275390625,
+          "width": 132.32467651367188,
+          "x": 198.8319091796875,
+          "y": 2365.457275390625
+        }
+      }
+    ],
+    "scrollWidth": 375,
+    "scrollY": 6444.5,
+    "width": 375,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -6802.01220703125,
+          "height": 484.2802734375,
+          "left": 39.497093200683594,
+          "right": 325.59664154052734,
+          "top": -7286.29248046875,
+          "width": 286.09954833984375,
+          "x": 39.497093200683594,
+          "y": -7286.29248046875
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -7209.08056640625,
+          "height": 84.41552734375,
+          "left": 22.556299209594727,
+          "right": 106.97170448303224,
+          "top": -7293.49609375,
+          "width": 84.4154052734375,
+          "x": 22.556299209594727,
+          "y": -7293.49609375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -1169.0074462890625,
+          "height": 335.063232421875,
+          "left": 98.01272583007812,
+          "right": 345.8935241699219,
+          "top": -1504.0706787109375,
+          "width": 247.88079833984375,
+          "x": 98.01272583007812,
+          "y": -1504.0706787109375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1447.636962890625,
+          "height": 88.6851806640625,
+          "left": 98.39688110351562,
+          "right": 176.86895751953125,
+          "top": -1536.3221435546875,
+          "width": 78.47207641601562,
+          "x": 98.39688110351562,
+          "y": -1536.3221435546875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1152.397705078125,
+          "height": 84,
+          "left": 271.42156982421875,
+          "right": 335.42156982421875,
+          "top": -1236.397705078125,
+          "width": 64,
+          "x": 271.42156982421875,
+          "y": -1236.397705078125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.125px",
+        "lineHeight": "25.8188px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 473.3736572265625,
+          "height": 82.55569458007812,
+          "left": 42.73443984985352,
+          "right": 338.04089736938477,
+          "top": 390.8179626464844,
+          "width": 295.30645751953125,
+          "x": 42.73443984985352,
+          "y": 390.8179626464844
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 670.436279296875,
+          "height": 184.25949096679688,
+          "left": 195.70494079589844,
+          "right": 336.51446533203125,
+          "top": 486.1767883300781,
+          "width": 140.8095245361328,
+          "x": 195.70494079589844,
+          "y": 486.1767883300781
+        }
+      }
+    ],
+    "scrollWidth": 375,
+    "scrollY": 8280,
+    "width": 375,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 683.808349609375,
+          "height": 505.3970031738281,
+          "left": 37.10111618041992,
+          "right": 342.5864067077637,
+          "top": 178.41134643554688,
+          "width": 305.48529052734375,
+          "x": 37.10111618041992,
+          "y": 178.41134643554688
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 260.9920654296875,
+          "height": 85.39926147460938,
+          "left": 19.967023849487305,
+          "right": 105.3662929534912,
+          "top": 175.59280395507812,
+          "width": 85.3992691040039,
+          "x": 19.967023849487305,
+          "y": 175.59280395507812
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 6389.80078125,
+          "height": 347.5859375,
+          "left": 102.76547241210938,
+          "right": 360.4845275878906,
+          "top": 6042.21484375,
+          "width": 257.71905517578125,
+          "x": 102.76547241210938,
+          "y": 6042.21484375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6098.6484375,
+          "height": 88.68505859375,
+          "left": 104.17778778076172,
+          "right": 182.64987182617188,
+          "top": 6009.96337890625,
+          "width": 78.47208404541016,
+          "x": 104.17778778076172,
+          "y": 6009.96337890625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6406.41064453125,
+          "height": 84,
+          "left": 284.9844055175781,
+          "right": 348.9844055175781,
+          "top": 6322.41064453125,
+          "width": 64,
+          "x": 284.9844055175781,
+          "y": 6322.41064453125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.89px",
+        "lineHeight": "26.8515px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8166.61083984375,
+          "height": 90.8779296875,
+          "left": 39.485748291015625,
+          "right": 339.31134033203125,
+          "top": 8075.73291015625,
+          "width": 299.8255920410156,
+          "x": 39.485748291015625,
+          "y": 8075.73291015625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8355.8369140625,
+          "height": 180.38818359375,
+          "left": 206.7990264892578,
+          "right": 340.5596618652344,
+          "top": 8175.44873046875,
+          "width": 133.76063537597656,
+          "x": 206.7990264892578,
+          "y": 8175.44873046875
+        }
+      }
+    ],
+    "scrollWidth": 390,
+    "scrollY": 817,
+    "width": 390,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -5017.67724609375,
+          "height": 501.4501953125,
+          "left": 41.144927978515625,
+          "right": 338.5425720214844,
+          "top": -5519.12744140625,
+          "width": 297.39764404296875,
+          "x": 41.144927978515625,
+          "y": -5519.12744140625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5441.2060546875,
+          "height": 84.4150390625,
+          "left": 24.20413589477539,
+          "right": 108.61954116821288,
+          "top": -5525.62109375,
+          "width": 84.4154052734375,
+          "x": 24.20413589477539,
+          "y": -5525.62109375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 694.3008422851562,
+          "height": 347.5860595703125,
+          "left": 102.76547241210938,
+          "right": 360.4845275878906,
+          "top": 346.71478271484375,
+          "width": 257.71905517578125,
+          "x": 102.76547241210938,
+          "y": 346.71478271484375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 403.1485595703125,
+          "height": 88.68524169921875,
+          "left": 104.17778778076172,
+          "right": 182.64987182617188,
+          "top": 314.46331787109375,
+          "width": 78.47208404541016,
+          "x": 104.17778778076172,
+          "y": 314.46331787109375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 710.9105224609375,
+          "height": 84,
+          "left": 284.9844055175781,
+          "right": 348.9844055175781,
+          "top": 626.9105224609375,
+          "width": 64,
+          "x": 284.9844055175781,
+          "y": 626.9105224609375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.89px",
+        "lineHeight": "26.8515px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2471.11083984375,
+          "height": 90.877685546875,
+          "left": 39.485748291015625,
+          "right": 339.31134033203125,
+          "top": 2380.233154296875,
+          "width": 299.8255920410156,
+          "x": 39.485748291015625,
+          "y": 2380.233154296875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2660.336669921875,
+          "height": 180.3876953125,
+          "left": 206.7990264892578,
+          "right": 340.5596618652344,
+          "top": 2479.948974609375,
+          "width": 133.76063537597656,
+          "x": 206.7990264892578,
+          "y": 2479.948974609375
+        }
+      }
+    ],
+    "scrollWidth": 390,
+    "scrollY": 6512.5,
+    "width": 390,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -6952.67724609375,
+          "height": 501.4501953125,
+          "left": 41.144927978515625,
+          "right": 338.5425720214844,
+          "top": -7454.12744140625,
+          "width": 297.39764404296875,
+          "x": 41.144927978515625,
+          "y": -7454.12744140625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -7376.2060546875,
+          "height": 84.4150390625,
+          "left": 24.20413589477539,
+          "right": 108.61954116821288,
+          "top": -7460.62109375,
+          "width": 84.4154052734375,
+          "x": 24.20413589477539,
+          "y": -7460.62109375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -1240.69921875,
+          "height": 347.5860595703125,
+          "left": 102.76547241210938,
+          "right": 360.4845275878906,
+          "top": -1588.2852783203125,
+          "width": 257.71905517578125,
+          "x": 102.76547241210938,
+          "y": -1588.2852783203125
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1531.8514404296875,
+          "height": 88.6851806640625,
+          "left": 104.17778778076172,
+          "right": 182.64987182617188,
+          "top": -1620.53662109375,
+          "width": 78.47208404541016,
+          "x": 104.17778778076172,
+          "y": -1620.53662109375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1224.0894775390625,
+          "height": 84,
+          "left": 284.9844055175781,
+          "right": 348.9844055175781,
+          "top": -1308.0894775390625,
+          "width": 64,
+          "x": 284.9844055175781,
+          "y": -1308.0894775390625
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "19.89px",
+        "lineHeight": "26.8515px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 488.4638977050781,
+          "height": 85.7281494140625,
+          "left": 48.51690673828125,
+          "right": 347.07257080078125,
+          "top": 402.7357482910156,
+          "width": 298.5556640625,
+          "x": 48.51690673828125,
+          "y": 402.7357482910156
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 687.3768310546875,
+          "height": 186.18695068359375,
+          "left": 203.232666015625,
+          "right": 345.56640625,
+          "top": 501.18988037109375,
+          "width": 142.333740234375,
+          "x": 203.232666015625,
+          "y": 501.18988037109375
+        }
+      }
+    ],
+    "scrollWidth": 390,
+    "scrollY": 8447.5,
+    "width": 390,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 685.9886016845703,
+          "height": 508.7574462890625,
+          "left": 43.023216247558594,
+          "right": 375.60176849365234,
+          "top": 177.2311553955078,
+          "width": 332.57855224609375,
+          "x": 43.023216247558594,
+          "y": 177.2311553955078
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 262.17608642578125,
+          "height": 85.39927673339844,
+          "left": 25.88912582397461,
+          "right": 111.28838729858398,
+          "top": 176.7768096923828,
+          "width": 85.39926147460938,
+          "x": 25.88912582397461,
+          "y": 176.7768096923828
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 6566.79248046875,
+          "height": 380.9677734375,
+          "left": 115.45565032958984,
+          "right": 399.4115219116211,
+          "top": 6185.82470703125,
+          "width": 283.95587158203125,
+          "x": 115.45565032958984,
+          "y": 6185.82470703125
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6242.2587890625,
+          "height": 88.685546875,
+          "left": 119.60860443115234,
+          "right": 198.0806884765625,
+          "top": 6153.5732421875,
+          "width": 78.47208404541016,
+          "x": 119.60860443115234,
+          "y": 6153.5732421875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6583.40185546875,
+          "height": 84,
+          "left": 321.1707763671875,
+          "right": 385.1707763671875,
+          "top": 6499.40185546875,
+          "width": 64,
+          "x": 321.1707763671875,
+          "y": 6499.40185546875
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "21.93px",
+        "lineHeight": "29.6055px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8351.501953125,
+          "height": 100.3515625,
+          "left": 41.407135009765625,
+          "right": 376.7023315429687,
+          "top": 8251.150390625,
+          "width": 335.2951965332031,
+          "x": 41.407135009765625,
+          "y": 8251.150390625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8559.828125,
+          "height": 200.837890625,
+          "left": 229.2516326904297,
+          "right": 378.804443359375,
+          "top": 8358.990234375,
+          "width": 149.5528106689453,
+          "x": 229.2516326904297,
+          "y": 8358.990234375
+        }
+      }
+    ],
+    "scrollWidth": 430,
+    "scrollY": 817,
+    "width": 430,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -5160.73291015625,
+          "height": 504.3388671875,
+          "left": 47.05712890625,
+          "right": 371.56787109375,
+          "top": -5665.07177734375,
+          "width": 324.5107421875,
+          "x": 47.05712890625,
+          "y": -5665.07177734375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5585.25927734375,
+          "height": 84.4150390625,
+          "left": 30.1163387298584,
+          "right": 114.5317440032959,
+          "top": -5669.67431640625,
+          "width": 84.4154052734375,
+          "x": 30.1163387298584,
+          "y": -5669.67431640625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 726.2922973632812,
+          "height": 380.9674072265625,
+          "left": 115.45565032958984,
+          "right": 399.4115219116211,
+          "top": 345.32489013671875,
+          "width": 283.95587158203125,
+          "x": 115.45565032958984,
+          "y": 345.32489013671875
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 401.7586669921875,
+          "height": 88.68521118164062,
+          "left": 119.60860443115234,
+          "right": 198.0806884765625,
+          "top": 313.0734558105469,
+          "width": 78.47208404541016,
+          "x": 119.60860443115234,
+          "y": 313.0734558105469
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 742.9019775390625,
+          "height": 84,
+          "left": 321.1707763671875,
+          "right": 385.1707763671875,
+          "top": 658.9019775390625,
+          "width": 64,
+          "x": 321.1707763671875,
+          "y": 658.9019775390625
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "21.93px",
+        "lineHeight": "29.6055px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2511.001953125,
+          "height": 100.35107421875,
+          "left": 41.407135009765625,
+          "right": 376.7023315429687,
+          "top": 2410.65087890625,
+          "width": 335.2951965332031,
+          "x": 41.407135009765625,
+          "y": 2410.65087890625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2719.32763671875,
+          "height": 200.83740234375,
+          "left": 229.2516326904297,
+          "right": 378.804443359375,
+          "top": 2518.490234375,
+          "width": 149.5528106689453,
+          "x": 229.2516326904297,
+          "y": 2518.490234375
+        }
+      }
+    ],
+    "scrollWidth": 430,
+    "scrollY": 6657.5,
+    "width": 430,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -7126.73291015625,
+          "height": 504.3388671875,
+          "left": 47.05712890625,
+          "right": 371.56787109375,
+          "top": -7631.07177734375,
+          "width": 324.5107421875,
+          "x": 47.05712890625,
+          "y": -7631.07177734375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -7551.25927734375,
+          "height": 84.4150390625,
+          "left": 30.1163387298584,
+          "right": 114.5317440032959,
+          "top": -7635.67431640625,
+          "width": 84.4154052734375,
+          "x": 30.1163387298584,
+          "y": -7635.67431640625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -1239.707763671875,
+          "height": 380.96728515625,
+          "left": 115.45565032958984,
+          "right": 399.4115219116211,
+          "top": -1620.675048828125,
+          "width": 283.95587158203125,
+          "x": 115.45565032958984,
+          "y": -1620.675048828125
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1564.2413330078125,
+          "height": 88.6851806640625,
+          "left": 119.60860443115234,
+          "right": 198.0806884765625,
+          "top": -1652.926513671875,
+          "width": 78.47208404541016,
+          "x": 119.60860443115234,
+          "y": -1652.926513671875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -1223.0980224609375,
+          "height": 84,
+          "left": 321.1707763671875,
+          "right": 385.1707763671875,
+          "top": -1307.0980224609375,
+          "width": 64,
+          "x": 321.1707763671875,
+          "y": -1307.0980224609375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "21.93px",
+        "lineHeight": "29.6055px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 497.0486755371094,
+          "height": 94.58944702148438,
+          "left": 51.01727294921875,
+          "right": 384.9142150878906,
+          "top": 402.459228515625,
+          "width": 333.8969421386719,
+          "x": 51.01727294921875,
+          "y": 402.459228515625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 716.2529296875,
+          "height": 207.3265686035156,
+          "left": 224.9906311035156,
+          "right": 384.0831909179687,
+          "top": 508.9263610839844,
+          "width": 159.09255981445312,
+          "x": 224.9906311035156,
+          "y": 508.9263610839844
+        }
+      }
+    ],
+    "scrollWidth": 430,
+    "scrollY": 8623.5,
+    "width": 430,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 837.9073486328125,
+          "height": 523.213134765625,
+          "left": 44.122013092041016,
+          "right": 354.6279945373535,
+          "top": 314.6942138671875,
+          "width": 310.5059814453125,
+          "x": 44.122013092041016,
+          "y": 314.6942138671875
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 395.949951171875,
+          "height": 104.59710693359376,
+          "left": 240.04286193847656,
+          "right": 344.63995361328125,
+          "top": 291.35284423828125,
+          "width": 104.59709167480467,
+          "x": 240.04286193847656,
+          "y": 291.35284423828125
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 5368.38134765625,
+          "height": 481.8095703125,
+          "left": 472.36962890625,
+          "right": 741.67724609375,
+          "top": 4886.57177734375,
+          "width": 269.3076171875,
+          "x": 472.36962890625,
+          "y": 4886.57177734375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 4957.86328125,
+          "height": 111.55224609375,
+          "left": 477.96099853515625,
+          "right": 581.00244140625,
+          "top": 4846.31103515625,
+          "width": 103.04144287109376,
+          "x": 477.96099853515625,
+          "y": 4846.31103515625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 5388.771484375,
+          "height": 114,
+          "left": 640.4030151367188,
+          "right": 728.4030151367188,
+          "top": 5274.771484375,
+          "width": 88,
+          "x": 640.4030151367188,
+          "y": 5274.771484375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7116.21337890625,
+          "height": 128.17822265625,
+          "left": 116.72537231445312,
+          "right": 480.117431640625,
+          "top": 6988.03515625,
+          "width": 363.3920593261719,
+          "x": 116.72537231445312,
+          "y": 6988.03515625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7127.9521484375,
+          "height": 198.74169921875,
+          "left": 495.8159484863281,
+          "right": 639.2210083007812,
+          "top": 6929.21044921875,
+          "width": 143.40505981445312,
+          "x": 495.8159484863281,
+          "y": 6929.21044921875
+        }
+      }
+    ],
+    "scrollWidth": 768,
+    "scrollY": 947,
+    "width": 768,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -3652.5927734375,
+          "height": 523.212890625,
+          "left": 44.122013092041016,
+          "right": 354.6279945373535,
+          "top": -4175.8056640625,
+          "width": 310.5059814453125,
+          "x": 44.122013092041016,
+          "y": -4175.8056640625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -4094.550048828125,
+          "height": 104.596923828125,
+          "left": 240.04286193847656,
+          "right": 344.63995361328125,
+          "top": -4199.14697265625,
+          "width": 104.59709167480467,
+          "x": 240.04286193847656,
+          "y": -4199.14697265625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 877.8814086914062,
+          "height": 481.8096923828125,
+          "left": 472.36962890625,
+          "right": 741.67724609375,
+          "top": 396.07171630859375,
+          "width": 269.3076171875,
+          "x": 472.36962890625,
+          "y": 396.07171630859375
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 467.3634338378906,
+          "height": 111.55239868164062,
+          "left": 477.96099853515625,
+          "right": 581.00244140625,
+          "top": 355.81103515625,
+          "width": 103.04144287109376,
+          "x": 477.96099853515625,
+          "y": 355.81103515625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 898.271484375,
+          "height": 114,
+          "left": 640.4030151367188,
+          "right": 728.4030151367188,
+          "top": 784.271484375,
+          "width": 88,
+          "x": 640.4030151367188,
+          "y": 784.271484375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2625.71337890625,
+          "height": 128.17822265625,
+          "left": 116.72537231445312,
+          "right": 480.117431640625,
+          "top": 2497.53515625,
+          "width": 363.3920593261719,
+          "x": 116.72537231445312,
+          "y": 2497.53515625
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2637.4521484375,
+          "height": 198.74169921875,
+          "left": 495.8159484863281,
+          "right": 639.2210083007812,
+          "top": 2438.71044921875,
+          "width": 143.40505981445312,
+          "x": 495.8159484863281,
+          "y": 2438.71044921875
+        }
+      }
+    ],
+    "scrollWidth": 768,
+    "scrollY": 5437.5,
+    "width": 768,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -5459.5927734375,
+          "height": 523.212890625,
+          "left": 44.122013092041016,
+          "right": 354.6279945373535,
+          "top": -5982.8056640625,
+          "width": 310.5059814453125,
+          "x": 44.122013092041016,
+          "y": -5982.8056640625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5901.55029296875,
+          "height": 104.5966796875,
+          "left": 240.04286193847656,
+          "right": 344.63995361328125,
+          "top": -6006.14697265625,
+          "width": 104.59709167480467,
+          "x": 240.04286193847656,
+          "y": -6006.14697265625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -177.6654052734375,
+          "height": 481.8097534179687,
+          "left": 472.36962890625,
+          "right": 741.67724609375,
+          "top": -659.4751586914062,
+          "width": 269.3076171875,
+          "x": 472.36962890625,
+          "y": -659.4751586914062
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -588.1834106445312,
+          "height": 111.55242919921876,
+          "left": 477.96099853515625,
+          "right": 581.00244140625,
+          "top": -699.73583984375,
+          "width": 103.04144287109376,
+          "x": 477.96099853515625,
+          "y": -699.73583984375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -157.275390625,
+          "height": 114,
+          "left": 640.4030151367188,
+          "right": 728.4030151367188,
+          "top": -271.275390625,
+          "width": 88,
+          "x": 640.4030151367188,
+          "y": -271.275390625
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 679.5067138671875,
+          "height": 109.8692626953125,
+          "left": 125.27717590332033,
+          "right": 484.71180725097656,
+          "top": 569.637451171875,
+          "width": 359.43463134765625,
+          "x": 125.27717590332033,
+          "y": 569.637451171875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 740.9461669921875,
+          "height": 213.90032958984375,
+          "left": 491.9755859375,
+          "right": 657.9345092773438,
+          "top": 527.0458374023438,
+          "width": 165.95892333984375,
+          "x": 491.9755859375,
+          "y": 527.0458374023438
+        }
+      }
+    ],
+    "scrollWidth": 768,
+    "scrollY": 7244.5,
+    "width": 768,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 809.0999755859375,
+          "height": 529.629638671875,
+          "left": 64.70279693603516,
+          "right": 466.9690933227539,
+          "top": 279.4703369140625,
+          "width": 402.2662963867187,
+          "x": 64.70279693603516,
+          "y": 279.4703369140625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 360.72607421875,
+          "height": 104.59710693359376,
+          "left": 352.38397216796875,
+          "right": 456.9810485839844,
+          "top": 256.12896728515625,
+          "width": 104.59707641601562,
+          "x": 352.38397216796875,
+          "y": 256.12896728515625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 5342.67236328125,
+          "height": 488.4853515625,
+          "left": 636.562255859375,
+          "right": 982.172119140625,
+          "top": 4854.18701171875,
+          "width": 345.60986328125,
+          "x": 636.562255859375,
+          "y": 4854.18701171875
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 4925.47900390625,
+          "height": 111.552734375,
+          "left": 642.1536254882812,
+          "right": 745.195068359375,
+          "top": 4813.92626953125,
+          "width": 103.04144287109376,
+          "x": 642.1536254882812,
+          "y": 4813.92626953125
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 5363.0625,
+          "height": 114,
+          "left": 880.89794921875,
+          "right": 968.89794921875,
+          "top": 5249.0625,
+          "width": 88,
+          "x": 880.89794921875,
+          "y": 5249.0625
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7103.5498046875,
+          "height": 113.47265625,
+          "left": 146.18875122070312,
+          "right": 708.7267150878906,
+          "top": 6990.0771484375,
+          "width": 562.5379638671875,
+          "x": 146.18875122070312,
+          "y": 6990.0771484375
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7113.8056640625,
+          "height": 198.74169921875,
+          "left": 725.841552734375,
+          "right": 869.24658203125,
+          "top": 6915.06396484375,
+          "width": 143.405029296875,
+          "x": 725.841552734375,
+          "y": 6915.06396484375
+        }
+      }
+    ],
+    "scrollWidth": 1024,
+    "scrollY": 947,
+    "width": 1024,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -3630.39990234375,
+          "height": 529.6298828125,
+          "left": 64.70279693603516,
+          "right": 466.9690933227539,
+          "top": -4160.02978515625,
+          "width": 402.2662963867187,
+          "x": 64.70279693603516,
+          "y": -4160.02978515625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -4078.77392578125,
+          "height": 104.59716796875,
+          "left": 352.38397216796875,
+          "right": 456.9810485839844,
+          "top": -4183.37109375,
+          "width": 104.59707641601562,
+          "x": 352.38397216796875,
+          "y": -4183.37109375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 903.17236328125,
+          "height": 488.4853210449219,
+          "left": 636.562255859375,
+          "right": 982.172119140625,
+          "top": 414.6870422363281,
+          "width": 345.60986328125,
+          "x": 636.562255859375,
+          "y": 414.6870422363281
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 485.978759765625,
+          "height": 111.5523681640625,
+          "left": 642.1536254882812,
+          "right": 745.195068359375,
+          "top": 374.4263916015625,
+          "width": 103.04144287109376,
+          "x": 642.1536254882812,
+          "y": 374.4263916015625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 923.5623779296876,
+          "height": 114,
+          "left": 880.89794921875,
+          "right": 968.89794921875,
+          "top": 809.5623779296875,
+          "width": 88,
+          "x": 880.89794921875,
+          "y": 809.5623779296875
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2664.0498046875,
+          "height": 113.472900390625,
+          "left": 146.18875122070312,
+          "right": 708.7267150878906,
+          "top": 2550.576904296875,
+          "width": 562.5379638671875,
+          "x": 146.18875122070312,
+          "y": 2550.576904296875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2674.3056640625,
+          "height": 198.741455078125,
+          "left": 725.841552734375,
+          "right": 869.24658203125,
+          "top": 2475.564208984375,
+          "width": 143.405029296875,
+          "x": 725.841552734375,
+          "y": 2475.564208984375
+        }
+      }
+    ],
+    "scrollWidth": 1024,
+    "scrollY": 5386.5,
+    "width": 1024,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -5459.39990234375,
+          "height": 529.6298828125,
+          "left": 64.70279693603516,
+          "right": 466.9690933227539,
+          "top": -5989.02978515625,
+          "width": 402.2662963867187,
+          "x": 64.70279693603516,
+          "y": -5989.02978515625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5907.77392578125,
+          "height": 104.59716796875,
+          "left": 352.38397216796875,
+          "right": 456.9810485839844,
+          "top": -6012.37109375,
+          "width": 104.59707641601562,
+          "x": 352.38397216796875,
+          "y": -6012.37109375
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -174.37451171875,
+          "height": 488.48529052734375,
+          "left": 636.562255859375,
+          "right": 982.172119140625,
+          "top": -662.8598022460938,
+          "width": 345.60986328125,
+          "x": 636.562255859375,
+          "y": -662.8598022460938
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -591.568115234375,
+          "height": 111.5523681640625,
+          "left": 642.1536254882812,
+          "right": 745.195068359375,
+          "top": -703.1204833984375,
+          "width": 103.04144287109376,
+          "x": 642.1536254882812,
+          "y": -703.1204833984375
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -153.9844970703125,
+          "height": 114,
+          "left": 880.89794921875,
+          "right": 968.89794921875,
+          "top": -267.9844970703125,
+          "width": 88,
+          "x": 880.89794921875,
+          "y": -267.9844970703125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26px",
+        "lineHeight": "32.5px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 690.5439453125,
+          "height": 84.45269775390625,
+          "left": 152.1155548095703,
+          "right": 713.0421905517578,
+          "top": 606.0912475585938,
+          "width": 560.9266357421875,
+          "x": 152.1155548095703,
+          "y": 606.0912475585938
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 768.220947265625,
+          "height": 213.8984375,
+          "left": 720.875,
+          "right": 886.8308715820312,
+          "top": 554.322509765625,
+          "width": 165.95587158203125,
+          "x": 720.875,
+          "y": 554.322509765625
+        }
+      }
+    ],
+    "scrollWidth": 1024,
+    "scrollY": 7215.5,
+    "width": 1024,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 868.691650390625,
+          "height": 597.96923828125,
+          "left": 94.47702026367188,
+          "right": 622.2808532714844,
+          "top": 270.722412109375,
+          "width": 527.8038330078125,
+          "x": 94.47702026367188,
+          "y": 270.722412109375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 351.9781188964844,
+          "height": 104.59707641601562,
+          "left": 503.5102844238281,
+          "right": 608.1073608398438,
+          "top": 247.38104248046875,
+          "width": 104.59707641601562,
+          "x": 503.5102844238281,
+          "y": 247.38104248046875
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 7132.873046875,
+          "height": 559.10546875,
+          "left": 900.7546997070312,
+          "right": 1375.589111328125,
+          "top": 6573.767578125,
+          "width": 474.83441162109375,
+          "x": 900.7546997070312,
+          "y": 6573.767578125
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6645.0595703125,
+          "height": 111.55224609375,
+          "left": 911.575439453125,
+          "right": 1014.6168212890624,
+          "top": 6533.50732421875,
+          "width": 103.0413818359375,
+          "x": 911.575439453125,
+          "y": 6533.50732421875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 7153.26318359375,
+          "height": 114.00048828125,
+          "left": 1269.08544921875,
+          "right": 1357.08544921875,
+          "top": 7039.2626953125,
+          "width": 88,
+          "x": 1269.08544921875,
+          "y": 7039.2626953125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26.64px",
+        "lineHeight": "33.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 9058.6982421875,
+          "height": 115.7578125,
+          "left": 342.05902099609375,
+          "right": 912.7054443359376,
+          "top": 8942.9404296875,
+          "width": 570.6464233398438,
+          "x": 342.05902099609375,
+          "y": 8942.9404296875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 9076.416015625,
+          "height": 219,
+          "left": 935.5260620117188,
+          "right": 1094.27783203125,
+          "top": 8857.416015625,
+          "width": 158.75177001953125,
+          "x": 935.5260620117188,
+          "y": 8857.416015625
+        }
+      }
+    ],
+    "scrollWidth": 1440,
+    "scrollY": 947,
+    "width": 1440,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -5239.30859375,
+          "height": 597.96875,
+          "left": 94.47702026367188,
+          "right": 622.2808532714844,
+          "top": -5837.27734375,
+          "width": 527.8038330078125,
+          "x": 94.47702026367188,
+          "y": -5837.27734375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5756.02197265625,
+          "height": 104.59716796875,
+          "left": 503.5102844238281,
+          "right": 608.1073608398438,
+          "top": -5860.619140625,
+          "width": 104.59707641601562,
+          "x": 503.5102844238281,
+          "y": -5860.619140625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 1024.872802734375,
+          "height": 559.1050415039062,
+          "left": 900.7546997070312,
+          "right": 1375.589111328125,
+          "top": 465.7677612304687,
+          "width": 474.83441162109375,
+          "x": 900.7546997070312,
+          "y": 465.7677612304687
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 537.0594482421875,
+          "height": 111.5523681640625,
+          "left": 911.575439453125,
+          "right": 1014.6168212890624,
+          "top": 425.507080078125,
+          "width": 103.0413818359375,
+          "x": 911.575439453125,
+          "y": 425.507080078125
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 1045.262939453125,
+          "height": 114,
+          "left": 1269.08544921875,
+          "right": 1357.08544921875,
+          "top": 931.262939453125,
+          "width": 88,
+          "x": 1269.08544921875,
+          "y": 931.262939453125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26.64px",
+        "lineHeight": "33.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2950.698486328125,
+          "height": 115.757568359375,
+          "left": 342.05902099609375,
+          "right": 912.7054443359376,
+          "top": 2834.94091796875,
+          "width": 570.6464233398438,
+          "x": 342.05902099609375,
+          "y": 2834.94091796875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2968.416259765625,
+          "height": 219.000244140625,
+          "left": 935.5260620117188,
+          "right": 1094.27783203125,
+          "top": 2749.416015625,
+          "width": 158.75177001953125,
+          "x": 935.5260620117188,
+          "y": 2749.416015625
+        }
+      }
+    ],
+    "scrollWidth": 1440,
+    "scrollY": 7055,
+    "width": 1440,
+    "scene": "services",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -7290.30859375,
+          "height": 597.96875,
+          "left": 94.47702026367188,
+          "right": 622.2808532714844,
+          "top": -7888.27734375,
+          "width": 527.8038330078125,
+          "x": 94.47702026367188,
+          "y": -7888.27734375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -7807.02197265625,
+          "height": 104.59716796875,
+          "left": 503.5102844238281,
+          "right": 608.1073608398438,
+          "top": -7911.619140625,
+          "width": 104.59707641601562,
+          "x": 503.5102844238281,
+          "y": -7911.619140625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": -169.0880126953125,
+          "height": 559.1051635742188,
+          "left": 900.7546997070312,
+          "right": 1375.589111328125,
+          "top": -728.1931762695312,
+          "width": 474.83441162109375,
+          "x": 900.7546997070312,
+          "y": -728.1931762695312
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -656.9014892578125,
+          "height": 111.5523681640625,
+          "left": 911.575439453125,
+          "right": 1014.6168212890624,
+          "top": -768.453857421875,
+          "width": 103.0413818359375,
+          "x": 911.575439453125,
+          "y": -768.453857421875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": -148.697998046875,
+          "height": 114,
+          "left": 1269.08544921875,
+          "right": 1357.08544921875,
+          "top": -262.697998046875,
+          "width": 88,
+          "x": 1269.08544921875,
+          "y": -262.697998046875
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26.64px",
+        "lineHeight": "33.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 753.884033203125,
+          "height": 86.25946044921875,
+          "left": 344.6429748535156,
+          "right": 913.6148986816406,
+          "top": 667.6245727539062,
+          "width": 568.971923828125,
+          "x": 344.6429748535156,
+          "y": 667.6245727539062
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 842.1622924804688,
+          "height": 235.77679443359375,
+          "left": 926.1085815429688,
+          "right": 1109.67919921875,
+          "top": 606.385498046875,
+          "width": 183.57061767578125,
+          "x": 926.1085815429688,
+          "y": 606.385498046875
+        }
+      }
+    ],
+    "scrollWidth": 1440,
+    "scrollY": 9106,
+    "width": 1440,
+    "scene": "contact",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 1889.1182861328125,
+          "height": 634.822509765625,
+          "left": 72.39944458007812,
+          "right": 644.3583068847656,
+          "top": 1254.2957763671875,
+          "width": 571.9588623046875,
+          "x": 72.39944458007812,
+          "y": 1254.2957763671875
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "31px",
+        "lineHeight": "24.8px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 1341.0692138671875,
+          "height": 111.138427734375,
+          "left": 475.953857421875,
+          "right": 587.0923461914062,
+          "top": 1229.9307861328125,
+          "width": 111.13848876953124,
+          "x": 475.953857421875,
+          "y": 1229.9307861328125
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 8079.873046875,
+          "height": 559.10546875,
+          "left": 900.7546997070312,
+          "right": 1375.589111328125,
+          "top": 7520.767578125,
+          "width": 474.83441162109375,
+          "x": 900.7546997070312,
+          "y": 7520.767578125
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 7592.0595703125,
+          "height": 111.55224609375,
+          "left": 911.575439453125,
+          "right": 1014.6168212890624,
+          "top": 7480.50732421875,
+          "width": 103.0413818359375,
+          "x": 911.575439453125,
+          "y": 7480.50732421875
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 8100.26318359375,
+          "height": 114.00048828125,
+          "left": 1269.08544921875,
+          "right": 1357.08544921875,
+          "top": 7986.2626953125,
+          "width": 88,
+          "x": 1269.08544921875,
+          "y": 7986.2626953125
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "26.64px",
+        "lineHeight": "33.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 10005.6982421875,
+          "height": 115.7578125,
+          "left": 342.05902099609375,
+          "right": 912.7054443359376,
+          "top": 9889.9404296875,
+          "width": 570.6464233398438,
+          "x": 342.05902099609375,
+          "y": 9889.9404296875
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "15px",
+        "lineHeight": "24.75px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 10023.416015625,
+          "height": 219,
+          "left": 935.5260620117188,
+          "right": 1094.27783203125,
+          "top": 9804.416015625,
+          "width": 158.75177001953125,
+          "x": 935.5260620117188,
+          "y": 9804.416015625
+        }
+      }
+    ],
+    "scrollWidth": 1440,
+    "scrollY": 0,
+    "width": 1440,
+    "scene": "home",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 1443.6484375,
+          "height": 436.10150146484375,
+          "left": 16.84444236755371,
+          "right": 294.70241355895996,
+          "top": 1007.5469360351562,
+          "width": 277.85797119140625,
+          "x": 16.84444236755371,
+          "y": 1007.5469360351562
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 1097.3043212890625,
+          "height": 81.6527099609375,
+          "left": 2.694835662841797,
+          "right": 84.34759140014648,
+          "top": 1015.651611328125,
+          "width": 81.65275573730469,
+          "x": 2.694835662841797,
+          "y": 1015.651611328125
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 6919.73974609375,
+          "height": 289.1669921875,
+          "left": 80.5616455078125,
+          "right": 292.3680419921875,
+          "top": 6630.57275390625,
+          "width": 211.806396484375,
+          "x": 80.5616455078125,
+          "y": 6630.57275390625
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6687.00634765625,
+          "height": 88.68505859375,
+          "left": 77.17767333984375,
+          "right": 155.64974975585938,
+          "top": 6598.3212890625,
+          "width": 78.47207641601562,
+          "x": 77.17767333984375,
+          "y": 6598.3212890625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6936.349609375,
+          "height": 84,
+          "left": 221.66421508789065,
+          "right": 285.6642150878906,
+          "top": 6852.349609375,
+          "width": 64,
+          "x": 221.66421508789065,
+          "y": 6852.349609375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "18px",
+        "lineHeight": "24.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8644.6640625,
+          "height": 81.4169921875,
+          "left": 31.383869171142575,
+          "right": 279.3718605041504,
+          "top": 8563.2470703125,
+          "width": 247.9879913330078,
+          "x": 31.383869171142575,
+          "y": 8563.2470703125
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 8805.8759765625,
+          "height": 150.39453125,
+          "left": 168.76193237304688,
+          "right": 279.367919921875,
+          "top": 8655.4814453125,
+          "width": 110.60598754882812,
+          "x": 168.76193237304688,
+          "y": 8655.4814453125
+        }
+      }
+    ],
+    "scrollWidth": 320,
+    "scrollY": 0,
+    "width": 320,
+    "scene": "home",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": 604.9769287109375,
+          "height": 424.6043701171875,
+          "left": 29.962087631225582,
+          "right": 281.58478355407715,
+          "top": 180.37255859375,
+          "width": 251.62269592285156,
+          "x": 29.962087631225582,
+          "y": 180.37255859375
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": 258.8779602050781,
+          "height": 85.41494750976562,
+          "left": 12.82491683959961,
+          "right": 98.23986434936523,
+          "top": 173.4630126953125,
+          "width": 85.41494750976562,
+          "x": 12.82491683959961,
+          "y": 173.4630126953125
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 6102.73974609375,
+          "height": 289.1669921875,
+          "left": 80.5616455078125,
+          "right": 292.3680419921875,
+          "top": 5813.57275390625,
+          "width": 211.806396484375,
+          "x": 80.5616455078125,
+          "y": 5813.57275390625
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 5870.00634765625,
+          "height": 88.68505859375,
+          "left": 77.17767333984375,
+          "right": 155.64974975585938,
+          "top": 5781.3212890625,
+          "width": 78.47207641601562,
+          "x": 77.17767333984375,
+          "y": 5781.3212890625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 6119.349609375,
+          "height": 84,
+          "left": 221.66421508789065,
+          "right": 285.6642150878906,
+          "top": 6035.349609375,
+          "width": 64,
+          "x": 221.66421508789065,
+          "y": 6035.349609375
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "18px",
+        "lineHeight": "24.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7827.66455078125,
+          "height": 81.41748046875,
+          "left": 31.383869171142575,
+          "right": 279.3718605041504,
+          "top": 7746.2470703125,
+          "width": 247.9879913330078,
+          "x": 31.383869171142575,
+          "y": 7746.2470703125
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 7988.8759765625,
+          "height": 150.39453125,
+          "left": 168.76193237304688,
+          "right": 279.367919921875,
+          "top": 7838.4814453125,
+          "width": 110.60598754882812,
+          "x": 168.76193237304688,
+          "y": 7838.4814453125
+        }
+      }
+    ],
+    "scrollWidth": 320,
+    "scrollY": 817,
+    "width": 320,
+    "scene": "about",
+    "logs": []
+  },
+  {
+    "arrowCount": 0,
+    "heading": "Давайтезнакомиться!",
+    "rects": [
+      {
+        "className": "about-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "about-visual",
+        "rect": {
+          "bottom": -4872.23828125,
+          "height": 421.328125,
+          "left": 33.42121124267578,
+          "right": 278.1256790161133,
+          "top": -5293.56640625,
+          "width": 244.7044677734375,
+          "x": 33.42121124267578,
+          "y": -5293.56640625
+        }
+      },
+      {
+        "className": "about-label",
+        "font": "24px",
+        "lineHeight": "19.2px",
+        "parent": "about-photo",
+        "rect": {
+          "bottom": -5218.9541015625,
+          "height": 84.41552734375,
+          "left": 16.480419158935547,
+          "right": 100.89582443237305,
+          "top": -5303.36962890625,
+          "width": 84.4154052734375,
+          "x": 16.480419158935547,
+          "y": -5303.36962890625
+        }
+      },
+      {
+        "className": "format-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "formats-stage",
+        "rect": {
+          "bottom": 631.23974609375,
+          "height": 289.1669921875,
+          "left": 80.5616455078125,
+          "right": 292.3680419921875,
+          "top": 342.07275390625,
+          "width": 211.806396484375,
+          "x": 80.5616455078125,
+          "y": 342.07275390625
+        }
+      },
+      {
+        "className": "create-paperclip",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 398.5065307617187,
+          "height": 88.68524169921875,
+          "left": 77.17767333984375,
+          "right": 155.64974975585938,
+          "top": 309.8212890625,
+          "width": 78.47207641601562,
+          "x": 77.17767333984375,
+          "y": 309.8212890625
+        }
+      },
+      {
+        "className": "create-candle",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "format-photo",
+        "rect": {
+          "bottom": 647.8494873046875,
+          "height": 84.00006103515625,
+          "left": 221.66421508789065,
+          "right": 285.6642150878906,
+          "top": 563.8494262695312,
+          "width": 64,
+          "x": 221.66421508789065,
+          "y": 563.8494262695312
+        }
+      },
+      {
+        "className": "letter-copy",
+        "font": "18px",
+        "lineHeight": "24.3px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2356.164306640625,
+          "height": 81.417236328125,
+          "left": 31.383869171142575,
+          "right": 279.3718605041504,
+          "top": 2274.7470703125,
+          "width": 247.9879913330078,
+          "x": 31.383869171142575,
+          "y": 2274.7470703125
+        }
+      },
+      {
+        "className": "contact-photo",
+        "font": "14px",
+        "lineHeight": "23.1px",
+        "parent": "letter-intro",
+        "rect": {
+          "bottom": 2517.3759765625,
+          "height": 150.39453125,
+          "left": 168.76193237304688,
+          "right": 279.367919921875,
+          "top": 2366.9814453125,
+          "width": 110.60598754882812,
+          "x": 168.76193237304688,
+          "y": 2366.9814453125
+        }
+      }
+    ],
+    "scrollWidth": 320,
+    "scrollY": 6288.5,
+    "width": 320,
+    "scene": "services",
+    "logs": []
+  }
+]

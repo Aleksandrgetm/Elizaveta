@@ -195,6 +195,9 @@ function setupScenes(gsap, compact) {
     rotation: -4, y: 0, ease: 'none',
     scrollTrigger: { trigger: about || aboutPhoto, start: 'top 90%', end: 'center 65%', scrub: 0.7 },
   });
+  const aboutLabel = query('.about-label');
+  if (aboutLabel) gsap.from(aboutLabel, { scale: 0.9, rotation: -9, duration: 0.65, ease: 'power2.out',
+    scrollTrigger: { trigger: aboutPhoto || aboutLabel, start: 'top 88%', once: true } });
   if (aboutCopy) gsap.from(aboutCopy, { y: compact ? 22 : 48, autoAlpha: 0, duration: 0.75,
     scrollTrigger: { trigger: aboutCopy, start: 'top 91%', once: true } });
 

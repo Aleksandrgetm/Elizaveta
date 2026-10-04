@@ -20,8 +20,8 @@ const socialIcon=name=>{
 function About(){return `<section class="about" id="about" data-chapter="about" aria-labelledby="about-title">
   <div class="page-width">${marker('01','ЗНАКОМСТВО','A FEW WORDS ABOUT ME')}
     <div class="about-spread">
-      <div class="about-visual"><span class="about-label" aria-hidden="true">about<br><i>me</i></span>
-        <figure class="about-photo">${photo('summer','(min-width: 900px) 34vw, 75vw')}<figcaption><span>ELIZAVETA</span><span>01 — EVERYDAY MUSE</span></figcaption></figure>
+      <div class="about-visual">
+        <figure class="about-photo"><span class="about-label" aria-hidden="true">about<br><i>me</i></span>${photo('summer','(min-width: 900px) 34vw, 75vw')}<figcaption><span>ELIZAVETA</span><span>01 — EVERYDAY MUSE</span></figcaption></figure>
         ${asset('editorial/ribbon-key','about-key',360,560)}
       </div>
       <div class="about-copy"><h2 id="about-title">Давайте<br><em>знакомиться!</em></h2>
@@ -69,9 +69,9 @@ function Work(){return `<section class="work" id="work" data-chapter="work" aria
  </div><div class="work-index page-width" aria-label="Индекс всех работ">${videos.map((v,i)=>`<button data-video="${i}" aria-label="${esc(v.title)} — открыть превью">${photo(v.poster,'(min-width: 700px) 120px, 28vw')}<span>${v.id}</span></button>`).join('')}</div></section>`;}
 
 function Create(){const words=['UGC','GRWM','LET’S TALK','VOICEOVER','REVIEW','UNBOXING','LIFESTYLE','NATIVE','PHOTO'];return `<section class="create" id="services" data-chapter="services" aria-labelledby="create-title"><div class="page-width">${marker('05','ЧТО Я СОЗДАЮ','YOUR IDEA. MY POINT OF VIEW.')}
- <div class="create-heading"><span class="create-paperclip" aria-hidden="true"><img src="/assets/editorial/IMG_1481.JPG" width="736" height="736" loading="lazy" alt=""></span><h2 id="create-title"><span>Ваш бренд +</span> <span>Моя подача = <em>"ВАУ!"</em></span></h2></div>
- <div class="formats-stage"><figure class="format-photo">${photo('mirror','(min-width: 900px) 27vw, 66vw')}<figcaption><span class="recording-dot"></span>REC <span>MADE TO FEEL REAL</span></figcaption></figure><div class="format-list">${services.map((name,i)=>`<div class="format-row" data-format="${i}"><span class="format-number">${String(i+1).padStart(2,'0')}</span><span class="format-word">${words[i]}</span><span class="format-description">${esc(name)}</span></div>`).join('')}</div></div>
- <div class="create-bottom"><a href="#contact" class="text-link">ОБСУДИМ ВАШУ ИДЕЮ <span>↗</span></a><img class="create-candle" src="/assets/editorial/IMG_1488.JPG" width="750" height="750" loading="lazy" alt="" aria-hidden="true"></div>
+ <div class="create-heading"><h2 id="create-title"><span>Ваш бренд +</span> <span>Моя подача = <em>"ВАУ!"</em></span></h2></div>
+ <div class="formats-stage"><figure class="format-photo"><span class="create-paperclip" aria-hidden="true"><img src="/assets/editorial/IMG_1481.JPG" width="736" height="736" loading="lazy" alt=""></span><span class="create-candle" aria-hidden="true"><img src="/assets/editorial/IMG_1488.JPG" width="750" height="750" loading="lazy" alt=""></span>${photo('mirror','(min-width: 900px) 27vw, 66vw')}<figcaption><span class="recording-dot"></span>REC <span>MADE TO FEEL REAL</span></figcaption></figure><div class="format-list">${services.map((name,i)=>`<div class="format-row" data-format="${i}"><span class="format-number">${String(i+1).padStart(2,'0')}</span><span class="format-word">${words[i]}</span><span class="format-description">${esc(name)}</span></div>`).join('')}</div></div>
+ <div class="create-bottom"><a href="#contact" class="text-link">ОБСУДИМ ВАШУ ИДЕЮ <span>↗</span></a></div>
  </div></section>`;}
 
 function Connect(){return `<section class="connect" id="contact" data-chapter="contact" aria-labelledby="contact-title"><div class="page-width">${marker('06','НА СВЯЗИ','A NEW STORY STARTS HERE')}
