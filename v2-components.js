@@ -8,6 +8,14 @@ export function photo(key,sizes='(min-width: 900px) 30vw, 80vw',className='') {
 }
 const asset=(file,className='',width=400,height=400)=>`<img class="${className}" src="/assets/${file}.webp" width="${width}" height="${height}" loading="lazy" decoding="async" alt="" aria-hidden="true">`;
 const marker=(number,name,end='LIFESTYLE CREATOR & UGC')=>`<div class="section-marker"><span>${number} / ${name}</span><span>${end}</span></div>`;
+const socialIcon=name=>{
+ const shapes={
+  instagram:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>',
+  gmail:'<path d="M3 7v12h4V10l5 4 5-4v9h4V7M3 7V5l9 7 9-7v2"/>',
+  telegram:'<path d="m21 3-4 18-6-5-4 3 1-6-6-3 19-7Z"/><path d="m8 13 8-6-5 9"/>'
+ };
+ return `<svg class="social-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${shapes[name]}</svg>`;
+};
 
 function About(){return `<section class="about" id="about" data-chapter="about" aria-labelledby="about-title">
   <div class="page-width">${marker('01','ЗНАКОМСТВО','A FEW WORDS ABOUT ME')}
@@ -75,9 +83,9 @@ function Moments(){const treatments=['paper','borderless','polaroid','film','tap
 function Connect(){return `<section class="connect" id="contact" data-chapter="contact" aria-labelledby="contact-title"><div class="page-width">${marker('07','НА СВЯЗИ','A NEW STORY STARTS HERE')}
  <div class="letter-scene"><div class="letter-envelope" aria-hidden="true"><span>ДЛЯ ВАШЕГО БРЕНДА.<br>С ТЕПЛОМ, ЛИЗА</span></div><article class="letter-sheet"><div class="letter-meta"><span>TO: YOUR BRAND<br>FROM: ELIZAVETA</span><span>LET’S MAKE<br>SOMETHING BEAUTIFUL ↗</span></div>
  <h2 id="contact-title">Давайте создадим<br><em>что-то классное.</em></h2><div class="letter-copy"><p>Готова к сотрудничеству с брендами в нишах бьюти, фешн и лайфстайл.</p><p>Если вам близка моя эстетика и формат контента — буду рада обсудить сотрудничество.</p></div>
- <div class="contact-links"><a data-cursor="OPEN" href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span>Instagram</span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="mailto:lbritakina@gmail.com"><span>Gmail</span><strong>lbritakina@gmail.com</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a></div>
+ <div class="contact-links"><a data-cursor="OPEN" href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('instagram')}<span class="platform-name">Instagram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="mailto:lbritakina@gmail.com"><span class="contact-platform">${socialIcon('gmail')}<span class="platform-name">Gmail</span></span><strong>lbritakina@gmail.com</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('telegram')}<span class="platform-name">Telegram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a></div>
  <div class="letter-signature"><span class="handwritten">начнём с вашего сообщения.</span>${asset('elizaveta-signature','letter-name',2161,728)}</div></article>${asset('editorial/wax-seal','letter-seal',400,400)}${asset('editorial/rose-petals','letter-petals',600,600)}</div>
- <footer class="footer"><a class="footer-logo" href="#home">Л.</a><span>LIFESTYLE CREATOR & UGC<br><small>С ЛЮБОВЬЮ К МАЛЕНЬКИМ ДЕТАЛЯМ</small></span><a href="#home" class="back-top">В НАЧАЛО ↑</a>${asset('editorial/fawn','footer-fawn',350,500)}</footer>
+ <footer class="footer"><a class="footer-logo" href="#home" aria-label="waniloow — на главную">waniloow</a><span>LIFESTYLE CREATOR & UGC<br><small>С ЛЮБОВЬЮ К МАЛЕНЬКИМ ДЕТАЛЯМ</small></span><a href="#home" class="back-top">В НАЧАЛО ↑</a>${asset('editorial/fawn','footer-fawn',350,500)}</footer>
  </div></section>`;}
 
 export function mountSections(target){target.innerHTML=[About(),Film(),Contents(),World(),Work(),Create(),Moments(),Connect()].join('');}
