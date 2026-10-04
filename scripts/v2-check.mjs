@@ -4,7 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { mountSections, esc } from '../dist/v2-components.js';
-import { videos, services, gallery } from '../dist/content.js';
+import { videos, services } from '../dist/content.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
@@ -19,9 +19,10 @@ mountSections(mount);
 const html = documentSource.replace('<div id="sections"></div>', mount.innerHTML);
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'IDs must be unique across static and mounted content');
-for (const id of ['home', 'about', 'contents', 'niches', 'work', 'services', 'moments', 'contact']) {
+for (const id of ['home', 'about', 'contents', 'niches', 'work', 'services', 'contact']) {
   assert.ok(ids.includes(id), `chapter ${id} must exist`);
 }
+assert.ok(!ids.includes('moments'), 'the separate Moments gallery must stay removed');
 for (const match of html.matchAll(/href="#([^"\s]+)"/g)) {
   assert.ok(ids.includes(match[1]), `anchor #${match[1]} must resolve`);
 }
@@ -54,7 +55,7 @@ assert.equal((html.match(/class="world-bubble /g) || []).length, 5, 'five access
 assert.equal((html.match(/class="world-path"/g) || []).length, 5, 'five category connections');
 assert.equal((html.match(/data-work-card="/g) || []).length, videos.length, 'one reel card per work slot');
 assert.equal((html.match(/data-format="/g) || []).length, services.length, 'all nine content formats rendered');
-assert.equal((html.match(/data-photo="/g) || []).length, gallery.length, 'all moments are openable');
+assert.ok(!html.includes('data-photo='), 'no standalone photo-gallery controls remain');
 assert.equal((html.match(/class="vinyl-index"/g) || []).length, 5, 'five indexed contents links');
 assert.ok(!/<video\b|<audio\b|<source[^>]+\btype="video\//i.test(html), 'no initial video elements or video sources');
 for (const social of ['https://instagram.com/waniloow', 'mailto:lbritakina@gmail.com', 'https://t.me/waniloow']) {

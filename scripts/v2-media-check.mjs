@@ -42,7 +42,12 @@ class Element {
   setAttribute(name, value) { this.attributes.set(name, value); }
   removeAttribute(name) { this.attributes.delete(name); if (name === 'src') this.src = ''; }
   hasAttribute(name) { return this.attributes.has(name); }
-  closest() { return this; }
+  closest(selector) {
+    return selector.split(',').some(part => {
+      const attribute = part.trim().match(/^\[([^\]]+)\]$/)?.[1];
+      return attribute && this.hasAttribute(attribute);
+    }) ? this : null;
+  }
   focus() { document.activeElement = this; }
 }
 
@@ -78,6 +83,11 @@ const open = () => document.emit('click', { target: trigger });
 const { initMediaDialog } = await import('../dist/v2-interactions.js');
 initMediaDialog();
 assert.equal(createdVideos.length, 0, 'initialization must not create video elements');
+const removedPhotoTrigger = new Element('removed-photo-trigger');
+removedPhotoTrigger.dataset.photo = '0';
+removedPhotoTrigger.setAttribute('data-photo', '0');
+document.emit('click', { target: removedPhotoTrigger });
+assert.ok(!dialog.open, 'legacy photo-gallery controls no longer open the UGC viewer');
 
 // A genuinely absent source opens an honest image preview, with no fake player.
 open();
