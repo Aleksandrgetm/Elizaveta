@@ -1,4 +1,4 @@
-import { videos, gallery, photos } from './content.js';
+import { videos, photos } from './content.js';
 import { photo, esc } from './v2-components.js';
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -57,7 +57,6 @@ export function initMediaDialog() {
   const closeButton = document.querySelector('#close-dialog');
   const previousButton = document.querySelector('#previous-media');
   const nextButton = document.querySelector('#next-media');
-  let kind = 'video';
   let index = 0;
   let trigger;
   let unlock;
@@ -83,21 +82,17 @@ export function initMediaDialog() {
   };
   const render = () => {
     clean();
-    const isVideo = kind === 'video';
-    const items = isVideo ? videos : gallery;
-    const item = items[index];
-    const source = isVideo ? item.src?.trim() || '' : '';
+    const item = videos[index];
+    const source = item.src?.trim() || '';
     const currentGeneration = generation;
-    counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(items.length).padStart(2, '0')}`;
-    meta.textContent = isVideo ? item.category : 'PHOTO DIARY';
-    title.textContent = isVideo ? item.title : (photos[item]?.alt || 'Кадр из фотодневника');
-    description.textContent = isVideo
-      ? (source ? item.description : 'Это превью будущей работы. Видео скоро появится в портфолио.')
-      : '';
-    previousButton.disabled = nextButton.disabled = items.length < 2;
+    counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(videos.length).padStart(2, '0')}`;
+    meta.textContent = item.category;
+    title.textContent = item.title;
+    description.textContent = source ? item.description : 'Это превью будущей работы. Видео скоро появится в портфолио.';
+    previousButton.disabled = nextButton.disabled = videos.length < 2;
 
-    if (!isVideo || !source) {
-      preview(isVideo ? item.poster : item, isVideo ? 'ПРЕВЬЮ · ВИДЕО СКОРО' : '');
+    if (!source) {
+      preview(item.poster, 'ПРЕВЬЮ · ВИДЕО СКОРО');
       return;
     }
 
@@ -123,10 +118,8 @@ export function initMediaDialog() {
     const playRequest = video.play();
     playRequest?.catch(() => {});
   };
-  const open = (type, requestedIndex, button) => {
-    const items = type === 'video' ? videos : gallery;
-    if (!Number.isInteger(requestedIndex) || !items[requestedIndex]) return;
-    kind = type;
+  const open = (requestedIndex, button) => {
+    if (!Number.isInteger(requestedIndex) || !videos[requestedIndex]) return;
     index = requestedIndex;
     trigger = button;
     if (!dialog.open) {
@@ -151,7 +144,7 @@ export function initMediaDialog() {
     }
   };
   const step = (direction) => {
-    const length = kind === 'video' ? videos.length : gallery.length;
+    const length = videos.length;
     if (!dialog.open || length < 2) return;
     index = (index + direction + length) % length;
     render();
@@ -161,10 +154,9 @@ export function initMediaDialog() {
   };
 
   document.addEventListener('click', (event) => {
-    const button = event.target.closest('[data-video], [data-photo]');
+    const button = event.target.closest('[data-video]');
     if (!button || dialog.contains(button)) return;
-    const isVideo = button.hasAttribute('data-video');
-    open(isVideo ? 'video' : 'photo', Number(isVideo ? button.dataset.video : button.dataset.photo), button);
+    open(Number(button.dataset.video), button);
   });
   previousButton.addEventListener('click', () => step(-1));
   nextButton.addEventListener('click', () => step(1));
