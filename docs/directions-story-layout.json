@@ -1,0 +1,1598 @@
+[
+  {
+    "active": "beauty",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 176.59375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 108.9140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 108.9140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 788.3465270996094,
+          "height": 567.3726806640625,
+          "left": 843.0580444335938,
+          "right": 1281.1063232421875,
+          "top": 220.97384643554688,
+          "width": 438.04827880859375,
+          "x": 843.0580444335938,
+          "y": 220.97384643554688
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 900.9140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 847.9140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 847.9140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 765.1636962890625,
+          "height": 560.382080078125,
+          "left": 110.51071166992188,
+          "right": 518.4736328125,
+          "top": 204.7816162109375,
+          "width": 407.9629211425781,
+          "x": 110.51071166992188,
+          "y": 204.7816162109375
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 566.4140625,
+          "height": 203.859375,
+          "left": 555.2578125,
+          "right": 922.7421875,
+          "top": 362.5546875,
+          "width": 367.484375,
+          "x": 555.2578125,
+          "y": 362.5546875
+        }
+      }
+    ],
+    "scrollY": 3285.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 1440,
+    "label": "1440-beauty",
+    "errors": []
+  },
+  {
+    "active": "fashion",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 152.09375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 84.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 84.4140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 749.2672729492188,
+          "height": 538.2142333984375,
+          "left": 159.3944854736328,
+          "right": 571.0699005126953,
+          "top": 211.05303955078125,
+          "width": 411.6754150390625,
+          "x": 159.3944854736328,
+          "y": 211.05303955078125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 876.4140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 823.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 823.4140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 766.0966796875,
+          "height": 572.583984375,
+          "left": 946.5086059570312,
+          "right": 1342.4913330078125,
+          "top": 193.5126953125,
+          "width": 395.9827270507813,
+          "x": 946.5086059570312,
+          "y": 193.5126953125
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 645.0078125,
+          "height": 203.859375,
+          "left": 567.9296875,
+          "right": 935.4140625,
+          "top": 441.1484375,
+          "width": 367.484375,
+          "x": 567.9296875,
+          "y": 441.1484375
+        }
+      }
+    ],
+    "scrollY": 3850,
+    "selected": [
+      "fashion"
+    ],
+    "visiblePanels": [
+      "fashion"
+    ],
+    "width": 1440,
+    "label": "1440-fashion",
+    "errors": []
+  },
+  {
+    "active": "lifestyle",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 152.09375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 84.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 84.4140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 752.0704956054688,
+          "height": 543.8206787109375,
+          "left": 537.350341796875,
+          "right": 953.3140258789062,
+          "top": 208.24981689453125,
+          "width": 415.9636840820313,
+          "x": 537.350341796875,
+          "y": 208.24981689453125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 876.4140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 823.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 823.4140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 779.2709197998047,
+          "height": 573.1590576171875,
+          "left": 177.6008758544922,
+          "right": 613.2897186279297,
+          "top": 206.1118621826172,
+          "width": 435.6888427734375,
+          "x": 177.6008758544922,
+          "y": 206.1118621826172
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 596.2109375,
+          "height": 232.3828125,
+          "left": 973.4296875,
+          "right": 1353.5859375,
+          "top": 363.828125,
+          "width": 380.15625,
+          "x": 973.4296875,
+          "y": 363.828125
+        }
+      }
+    ],
+    "scrollY": 4390,
+    "selected": [
+      "lifestyle"
+    ],
+    "visiblePanels": [
+      "lifestyle"
+    ],
+    "width": 1440,
+    "label": "1440-lifestyle",
+    "errors": []
+  },
+  {
+    "active": "wellness",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 152.09375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 84.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 84.4140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 749.6622009277344,
+          "height": 539.0040283203125,
+          "left": 942.69921875,
+          "right": 1358.8450927734375,
+          "top": 210.65817260742188,
+          "width": 416.1458740234375,
+          "x": 942.69921875,
+          "y": 210.65817260742188
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 876.4140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 823.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 823.4140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 686.1953735351562,
+          "height": 528.7501220703125,
+          "left": 140.88194274902344,
+          "right": 548.6336517333984,
+          "top": 157.44525146484375,
+          "width": 407.751708984375,
+          "x": 140.88194274902344,
+          "y": 157.44525146484375
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 727.765625,
+          "height": 196.4140625,
+          "left": 542.5859375,
+          "right": 1011.4453125,
+          "top": 531.3515625,
+          "width": 468.859375,
+          "x": 542.5859375,
+          "y": 531.3515625
+        }
+      }
+    ],
+    "scrollY": 4930,
+    "selected": [
+      "wellness"
+    ],
+    "visiblePanels": [
+      "wellness"
+    ],
+    "width": 1440,
+    "label": "1440-wellness",
+    "errors": []
+  },
+  {
+    "active": "travel",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 152.09375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 84.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 84.4140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 746.4640197753906,
+          "height": 532.6077880859375,
+          "left": 186.87863159179688,
+          "right": 594.2657470703125,
+          "top": 213.85623168945312,
+          "width": 407.3871154785156,
+          "x": 186.87863159179688,
+          "y": 213.85623168945312
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 876.4140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 823.4140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 823.4140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 785.9962768554688,
+          "height": 625.2581787109375,
+          "left": 917.3750610351562,
+          "right": 1318.1092529296875,
+          "top": 160.73809814453125,
+          "width": 400.7341918945313,
+          "x": 917.3750610351562,
+          "y": 160.73809814453125
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 569.4140625,
+          "height": 237.8046875,
+          "left": 580.6015625,
+          "right": 910.0703125,
+          "top": 331.609375,
+          "width": 329.46875,
+          "x": 580.6015625,
+          "y": 331.609375
+        }
+      }
+    ],
+    "scrollY": 5469,
+    "selected": [
+      "travel"
+    ],
+    "visiblePanels": [
+      "travel"
+    ],
+    "width": 1440,
+    "label": "1440-travel",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 844,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 237.421875,
+          "height": 116.4453125,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 120.9765625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 120.9765625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 588.2109375,
+          "height": 332.7890625,
+          "left": 70.1953125,
+          "right": 319.7890625,
+          "top": 255.421875,
+          "width": 249.59375,
+          "x": 70.1953125,
+          "y": 255.421875
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 659.2109375,
+          "height": 49,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 610.2109375,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 610.2109375
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 1071.763427734375,
+          "height": 380.29248046875,
+          "left": 49.5516242980957,
+          "right": 340.4327278137207,
+          "top": 691.470947265625,
+          "width": 290.881103515625,
+          "x": 49.5516242980957,
+          "y": 691.470947265625
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1222.109375,
+          "height": 128.0859375,
+          "left": 55.9375,
+          "right": 334.046875,
+          "top": 1094.0234375,
+          "width": 278.109375,
+          "x": 55.9375,
+          "y": 1094.0234375
+        }
+      }
+    ],
+    "scrollY": 3317,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 390,
+    "label": "390-intro",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 844,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": -570.578125,
+          "height": 116.4453125,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": -687.0234375,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": -687.0234375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": -219.7890625,
+          "height": 332.7890625,
+          "left": 70.1953125,
+          "right": 319.7890625,
+          "top": -552.578125,
+          "width": 249.59375,
+          "x": 70.1953125,
+          "y": -552.578125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": -148.7890625,
+          "height": 49,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": -197.7890625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": -197.7890625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 263.763427734375,
+          "height": 380.29248046875,
+          "left": 49.5516242980957,
+          "right": 340.4327278137207,
+          "top": -116.529052734375,
+          "width": 290.881103515625,
+          "x": 49.5516242980957,
+          "y": -116.529052734375
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 414.109375,
+          "height": 128.0859375,
+          "left": 55.9375,
+          "right": 334.046875,
+          "top": 286.0234375,
+          "width": 278.109375,
+          "x": 55.9375,
+          "y": 286.0234375
+        }
+      }
+    ],
+    "scrollY": 4125,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 390,
+    "label": "390-beauty",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 740,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 257.90625,
+          "height": 136.78125,
+          "left": 19.203125,
+          "right": 300.796875,
+          "top": 121.125,
+          "width": 281.59375,
+          "x": 19.203125,
+          "y": 121.125
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 548.96875,
+          "height": 273.0625,
+          "left": 57.6015625,
+          "right": 262.3984375,
+          "top": 275.90625,
+          "width": 204.796875,
+          "x": 57.6015625,
+          "y": 275.90625
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 619.96875,
+          "height": 49,
+          "left": 19.203125,
+          "right": 300.796875,
+          "top": 570.96875,
+          "width": 281.59375,
+          "x": 19.203125,
+          "y": 570.96875
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 961.8163452148438,
+          "height": 308.6951904296875,
+          "left": 41.941383361816406,
+          "right": 278.05863189697266,
+          "top": 653.1211547851562,
+          "width": 236.11724853515625,
+          "x": 41.941383361816406,
+          "y": 653.1211547851562
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1113.0546875,
+          "height": 128.0859375,
+          "left": 47.125,
+          "right": 272.875,
+          "top": 984.96875,
+          "width": 225.75,
+          "x": 47.125,
+          "y": 984.96875
+        }
+      }
+    ],
+    "scrollY": 3190.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 320,
+    "label": "320-intro",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 740,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 229.3125,
+          "height": 108.1875,
+          "left": 19.203125,
+          "right": 300.796875,
+          "top": 121.125,
+          "width": 281.59375,
+          "x": 19.203125,
+          "y": 121.125
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 520.375,
+          "height": 273.0625,
+          "left": 57.6015625,
+          "right": 262.3984375,
+          "top": 247.3125,
+          "width": 204.796875,
+          "x": 57.6015625,
+          "y": 247.3125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 591.375,
+          "height": 49,
+          "left": 19.203125,
+          "right": 300.796875,
+          "top": 542.375,
+          "width": 281.59375,
+          "x": 19.203125,
+          "y": 542.375
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 933.2225952148438,
+          "height": 308.6951904296875,
+          "left": 41.941383361816406,
+          "right": 278.05863189697266,
+          "top": 624.5274047851562,
+          "width": 236.11724853515625,
+          "x": 41.941383361816406,
+          "y": 624.5274047851562
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1084.4609375,
+          "height": 128.0859375,
+          "left": 47.125,
+          "right": 272.875,
+          "top": 956.375,
+          "width": 225.75,
+          "x": 47.125,
+          "y": 956.375
+        }
+      }
+    ],
+    "scrollY": 3190.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 320,
+    "label": "320-final",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 812,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 234.8671875,
+          "height": 113.671875,
+          "left": 22.5,
+          "right": 352.5,
+          "top": 121.1953125,
+          "width": 330,
+          "x": 22.5,
+          "y": 121.1953125
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 572.8671875,
+          "height": 320,
+          "left": 67.5,
+          "right": 307.5,
+          "top": 252.8671875,
+          "width": 240,
+          "x": 67.5,
+          "y": 252.8671875
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 643.8671875,
+          "height": 49,
+          "left": 22.5,
+          "right": 352.5,
+          "top": 594.8671875,
+          "width": 330,
+          "x": 22.5,
+          "y": 594.8671875
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 1041.2755126953125,
+          "height": 364.957275390625,
+          "left": 47.91851043701172,
+          "right": 327.0736618041992,
+          "top": 676.3182373046875,
+          "width": 279.1551513671875,
+          "x": 47.91851043701172,
+          "y": 676.3182373046875
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1191.8125,
+          "height": 128.0859375,
+          "left": 54.046875,
+          "right": 320.9453125,
+          "top": 1063.7265625,
+          "width": 266.8984375,
+          "x": 54.046875,
+          "y": 1063.7265625
+        }
+      }
+    ],
+    "scrollY": 3269.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 375,
+    "label": "375-final",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 932,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 241.1328125,
+          "height": 120.171875,
+          "left": 25.796875,
+          "right": 404.1953125,
+          "top": 120.9609375,
+          "width": 378.3984375,
+          "x": 25.796875,
+          "y": 120.9609375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 619.1328125,
+          "height": 360,
+          "left": 79.9921875,
+          "right": 349.9921875,
+          "top": 259.1328125,
+          "width": 270,
+          "x": 79.9921875,
+          "y": 259.1328125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 690.1328125,
+          "height": 49,
+          "left": 25.796875,
+          "right": 404.1953125,
+          "top": 641.1328125,
+          "width": 378.3984375,
+          "x": 25.796875,
+          "y": 641.1328125
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 1143.0859375,
+          "height": 421.203125,
+          "left": 53.903717041015625,
+          "right": 376.0806579589844,
+          "top": 721.8828125,
+          "width": 322.17694091796875,
+          "x": 53.903717041015625,
+          "y": 721.8828125
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1292.921875,
+          "height": 128.0859375,
+          "left": 60.9765625,
+          "right": 369.0078125,
+          "top": 1164.8359375,
+          "width": 308.03125,
+          "x": 60.9765625,
+          "y": 1164.8359375
+        }
+      }
+    ],
+    "scrollY": 3402.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 430,
+    "label": "430-final",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 1024,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 214.3984375,
+          "height": 79.296875,
+          "left": 46.078125,
+          "right": 721.9140625,
+          "top": 135.1015625,
+          "width": 675.8359375,
+          "x": 46.078125,
+          "y": 135.1015625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 730.2890625,
+          "height": 342.4140625,
+          "left": 46.078125,
+          "right": 302.890625,
+          "top": 387.875,
+          "width": 256.8125,
+          "x": 46.078125,
+          "y": 387.875
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 940.7734375,
+          "height": 49,
+          "left": 46.078125,
+          "right": 721.9140625,
+          "top": 891.7734375,
+          "width": 675.8359375,
+          "x": 46.078125,
+          "y": 891.7734375
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 643.3447265625,
+          "height": 378.6660461425781,
+          "left": 384.4773864746094,
+          "right": 674.1163330078125,
+          "top": 264.6786804199219,
+          "width": 289.6389465332031,
+          "x": 384.4773864746094,
+          "y": 264.6786804199219
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 811.4609375,
+          "height": 145.8359375,
+          "left": 369.296875,
+          "right": 689.296875,
+          "top": 665.625,
+          "width": 320,
+          "x": 369.296875,
+          "y": 665.625
+        }
+      }
+    ],
+    "scrollY": 3332.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 768,
+    "label": "768-final",
+    "errors": []
+  },
+  {
+    "active": "travel",
+    "enhanced": false,
+    "height": 900,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": -256.3046875,
+          "height": 124.28125,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": -380.5859375,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": -380.5859375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 323.75,
+          "height": 453.328125,
+          "left": 86.3984375,
+          "right": 426.3984375,
+          "top": -129.578125,
+          "width": 340,
+          "x": 86.3984375,
+          "y": -129.578125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 487.484375,
+          "height": 49,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 438.484375,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 438.484375
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 227.42117309570312,
+          "height": 430.78765869140625,
+          "left": 868.9513549804688,
+          "right": 1116.361083984375,
+          "top": -203.36648559570312,
+          "width": 247.40972900390625,
+          "x": 868.9513549804688,
+          "y": -203.36648559570312
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 402.484375,
+          "height": 150.125,
+          "left": 832.65625,
+          "right": 1152.65625,
+          "top": 252.359375,
+          "width": 320,
+          "x": 832.65625,
+          "y": 252.359375
+        }
+      }
+    ],
+    "scrollY": 3801,
+    "selected": [
+      "travel"
+    ],
+    "visiblePanels": [
+      "travel"
+    ],
+    "width": 1440,
+    "label": "1440-reduced-travel",
+    "errors": []
+  },
+  {
+    "active": "lifestyle",
+    "enhanced": false,
+    "height": 900,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": -256.3046875,
+          "height": 124.28125,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": -380.5859375,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": -380.5859375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 323.75,
+          "height": 453.328125,
+          "left": 86.3984375,
+          "right": 426.3984375,
+          "top": -129.578125,
+          "width": 340,
+          "x": 86.3984375,
+          "y": -129.578125
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 487.484375,
+          "height": 49,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 438.484375,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 438.484375
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 233.44076538085935,
+          "height": 442.8268432617187,
+          "left": 821.6011962890625,
+          "right": 1163.4925537109375,
+          "top": -209.38607788085935,
+          "width": 341.891357421875,
+          "x": 821.6011962890625,
+          "y": -209.38607788085935
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 402.484375,
+          "height": 150.125,
+          "left": 832.546875,
+          "right": 1152.546875,
+          "top": 252.359375,
+          "width": 320,
+          "x": 832.546875,
+          "y": 252.359375
+        }
+      }
+    ],
+    "scrollY": 3801,
+    "selected": [
+      "lifestyle"
+    ],
+    "visiblePanels": [
+      "lifestyle"
+    ],
+    "width": 1440,
+    "label": "1440-no-gsap",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": true,
+    "height": 900,
+    "overflow": 0,
+    "pins": 2,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 176.59375,
+          "height": 67.6796875,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 108.9140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 108.9140625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 788.3465270996094,
+          "height": 567.3726806640625,
+          "left": 843.0580444335938,
+          "right": 1281.1063232421875,
+          "top": 220.97384643554688,
+          "width": 438.04827880859375,
+          "x": 843.0580444335938,
+          "y": 220.97384643554688
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 900.9140625,
+          "height": 53,
+          "left": 86.3984375,
+          "right": 1353.59375,
+          "top": 847.9140625,
+          "width": 1267.1953125,
+          "x": 86.3984375,
+          "y": 847.9140625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 765.1636962890625,
+          "height": 560.382080078125,
+          "left": 110.51071166992188,
+          "right": 518.4736328125,
+          "top": 204.7816162109375,
+          "width": 407.9629211425781,
+          "x": 110.51071166992188,
+          "y": 204.7816162109375
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 566.4140625,
+          "height": 203.859375,
+          "left": 555.2578125,
+          "right": 922.7421875,
+          "top": 362.5546875,
+          "width": 367.484375,
+          "x": 555.2578125,
+          "y": 362.5546875
+        }
+      }
+    ],
+    "scrollY": 3285.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 1440,
+    "label": "1440-final-intro",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": true,
+    "height": 768,
+    "overflow": 0,
+    "pins": 1,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 157.1953125,
+          "height": 48.125,
+          "left": 61.4375,
+          "right": 962.5546875,
+          "top": 109.0703125,
+          "width": 901.1171875,
+          "x": 61.4375,
+          "y": 109.0703125
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 608.6243896484375,
+          "height": 410.9362487792969,
+          "left": 596.6282348632812,
+          "right": 913.8961791992188,
+          "top": 197.68814086914065,
+          "width": 317.2679443359375,
+          "x": 596.6282348632812,
+          "y": 197.68814086914065
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 769.0703125,
+          "height": 53,
+          "left": 61.4375,
+          "right": 962.5546875,
+          "top": 716.0703125,
+          "width": 901.1171875,
+          "x": 61.4375,
+          "y": 716.0703125
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 644.0105133056641,
+          "height": 460.31005859375,
+          "left": 76.96195983886719,
+          "right": 370.3036346435547,
+          "top": 183.7004547119141,
+          "width": 293.3416748046875,
+          "x": 76.96195983886719,
+          "y": 183.7004547119141
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 480.09375,
+          "height": 167.296875,
+          "left": 394.84375,
+          "right": 656.1640625,
+          "top": 312.796875,
+          "width": 261.3203125,
+          "x": 394.84375,
+          "y": 312.796875
+        }
+      }
+    ],
+    "scrollY": 3012.5,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 1024,
+    "label": "1024-final",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 844,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 237,
+          "height": 116.0234375,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 120.9765625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 120.9765625
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 587.7890625,
+          "height": 332.7890625,
+          "left": 70.1953125,
+          "right": 319.7890625,
+          "top": 255,
+          "width": 249.59375,
+          "x": 70.1953125,
+          "y": 255
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 658.7890625,
+          "height": 49,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 609.7890625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 609.7890625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 1071.341552734375,
+          "height": 380.29248046875,
+          "left": 49.5516242980957,
+          "right": 340.4327278137207,
+          "top": 691.049072265625,
+          "width": 290.881103515625,
+          "x": 49.5516242980957,
+          "y": 691.049072265625
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1221.6875,
+          "height": 128.0859375,
+          "left": 55.9375,
+          "right": 334.046875,
+          "top": 1093.6015625,
+          "width": 278.109375,
+          "x": 55.9375,
+          "y": 1093.6015625
+        }
+      }
+    ],
+    "scrollY": 3317,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 390,
+    "label": "390-final-intro",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 844,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": 26,
+          "height": 116.0234375,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": -90.0234375,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": -90.0234375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 376.7890625,
+          "height": 332.7890625,
+          "left": 70.1953125,
+          "right": 319.7890625,
+          "top": 44,
+          "width": 249.59375,
+          "x": 70.1953125,
+          "y": 44
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 447.7890625,
+          "height": 49,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 398.7890625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 398.7890625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 860.341552734375,
+          "height": 380.29248046875,
+          "left": 49.5516242980957,
+          "right": 340.4327278137207,
+          "top": 480.049072265625,
+          "width": 290.881103515625,
+          "x": 49.5516242980957,
+          "y": 480.049072265625
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 1010.6875,
+          "height": 128.0859375,
+          "left": 55.9375,
+          "right": 334.046875,
+          "top": 882.6015625,
+          "width": 278.109375,
+          "x": 55.9375,
+          "y": 882.6015625
+        }
+      }
+    ],
+    "scrollY": 3528,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 390,
+    "label": "390-final-content",
+    "errors": []
+  },
+  {
+    "active": "beauty",
+    "enhanced": false,
+    "height": 844,
+    "overflow": 0,
+    "pins": 0,
+    "rects": [
+      {
+        "name": "world-heading",
+        "rect": {
+          "bottom": -185,
+          "height": 116.0234375,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": -301.0234375,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": -301.0234375
+        }
+      },
+      {
+        "name": "world-portrait",
+        "rect": {
+          "bottom": 165.7890625,
+          "height": 332.7890625,
+          "left": 70.1953125,
+          "right": 319.7890625,
+          "top": -167,
+          "width": 249.59375,
+          "x": 70.1953125,
+          "y": -167
+        }
+      },
+      {
+        "name": "world-nav",
+        "rect": {
+          "bottom": 236.7890625,
+          "height": 49,
+          "left": 23.3984375,
+          "right": 366.59375,
+          "top": 187.7890625,
+          "width": 343.1953125,
+          "x": 23.3984375,
+          "y": 187.7890625
+        }
+      },
+      {
+        "name": "world-category-image",
+        "rect": {
+          "bottom": 649.341552734375,
+          "height": 380.29248046875,
+          "left": 49.5516242980957,
+          "right": 340.4327278137207,
+          "top": 269.049072265625,
+          "width": 290.881103515625,
+          "x": 49.5516242980957,
+          "y": 269.049072265625
+        }
+      },
+      {
+        "name": "world-state-copy",
+        "rect": {
+          "bottom": 799.6875,
+          "height": 128.0859375,
+          "left": 55.9375,
+          "right": 334.046875,
+          "top": 671.6015625,
+          "width": 278.109375,
+          "x": 55.9375,
+          "y": 671.6015625
+        }
+      }
+    ],
+    "scrollY": 3739,
+    "selected": [
+      "beauty"
+    ],
+    "visiblePanels": [
+      "beauty"
+    ],
+    "width": 390,
+    "label": "390-final-content",
+    "errors": []
+  }
+]

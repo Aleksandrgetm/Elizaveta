@@ -8,7 +8,7 @@ import { videos, services } from '../dist/content.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
-for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js']) {
+for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js', 'v2-world.js']) {
   const result = spawnSync(process.execPath, ['--check', `dist/${name}`], { stdio: 'inherit' });
   assert.equal(result.status, 0, `${name} must parse`);
 }
@@ -51,8 +51,23 @@ for (const name of ['beauty', 'fashion', 'lifestyle', 'wellness', 'travel']) {
 assert.ok(html.includes('src="/assets/editorial/flower-portrait.webp"'), 'black dress and flowers anchor');
 assert.ok(html.includes('src="/assets/vinyl.webp"'), 'approved original pink vinyl');
 assert.ok(!html.includes('/decor/vinyl/pink-vinyl.webp'), 'replacement marbled CD must stay unused');
-assert.equal((html.match(/class="world-bubble /g) || []).length, 5, 'five accessible world controls');
-assert.equal((html.match(/class="world-path"/g) || []).length, 5, 'five category connections');
+const taggedAttributes = tag => [...html.matchAll(new RegExp(`<${tag}\\b[^>]*>`, 'g'))]
+  .map(match => Object.fromEntries([...match[0].matchAll(/([\w:-]+)="([^"]*)"/g)].map(attribute => [attribute[1], attribute[2]])));
+const hasClass = name => attributes => attributes.class?.split(/\s+/).includes(name);
+const worldTabs = taggedAttributes('button').filter(hasClass('world-tab'));
+const worldStates = taggedAttributes('article').filter(hasClass('world-state'));
+assert.equal(worldTabs.length, 5, 'five accessible world tabs');
+assert.equal(worldStates.length, 5, 'five world category panels');
+assert.deepEqual(worldTabs.map(tab => tab['data-world-index']), ['0', '1', '2', '3', '4'], 'tabs identify the five ordered world states');
+assert.equal(new Set(worldTabs.map(tab => tab['aria-controls'])).size, 5, 'each world tab controls a distinct panel');
+for (const tab of worldTabs) {
+  assert.equal(tab.role, 'tab', 'world controls expose tab semantics');
+  assert.ok(tab.id, 'world tabs have accessible IDs');
+  const panel = worldStates.find(state => state.id === tab['aria-controls']);
+  assert.ok(panel, `world tab ${tab.id} must control an existing category panel`);
+  assert.equal(panel.role, 'tabpanel', 'world states expose tabpanel semantics');
+  assert.equal(panel['aria-labelledby'], tab.id, 'each world panel is named by its controlling tab');
+}
 assert.equal((html.match(/data-work-card="/g) || []).length, videos.length, 'one reel card per work slot');
 assert.equal((html.match(/data-format="/g) || []).length, services.length, 'all nine content formats rendered');
 assert.ok(!html.includes('data-photo='), 'no standalone photo-gallery controls remain');

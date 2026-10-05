@@ -38,7 +38,7 @@ export function auditV2BrowserDocument() {
       focusedId: document.activeElement?.id || '',
       focusInside: Boolean(document.querySelector('#media-dialog')?.contains(document.activeElement)),
     },
-    selectedCategory: document.querySelector('.world-bubble[aria-pressed="true"]')?.dataset.category || '',
+    selectedCategory: document.querySelector('.world-tab[aria-selected="true"]')?.dataset.category || '',
     currentChapter: document.querySelector('.chapter-link[aria-current="location"]')?.hash || '',
     workRail: (() => {
       const rail = document.querySelector('.work-rail');

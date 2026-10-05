@@ -201,50 +201,6 @@ export function initMediaDialog() {
   reducedMotion.addEventListener('change', () => entrance?.cancel());
 }
 
-function initWorldMap() {
-  document.querySelectorAll('.world-map').forEach((map) => {
-    const buttons = [...map.querySelectorAll('.world-bubble[data-category]')];
-    const paths = [...map.querySelectorAll('path[data-category]')];
-    let selected = '';
-    let hovered = '';
-    let focused = '';
-    const paint = () => {
-      const active = hovered || focused || selected;
-      if (active) map.dataset.active = active;
-      else delete map.dataset.active;
-      [...buttons, ...paths].forEach((element) => {
-        const matches = element.dataset.category === active;
-        element.classList.toggle('is-active', Boolean(active && matches));
-        element.classList.toggle('is-muted', Boolean(active && !matches));
-      });
-      buttons.forEach((button) => {
-        const chosen = button.dataset.category === selected;
-        button.classList.toggle('is-selected', chosen);
-        button.setAttribute('aria-pressed', String(chosen));
-      });
-    };
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        selected = selected === button.dataset.category ? '' : button.dataset.category;
-        paint();
-      });
-      button.addEventListener('pointerenter', (event) => {
-        if (event.pointerType === 'touch' || !finePointer.matches) return;
-        hovered = button.dataset.category;
-        paint();
-      });
-      button.addEventListener('pointerleave', () => { hovered = ''; paint(); });
-      button.addEventListener('focus', () => {
-        // Pointer focus should not persist as a second selection on touch.
-        focused = button.matches(':focus-visible') ? button.dataset.category : '';
-        paint();
-      });
-      button.addEventListener('blur', () => { focused = ''; paint(); });
-    });
-    paint();
-  });
-}
-
 function initChapters() {
   const links = [...document.querySelectorAll('.chapter-link[href^="#"]')];
   if (!links.length) return;
@@ -387,7 +343,6 @@ function initPointerEnhancements() {
 export function initInteractions() {
   if (interactionsReady) return;
   interactionsReady = true;
-  initWorldMap();
   initChapters();
   initPointerEnhancements();
 }

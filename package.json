@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "python3 -m http.server 5173 --bind 127.0.0.1 --directory dist",
-    "check": "node scripts/check.mjs && node scripts/motion-check.mjs && node scripts/v2-check.mjs && node scripts/v2-media-check.mjs",
+    "check": "node scripts/check.mjs && node scripts/motion-check.mjs && node scripts/v2-check.mjs && node scripts/v2-media-check.mjs && node scripts/v2-world-check.mjs",
     "build": "node scripts/build.mjs"
   },
   "dependencies": {

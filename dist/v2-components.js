@@ -51,13 +51,15 @@ function Contents(){
 }
 
 function World(){
- const paths=['M485 315 C420 290 335 155 250 150','M520 300 C625 240 675 140 770 165','M490 365 C380 405 265 360 210 425','M550 365 C665 405 725 395 800 470','M510 390 C490 485 465 520 480 610'];
- return `<section class="world" id="niches" data-chapter="niches" aria-labelledby="world-title"><div class="page-width">${marker('03','НАПРАВЛЕНИЯ','FIVE WAYS TO TELL A STORY')}<div class="world-heading"><h2 id="world-title">МОИ <em>НАПРАВЛЕНИЯ</em></h2><p class="handwritten">близко мне и интересно вам!</p></div>
-  <div class="world-map"><svg class="world-connections" viewBox="0 0 1000 750" preserveAspectRatio="none" aria-hidden="true">${niches.map((n,i)=>`<path class="world-path" data-category="${n.name.toLowerCase()}" d="${paths[i]}" pathLength="1"/>`).join('')}</svg>
+ return `<section class="world" id="niches" data-chapter="niches" aria-labelledby="world-title"><div class="world-pin"><div class="page-width world-shell">${marker('03','НАПРАВЛЕНИЯ','FIVE WAYS TO TELL A STORY')}
+  <header class="world-heading"><h2 id="world-title">МОИ <em>НАПРАВЛЕНИЯ</em></h2><p class="handwritten">близко мне и интересно вам!</p></header>
+  <div class="world-stage">
     <figure class="world-portrait"><img class="world-face" src="/assets/editorial/flower-portrait.webp" alt="Лиза в чёрном платье с большим букетом цветов" width="750" height="1000" loading="lazy">${asset('lace-frame','world-frame',900,1200)}</figure>
-    ${niches.map((n,i)=>`<button type="button" class="world-bubble bubble-${n.name.toLowerCase()}" data-category="${n.name.toLowerCase()}" aria-pressed="false"><span class="bubble-image"><img src="/assets/editorial/${n.name.toLowerCase()}.webp" alt="${esc(n.imageAlt)}" width="480" height="640" loading="lazy"></span><span class="bubble-copy"><span class="bubble-index">0${i+1}</span><strong>${n.name}</strong><span>${esc(n.description)}</span></span></button>`).join('')}
+    <nav class="world-nav" role="tablist" aria-label="Мои направления">${niches.map((n,i)=>`<button type="button" class="world-tab${i===0?' is-active':''}" id="world-tab-${i}" role="tab" data-world-index="${i}" data-category="${n.name.toLowerCase()}" aria-controls="world-panel-${i}" aria-selected="${i===0}" tabindex="${i===0?'0':'-1'}"><span>0${i+1}</span>${esc(n.name)}</button>`).join('')}</nav>
+    <div class="world-slides" aria-label="Истории направлений">${niches.map((n,i)=>`<article class="world-state world-state-${n.name.toLowerCase()}${i===0?' is-active':''}" id="world-panel-${i}" role="tabpanel" data-world-index="${i}" data-category="${n.name.toLowerCase()}" aria-labelledby="world-tab-${i}" tabindex="0"><figure class="world-category-image"><img src="/assets/editorial/${n.name.toLowerCase()}.webp" alt="${esc(n.imageAlt)}" width="${n.name==='TRAVEL'?360:480}" height="640" loading="lazy" decoding="async"></figure><div class="world-state-copy"><span class="world-index">0${i+1}</span><h3>${esc(n.name)}</h3><p>${esc(n.description)}</p></div></article>`).join('')}</div>
     ${asset('editorial/rose-petals','world-petals',600,600)}
-  </div></div></section>`;
+  </div>
+ </div></div></section>`;
 }
 
 function Work(){return `<section class="work" id="work" data-chapter="work" aria-labelledby="work-title"><div class="work-pin">
