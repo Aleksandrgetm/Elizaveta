@@ -1,4 +1,4 @@
-import {photos,niches,videos,services} from './content.js';
+import {photos,niches,videos,services} from './content.js?v=ugc-20261005';
 
 export const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function photo(key,sizes='(min-width: 900px) 30vw, 80vw',className='') {
@@ -62,13 +62,14 @@ function World(){
  </div></div></section>`;
 }
 
-function Work(){return `<section class="work" id="work" data-chapter="work" aria-labelledby="work-title"><div class="work-pin">
-  <div class="page-width">${marker('04','РАБОТЫ','SELECTED STORIES / 01—12')}
-    <div class="work-heading"><h2 id="work-title"><span>SELECTED</span><em>UGC</em><small>РАБОТЫ</small></h2><div class="work-intro"><p>Контент,<br>который я<br><i>создаю</i></p>${videos.some(v=>!v.src)?'<span class="work-draft">Пока здесь — фотопревью.<br>Видео скоро появятся.</span>':''}</div></div>
+const workPoster = v => `<img src="${esc(v.poster)}" alt="Кадр из видео: ${esc(v.title)}" width="540" height="960" loading="lazy" decoding="async">`;
+function Work(){const total=String(videos.length).padStart(2,'0');return `<section class="work" id="work" data-chapter="work" aria-labelledby="work-title"><div class="work-pin">
+  <div class="page-width">${marker('04','РАБОТЫ',`SELECTED STORIES / 01—${total}`)}
+    <div class="work-heading"><h2 id="work-title"><span>SELECTED</span><em>UGC</em><small>РАБОТЫ</small></h2><div class="work-intro"><p>Контент,<br>который я<br><i>создаю</i></p></div></div>
   </div>
-  <div class="work-rail" tabindex="0" aria-label="Работы — листайте горизонтально"><div class="work-track">${videos.map((v,i)=>`<article class="work-card" data-work-card="${i}"><button class="work-poster" data-video="${i}" data-cursor="PLAY" aria-label="${esc(v.title)} — ${v.src?'смотреть видео':'открыть превью'}">${photo(v.poster,'(min-width: 1100px) 310px, 72vw')}<span class="work-card-top"><span>${v.id} / 12</span><span>${v.src?'UGC FILM':'PHOTO PREVIEW'}</span></span><span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 19 12 8 19Z"/></svg></span>${!v.src?'<span class="work-soon">ВИДЕО СКОРО</span>':''}</button><div class="work-card-caption"><h3>${esc(v.title)}</h3><span>${esc(v.category)}</span></div></article>`).join('')}</div></div>
-  <div class="work-controls page-width"><span class="work-counter"><span class="work-current">01</span><span> / 12</span></span><div class="work-progress" aria-hidden="true"><span class="work-progress-fill"></span></div><span class="work-scroll-label micro">SCROLL TO DISCOVER</span><div class="work-arrows"><button data-work-step="-1" aria-label="Предыдущая работа">←</button><button data-work-step="1" aria-label="Следующая работа">→</button></div></div>
- </div><div class="work-index page-width" aria-label="Индекс всех работ">${videos.map((v,i)=>`<button data-video="${i}" aria-label="${esc(v.title)} — открыть превью">${photo(v.poster,'(min-width: 700px) 120px, 28vw')}<span>${v.id}</span></button>`).join('')}</div></section>`;}
+  <div class="work-rail" tabindex="0" aria-label="Работы — листайте горизонтально"><div class="work-track">${videos.map((v,i)=>`<article class="work-card" data-work-card="${i}"><button type="button" class="work-poster" data-video="${i}" data-cursor="PLAY" aria-label="Открыть видео: ${esc(v.title)}">${workPoster(v)}<span class="work-card-top" aria-hidden="true"><span>${v.id} / ${total}</span><span>UGC FILM</span></span><span class="work-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5 19 12 8 19Z"/></svg></span></button><div class="work-card-caption"><h3>${esc(v.title)}</h3><span>${esc(v.category)}</span></div></article>`).join('')}</div></div>
+  <div class="work-controls page-width"><span class="work-counter"><span class="work-current">01</span><span> / ${total}</span></span><div class="work-progress" aria-hidden="true"><span class="work-progress-fill" style="width:${100/videos.length}%"></span></div><span class="work-scroll-label micro">SCROLL TO DISCOVER</span><div class="work-arrows"><button data-work-step="-1" aria-label="Предыдущая работа">←</button><button data-work-step="1" aria-label="Следующая работа">→</button></div></div>
+ </div><div class="work-index page-width" aria-label="Индекс всех работ">${videos.map((v,i)=>`<button type="button" data-video="${i}" aria-label="Открыть видео: ${esc(v.title)}"><span class="work-index-image">${workPoster(v)}<span class="work-index-number" aria-hidden="true">${v.id}</span></span><span class="work-index-title">${esc(v.title)}</span></button>`).join('')}</div></section>`;}
 
 function Create(){const words=['UGC','GRWM','LET’S TALK','VOICEOVER','REVIEW','UNBOXING','LIFESTYLE','NATIVE','PHOTO'];return `<section class="create" id="services" data-chapter="services" aria-labelledby="create-title"><div class="page-width">${marker('05','ЧТО Я СОЗДАЮ','YOUR IDEA. MY POINT OF VIEW.')}
  <div class="create-heading"><h2 id="create-title"><span>Ваш бренд +</span> <span>Моя подача = <em>"ВАУ!"</em></span></h2></div>

@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-05",
+  "chromiumVersion": "154 (macOS)",
+  "safariVersion": "26.6.2 (macOS)",
+  "initial": {
+    "videoElements": 0,
+    "videoSources": 0,
+    "mediaRequests": 0
+  },
+  "playback": [
+    {
+      "count": 1,
+      "duration": 46.2,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/patches-vlog.mp4",
+      "time": 12.510498,
+      "title": "Нативная демонстрация патчей во влоге"
+    },
+    {
+      "count": 1,
+      "duration": 10.260363,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": true,
+      "ready": 4,
+      "src": "/assets/videos/makeup-short.mp4",
+      "time": 10.260363,
+      "title": "Демонстрация косметики · короткая"
+    },
+    {
+      "count": 1,
+      "duration": 41.607302,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/makeup-native.mp4",
+      "time": 0.117831,
+      "title": "Нативная демонстрация косметики"
+    },
+    {
+      "count": 1,
+      "duration": 7.966667,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/cream-native.mp4",
+      "time": 0.119997,
+      "title": "Нативная демонстрация крема"
+    },
+    {
+      "count": 1,
+      "duration": 17.033333,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/bubble-tea.mp4",
+      "time": 7.705304,
+      "title": "Демонстрация bubble tea"
+    },
+    {
+      "count": 1,
+      "duration": 18,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/fashion-short.mp4",
+      "time": 0.107011,
+      "title": "Демонстрация одежды · короткая"
+    },
+    {
+      "count": 1,
+      "duration": 37.54,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/fashion-long.mp4",
+      "time": 6.689256,
+      "title": "Демонстрация одежды · полная версия"
+    },
+    {
+      "count": 1,
+      "duration": 60.366667,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "blob:http://127.0.0.1:5173/b543ff2f-b0ad-44e4-afdb-69ce3eef0b97",
+      "time": 10.375995,
+      "title": "Демонстрация косметики · 60 секунд"
+    },
+    {
+      "count": 1,
+      "duration": 15.020454,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/creative-unboxing.mp4",
+      "time": 0.114602,
+      "title": "Креативная распаковка"
+    },
+    {
+      "count": 1,
+      "duration": 8.568163,
+      "inline": true,
+      "loading": "is-ready",
+      "paused": false,
+      "ready": 4,
+      "src": "/assets/videos/footwear.mp4",
+      "time": 0.120257,
+      "title": "Демонстрация обуви"
+    }
+  ],
+  "responsive": [
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "87.8594px 87.8672px 87.8672px",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 320
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "104px 104px 104px",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 375
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "108.398px 108.398px 108.398px",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 390
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "120.133px 120.133px 120.133px",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 430
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "none",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 768
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "none",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "x mandatory",
+      "width": 1024
+    },
+    {
+      "cardCount": 10,
+      "cardScales": [
+        "1",
+        "0.93"
+      ],
+      "indexColumns": "none",
+      "indexCount": 10,
+      "overflow": 0,
+      "railSnap": "none",
+      "width": 1440
+    }
+  ],
+  "controls": [
+    "native pause",
+    "native seek",
+    "keyboard Enter",
+    "Escape closes",
+    "focus returns to trigger",
+    "closing removes all video elements"
+  ],
+  "safari": [
+    "H264 plays",
+    "native pause changes to play",
+    "HEVC hvc1 plays",
+    "60s byte-assembled Blob plays"
+  ],
+  "console": {
+    "chromium": []
+  },
+  "notes": [
+    "Responsive checks are desktop viewport simulations, not physical iPhone hardware.",
+    "HEVC compatibility depends on the browser/OS decoder; validated in current macOS Safari and Chromium.",
+    "The 60-second work downloads both parts only on selection and then starts as one byte-identical Blob MP4."
+  ]
+}

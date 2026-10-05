@@ -1,5 +1,5 @@
-import {mountSections} from './v2-components.js';
-import {initInteractions,initMediaDialog} from './v2-interactions.js';
+import {mountSections} from './v2-components.js?v=ugc-20261005';
+import {initInteractions,initMediaDialog} from './v2-interactions.js?v=ugc-20261005';
 import {initMotion} from './v2-motion.js';
 
 mountSections(document.querySelector('#sections'));

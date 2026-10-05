@@ -1,4 +1,4 @@
-import {videos,gallery,photos} from './content.js?v=20261004-corrections';
+import {videos,gallery,photos} from './content-v1.js?v=20261004-corrections';
 import {photo} from './components.js?v=20261004-corrections';
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 export function initWelcome({force=false}={}){
