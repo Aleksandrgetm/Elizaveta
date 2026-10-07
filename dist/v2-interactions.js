@@ -7,7 +7,7 @@ let mediaReady = false;
 let interactionsReady = false;
 
 // Fixed-body locking also keeps iOS Safari from moving the page behind a dialog.
-function lockPage() {
+export function lockPage(className = 'modal-open') {
   const body = document.body;
   const root = document.documentElement;
   const x = window.scrollX;
@@ -27,7 +27,7 @@ function lockPage() {
   set(body, 'width', '100%');
   set(body, 'overflow', 'hidden');
   if (scrollbar) set(body, 'padding-right', `${padding + scrollbar}px`);
-  body.classList.add('modal-open');
+  body.classList.add(className);
   return (trigger) => {
     // Keep instant scrolling until both the page position and focus are restored.
     const rootStyle = saved.shift();
@@ -38,7 +38,7 @@ function lockPage() {
     window.scrollTo(x, y);
     if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     window.scrollTo(x, y);
-    body.classList.remove('modal-open');
+    body.classList.remove(className);
     const [element, property, value, priority] = rootStyle;
     if (value) element.style.setProperty(property, value, priority);
     else element.style.removeProperty(property);

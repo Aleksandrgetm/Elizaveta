@@ -8,7 +8,7 @@ import { videos, services } from '../dist/content.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
-for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js', 'v2-world.js', 'v2-services.js', 'v2-services-content.js']) {
+for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js', 'v2-world.js', 'v2-services.js', 'v2-services-content.js', 'v2-navigation.js']) {
   const result = spawnSync(process.execPath, ['--check', `dist/${name}`], { stdio: 'inherit' });
   assert.equal(result.status, 0, `${name} must parse`);
 }
@@ -32,6 +32,10 @@ for (const match of html.matchAll(/aria-(?:labelledby|describedby)="([^"]+)"/g))
 assert.equal([...html.matchAll(/<h1\b/g)].length, 1, 'one accessible page title');
 assert.ok(html.includes('lang="ru"'), 'Russian document language');
 assert.ok(html.includes('<dialog id="media-dialog"'), 'native modal focus/inert semantics');
+assert.ok(html.includes('id="mobile-navigation"'), 'mobile navigation uses its own native dialog');
+assert.match(html, /id="mobile-menu-toggle"[^>]*aria-expanded="false"[^>]*aria-controls="mobile-navigation"/, 'menu trigger exposes initial state and dialog relation');
+const mobileNavigation = html.match(/<nav class="mobile-menu-links"[\s\S]*?<\/nav>/)?.[0] || '';
+assert.deepEqual([...mobileNavigation.matchAll(/href="([^"]+)"/g)].map(match => match[1]), ['#about', '#niches', '#work', '#service-index', '#services', '#contact'], 'six mobile links target the existing sections in the requested order');
 
 const localReference = path => {
   if (!path.startsWith('/') || path.startsWith('//')) return;

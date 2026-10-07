@@ -19,15 +19,43 @@
 <link rel="stylesheet" href="/v2.css?v=ugc-20261005">
 <link rel="stylesheet" href="/v2-world.css?v=directions-20261005">
   <link rel="stylesheet" href="/v2-services.css?v=services-20261007-3">
+<link rel="stylesheet" href="/v2-navigation.css?v=mobile-nav-20261007-4">
 <link rel="preload" as="image" href="/assets/editorial/restaurant-1280.webp" media="(min-width: 761px)">
 <link rel="preload" as="image" href="/assets/photos/liza-5788-960.webp" media="(max-width: 760px)">
 <script defer src="/vendor/gsap.min.js"></script>
 <script defer src="/vendor/ScrollTrigger.min.js"></script>
-  <script type="module" src="/v2.js?v=services-20261007-5"></script>
+  <script type="module" src="/v2.js?v=mobile-nav-20261007-4"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Перейти к содержимому</a>
-<header class="site-header"><div class="header-brand"><a class="wordmark" href="#home" aria-label="waniloow — на главную">waniloow</a><span class="header-note">LIFESTYLE CREATOR<br>& UGC PORTFOLIO</span></div><img class="header-fawn" src="/assets/editorial/fawn.webp" width="183" height="320" alt="" aria-hidden="true"><nav aria-label="Основная навигация"><a href="#about">Обо мне</a><a href="#work">Работы</a><a href="#contact">На связи ↗</a></nav></header>
+<header class="site-header"><div class="header-brand"><a class="wordmark" href="#home" aria-label="waniloow — на главную">waniloow</a><span class="header-note">LIFESTYLE CREATOR<br>& UGC PORTFOLIO</span></div><img class="header-fawn" src="/assets/editorial/fawn.webp" width="183" height="320" alt="" aria-hidden="true"><nav aria-label="Основная навигация"><a href="#about">Обо мне</a><a href="#work">Работы</a><a href="#contact">На связи ↗</a></nav><button class="mobile-menu-button mobile-menu-trigger" id="mobile-menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-navigation"><span aria-hidden="true"></span><span aria-hidden="true"></span></button></header>
+<dialog class="mobile-navigation" id="mobile-navigation" aria-label="Навигация по портфолио">
+  <div class="mobile-menu-top">
+    <a class="wordmark" href="#home" aria-label="waniloow — на главную">waniloow</a>
+    <img class="mobile-menu-fawn" src="/assets/editorial/fawn.webp" width="183" height="320" alt="" aria-hidden="true">
+    <button class="mobile-menu-button" id="mobile-menu-close" type="button" aria-label="Закрыть меню"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+  </div>
+  <div class="mobile-menu-body">
+    <nav class="mobile-menu-links" aria-label="Разделы портфолио">
+      <a href="#about"><span class="mobile-menu-index">01</span><span class="mobile-menu-name">Обо мне</span></a>
+      <a href="#niches"><span class="mobile-menu-index">02</span><span class="mobile-menu-name">Направления</span></a>
+      <a href="#work"><span class="mobile-menu-index">03</span><span class="mobile-menu-name">Работы</span></a>
+      <a href="#service-index"><span class="mobile-menu-index">04</span><span class="mobile-menu-name">Услуги</span></a>
+      <a href="#services"><span class="mobile-menu-index">05</span><span class="mobile-menu-name">Что я создаю</span></a>
+      <a href="#contact"><span class="mobile-menu-index">06</span><span class="mobile-menu-name">Контакты</span></a>
+      <img class="mobile-menu-decor mobile-menu-star" src="/assets/decor/stars/star-handdrawn.webp" width="220" height="207" alt="" aria-hidden="true">
+      <img class="mobile-menu-decor mobile-menu-petals" src="/assets/editorial/rose-petals.webp" width="399" height="400" alt="" aria-hidden="true">
+    </nav>
+    <div class="mobile-menu-bottom">
+      <div class="mobile-menu-socials">
+        <a href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span>INSTAGRAM</span><strong>@waniloow</strong></a>
+        <a href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span>TELEGRAM</span><strong>@waniloow</strong></a>
+        <a class="mobile-menu-email" href="mailto:lbritakina@gmail.com">lbritakina@gmail.com</a>
+      </div>
+      <p class="mobile-menu-edition">LIFESTYLE CREATOR &amp; UGC</p>
+    </div>
+  </div>
+</dialog>
 <nav class="chapters" aria-label="Главы портфолио">
 <a class="chapter-link is-active" href="#home" aria-label="00 — Intro" aria-current="location"><span>INTRO</span>00</a>
 <a class="chapter-link" href="#about" aria-label="01 — About"><span>ABOUT</span>01</a>
