@@ -8,6 +8,8 @@ export function photo(key,sizes='(min-width: 900px) 30vw, 80vw',className='') {
   return `<img class="${className}" src="/assets/photos/liza-${p.id}-960.webp" srcset="/assets/photos/liza-${p.id}-480.webp 480w, /assets/photos/liza-${p.id}-960.webp 960w, /assets/photos/liza-${p.id}-1440.webp 1440w" sizes="${sizes}" width="900" height="1200" alt="${esc(p.alt)}" loading="lazy" decoding="async">`;
 }
 const asset=(file,className='',width=400,height=400)=>`<img class="${className}" src="/assets/${file}.webp" width="${width}" height="${height}" loading="lazy" decoding="async" alt="" aria-hidden="true">`;
+const northEastArrow='<span class="arrow-text" aria-hidden="true">↗︎</span><svg class="text-arrow arrow-ne" viewBox="0 -880 1000 1000" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><use href="#arrow-ne-glyph"/></svg>';
+const playArrow='<span class="arrow-text" aria-hidden="true">▶︎</span><svg class="text-arrow arrow-play" viewBox="0 -966.797 879.883 1177.734" width=".879883em" height="1.177734em" fill="currentColor" aria-hidden="true" focusable="false"><use href="#arrow-play-glyph"/></svg>';
 const marker=(number,name,end='LIFESTYLE CREATOR & UGC')=>`<div class="section-marker"><span>${number} / ${name}</span><span>${end}</span></div>`;
 const socialIcon=name=>{
  const shapes={
@@ -30,7 +32,7 @@ function About(){return `<section class="about" id="about" data-chapter="about" 
         <p>Создаю живой, эстетичный и нативный контент о красоте, стиле, повседневной жизни и маленьких вещах, которые делают её интереснее.</p>
         <p>Мне важно, чтобы реклама не выбивалась из контента, а становилась его естественной частью. Поэтому я стараюсь не просто показать продукт, а придумать историю и подачу, через которые он действительно заинтересует аудиторию.</p>
         <blockquote>Эстетика, естественность,<br><span>ощущение разговора<br class="desktop-break"> с подругой.</span></blockquote>
-        <a class="text-link light-link" href="#work">ПОСМОТРЕТЬ РАБОТЫ <span>↗</span></a>
+        <a class="text-link light-link" href="#work">ПОСМОТРЕТЬ РАБОТЫ <span>${northEastArrow}</span></a>
       </div>
     </div>
   </div>
@@ -75,13 +77,13 @@ function Work(){const total=String(videos.length).padStart(2,'0');return `<secti
 function Create(){const words=['UGC','GRWM','LET’S TALK','VOICEOVER','REVIEW','UNBOXING','LIFESTYLE','NATIVE','PHOTO'];return `<section class="create" id="services" data-chapter="services" aria-labelledby="create-title"><div class="page-width">${marker('05','ЧТО Я СОЗДАЮ','YOUR IDEA. MY POINT OF VIEW.')}
  <div class="create-heading"><h2 id="create-title"><span>Ваш бренд +</span> <span>Моя подача = <em>"ВАУ!"</em></span></h2></div>
  <div class="formats-stage"><figure class="format-photo"><span class="create-paperclip" aria-hidden="true"><img src="/assets/editorial/IMG_1481.JPG" width="736" height="736" loading="lazy" alt=""></span><span class="create-candle" aria-hidden="true"><img src="/assets/editorial/IMG_1488.JPG" width="750" height="750" loading="lazy" alt=""></span>${photo('mirror','(min-width: 900px) 27vw, 66vw')}<figcaption><span class="recording-dot"></span>REC <span>MADE TO FEEL REAL</span></figcaption></figure><div class="format-list">${services.map((name,i)=>`<div class="format-row" data-format="${i}"><span class="format-number">${String(i+1).padStart(2,'0')}</span><span class="format-word">${words[i]}</span><span class="format-description">${esc(name)}</span></div>`).join('')}</div></div>
- <div class="create-bottom"><a href="#contact" class="text-link">ОБСУДИМ ВАШУ ИДЕЮ <span>↗</span></a></div>
+ <div class="create-bottom"><a href="#contact" class="text-link">ОБСУДИМ ВАШУ ИДЕЮ <span>${northEastArrow}</span></a></div>
  </div></section>`;}
 
 function serviceVisual(offer, index) {
  const reel = (id, className='service-reel') => {
   const i=videos.findIndex(work=>work.id===id), work=videos[i];
-  return `<button type="button" class="${className}" data-video="${i}" data-cursor="PLAY" aria-label="Открыть видео: ${esc(work.title)}"><img src="${esc(work.poster)}" alt="Кадр из видео: ${esc(work.title)}" width="540" height="960" loading="lazy" decoding="async"><span class="service-play" aria-hidden="true">▶</span></button>`;
+  return `<button type="button" class="${className}" data-video="${i}" data-cursor="PLAY" aria-label="Открыть видео: ${esc(work.title)}"><img src="${esc(work.poster)}" alt="Кадр из видео: ${esc(work.title)}" width="540" height="960" loading="lazy" decoding="async"><span class="service-play" aria-hidden="true">${playArrow}</span></button>`;
  };
  const story = (id, i) => {
   const work=videos.find(work=>work.id===id);
@@ -100,9 +102,9 @@ function ServiceIndex(){return `<section class="service-index" id="service-index
  </div></div></section>`;}
 
 function Connect(){return `<section class="connect" id="contact" data-chapter="contact" aria-labelledby="contact-title"><div class="page-width">${marker('07','НА СВЯЗИ','A NEW STORY STARTS HERE')}
- <div class="letter-scene"><div class="letter-envelope" aria-hidden="true"><span>ДЛЯ ВАШЕГО БРЕНДА.<br>С ТЕПЛОМ, ЛИЗА</span></div><article class="letter-sheet"><div class="letter-meta"><span>TO: YOUR BRAND<br>FROM: ELIZAVETA</span><span>LET’S MAKE<br>SOMETHING BEAUTIFUL ↗</span></div>
+ <div class="letter-scene"><div class="letter-envelope" aria-hidden="true"><span>ДЛЯ ВАШЕГО БРЕНДА.<br>С ТЕПЛОМ, ЛИЗА</span></div><article class="letter-sheet"><div class="letter-meta"><span>TO: YOUR BRAND<br>FROM: ELIZAVETA</span><span>LET’S MAKE<br>SOMETHING BEAUTIFUL ${northEastArrow}</span></div>
  <h2 id="contact-title">Давайте создадим<br><em>что-то классное.</em></h2><div class="letter-intro"><div class="letter-copy"><p>Если вам близка моя эстетика и формат контента — буду рада обсудить сотрудничество.</p></div><figure class="contact-photo">${photo('portrait','(min-width: 761px) 180px, 36vw')}</figure></div>
- <div class="contact-links"><a data-cursor="OPEN" href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('instagram')}<span class="platform-name">Instagram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="mailto:lbritakina@gmail.com"><span class="contact-platform">${socialIcon('gmail')}<span class="platform-name">Gmail</span></span><strong>lbritakina@gmail.com</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('telegram')}<span class="platform-name">Telegram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a></div>
+ <div class="contact-links"><a data-cursor="OPEN" href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('instagram')}<span class="platform-name">Instagram</span></span><strong>@waniloow</strong><span aria-hidden="true">${northEastArrow}</span></a><a data-cursor="OPEN" href="mailto:lbritakina@gmail.com"><span class="contact-platform">${socialIcon('gmail')}<span class="platform-name">Gmail</span></span><strong>lbritakina@gmail.com</strong><span aria-hidden="true">${northEastArrow}</span></a><a data-cursor="OPEN" href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('telegram')}<span class="platform-name">Telegram</span></span><strong>@waniloow</strong><span aria-hidden="true">${northEastArrow}</span></a></div>
  <div class="letter-signature"><span class="handwritten">начнём с вашего сообщения.</span>${asset('elizaveta-signature','letter-name',2161,728)}</div></article>${asset('editorial/wax-seal','letter-seal',400,400)}${asset('editorial/rose-petals','letter-petals',600,600)}</div>
  <footer class="footer"><a class="footer-logo" href="#home" aria-label="waniloow — на главную">waniloow</a><span>LIFESTYLE CREATOR & UGC<br><small>С ЛЮБОВЬЮ К МАЛЕНЬКИМ ДЕТАЛЯМ</small></span><a href="#home" class="back-top">В НАЧАЛО ↑</a>${asset('editorial/fawn','footer-fawn',350,500)}</footer>
  </div></section>`;}
