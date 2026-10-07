@@ -1,4 +1,5 @@
 import { setupWorld } from './v2-world.js';
+import { setupServices } from './v2-services.js?v=services-20261007-5';
 
 /* V2 motion: the document is readable before GSAP loads and with motion disabled. */
 const INTRO_KEY = 'liza-portfolio-v2-intro';
@@ -250,7 +251,8 @@ export function initMotion() {
     if (reveal) reveal.style.visibility = 'hidden';
     const cleanupWorld = setupWorld(null, null, { desktop: false, reduced: true });
     const cleanupWork = setupWork(null, { desktop: false, reduced: true });
-    return () => { cleanupWork(); cleanupWorld(); };
+    const cleanupServices = setupServices(null, null, { reduced: true });
+    return () => { cleanupServices(); cleanupWork(); cleanupWorld(); };
   }
   gsap.registerPlugin(ScrollTrigger);
   const media = gsap.matchMedia();
@@ -267,16 +269,18 @@ export function initMotion() {
     reduced: '(prefers-reduced-motion: reduce)',
     desktop: '(min-width: 1100px) and (min-height: 680px)',
     worldDesktop: '(min-width: 1024px) and (min-height: 700px)',
+    servicesDesktop: '(min-width: 1100px) and (min-height: 820px)',
     wide: '(min-width: 768px)',
     compact: '(max-width: 767px)',
   }, context => {
-    const { reduced, desktop, compact, worldDesktop } = context.conditions;
+    const { reduced, desktop, compact, worldDesktop, servicesDesktop } = context.conditions;
     intro(gsap, reduced);
     const cleanupWorld = setupWorld(gsap, ScrollTrigger, { desktop: worldDesktop, reduced });
     const cleanupWork = setupWork(gsap, { desktop, reduced });
+    const cleanupServices = setupServices(gsap, ScrollTrigger, { desktop: servicesDesktop, reduced });
     if (!reduced) setupScenes(gsap, compact);
     refresh();
-    return () => { cleanupWork(); cleanupWorld(); };
+    return () => { cleanupServices(); cleanupWork(); cleanupWorld(); };
   });
   const pendingImages = [...document.images].filter(image => !image.complete);
   pendingImages.forEach(image => image.addEventListener('load', refresh, { once: true }));

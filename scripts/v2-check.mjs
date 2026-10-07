@@ -8,7 +8,7 @@ import { videos, services } from '../dist/content.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
-for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js', 'v2-world.js']) {
+for (const name of ['v2.js', 'v2-components.js', 'v2-interactions.js', 'v2-motion.js', 'v2-world.js', 'v2-services.js', 'v2-services-content.js']) {
   const result = spawnSync(process.execPath, ['--check', `dist/${name}`], { stdio: 'inherit' });
   assert.equal(result.status, 0, `${name} must parse`);
 }
@@ -19,7 +19,7 @@ mountSections(mount);
 const html = documentSource.replace('<div id="sections"></div>', mount.innerHTML);
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, 'IDs must be unique across static and mounted content');
-for (const id of ['home', 'about', 'contents', 'niches', 'work', 'services', 'contact']) {
+for (const id of ['home', 'about', 'contents', 'niches', 'work', 'services', 'service-index', 'contact']) {
   assert.ok(ids.includes(id), `chapter ${id} must exist`);
 }
 assert.ok(!ids.includes('moments'), 'the separate Moments gallery must stay removed');
@@ -70,6 +70,9 @@ for (const tab of worldTabs) {
 }
 assert.equal((html.match(/data-work-card="/g) || []).length, videos.length, 'one reel card per work slot');
 assert.equal((html.match(/data-format="/g) || []).length, services.length, 'all nine content formats rendered');
+const serviceButtons = taggedAttributes('button').filter(hasClass('service-toggle'));
+assert.equal(serviceButtons.length, 4, 'four native service controls');
+for (const button of serviceButtons) assert.ok(ids.includes(button['aria-controls']), 'service control resolves to its details');
 assert.ok(!html.includes('data-photo='), 'no standalone photo-gallery controls remain');
 assert.equal((html.match(/class="vinyl-index"/g) || []).length, 5, 'five indexed contents links');
 assert.ok(!/<video\b|<audio\b|<source[^>]+\btype="video\//i.test(html), 'no initial video elements or video sources');

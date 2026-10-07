@@ -1,3 +1,4 @@
+import { serviceOffers } from './v2-services-content.js';
 import {photos,niches,videos,services} from './content.js?v=ugc-20261005';
 
 export const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -77,7 +78,28 @@ function Create(){const words=['UGC','GRWM','LET’S TALK','VOICEOVER','REVIEW',
  <div class="create-bottom"><a href="#contact" class="text-link">ОБСУДИМ ВАШУ ИДЕЮ <span>↗</span></a></div>
  </div></section>`;}
 
-function Connect(){return `<section class="connect" id="contact" data-chapter="contact" aria-labelledby="contact-title"><div class="page-width">${marker('06','НА СВЯЗИ','A NEW STORY STARTS HERE')}
+function serviceVisual(offer, index) {
+ const reel = (id, className='service-reel') => {
+  const i=videos.findIndex(work=>work.id===id), work=videos[i];
+  return `<button type="button" class="${className}" data-video="${i}" data-cursor="PLAY" aria-label="Открыть видео: ${esc(work.title)}"><img src="${esc(work.poster)}" alt="Кадр из видео: ${esc(work.title)}" width="540" height="960" loading="lazy" decoding="async"><span class="service-play" aria-hidden="true">▶</span></button>`;
+ };
+ const story = (id, i) => {
+  const work=videos.find(work=>work.id===id);
+  return `<figure class="service-story service-story-${i+1}"><img src="${esc(work.poster)}" alt="Кадр: ${esc(work.title)}" width="540" height="960" loading="lazy" decoding="async"><figcaption>STORY 0${i+1}</figcaption></figure>`;
+ };
+ let content='';
+ if(offer.kind==='photo') content=`<div class="service-photo service-photo-1">${photo('portrait','(min-width: 1100px) 260px, 52vw')}</div><div class="service-photo service-photo-2"><img src="/assets/editorial/beauty.webp" alt="Предметная фотография косметики e.l.f." width="480" height="640" loading="lazy" decoding="async"></div><div class="service-photo service-photo-3">${photo('street','(min-width: 1100px) 210px, 44vw')}</div>`;
+ else content=reel(offer.work)+(offer.stories?offer.stories.map(story).join(''):'');
+ const decor=offer.kind==='video'?asset('decor/objects/silver-camera','service-decor service-camera',500,337):offer.kind==='native'?asset('editorial/rose-petals','service-decor service-petals',399,400):offer.kind==='stories'?asset('decor/stars/star-handdrawn','service-decor service-star',220,207):'';
+ return `<div class="service-visual service-visual-${offer.kind}"><span class="service-watermark" aria-hidden="true">0${index+1}</span><div class="service-composition">${content}${decor}</div><p class="service-visual-label">${offer.kind==='photo'?'LIFESTYLE / PRODUCT / DETAILS':offer.kind==='stories'?'REEL + STORIES':offer.kind==='native'?'В МОЁМ ПРИВЫЧНОМ ФОРМАТЕ':'ДЛЯ ВАШЕГО БРЕНДА · 9:16'}</p></div>`;
+}
+function ServiceIndex(){return `<section class="service-index" id="service-index" data-chapter="services" aria-labelledby="service-index-title"><div class="service-pin"><div class="page-width service-shell">
+ ${marker('06','УСЛУГИ','LET’S CREATE TOGETHER')}
+ <header class="service-heading"><h2 id="service-index-title"><span>КАК МОЖЕМ</span><em>ПОРАБОТАТЬ ВМЕСТЕ</em></h2><p class="handwritten">от идеи до готового контента</p></header>
+ <div class="service-layout"><div class="service-list">${serviceOffers.map((offer,i)=>`<article class="service-item" data-service="${i}"><h3><button type="button" class="service-toggle" id="service-toggle-${i}" aria-controls="service-panel-${i}" aria-expanded="true"><span class="service-number">0${i+1}</span><span class="service-name">${esc(offer.title)}</span><span class="service-toggle-mark" aria-hidden="true"></span></button></h3><div class="service-panel" id="service-panel-${i}" role="region" aria-labelledby="service-toggle-${i}"><p class="service-description">${esc(offer.description)}</p>${serviceVisual(offer,i)}<dl class="service-features">${offer.features.map(([name,text],n)=>`<div class="service-feature"><dt><span>0${n+1}</span> / ${esc(name)}</dt><dd>${esc(text)}</dd></div>`).join('')}</dl></div></article>`).join('')}</div></div>
+ </div></div></section>`;}
+
+function Connect(){return `<section class="connect" id="contact" data-chapter="contact" aria-labelledby="contact-title"><div class="page-width">${marker('07','НА СВЯЗИ','A NEW STORY STARTS HERE')}
  <div class="letter-scene"><div class="letter-envelope" aria-hidden="true"><span>ДЛЯ ВАШЕГО БРЕНДА.<br>С ТЕПЛОМ, ЛИЗА</span></div><article class="letter-sheet"><div class="letter-meta"><span>TO: YOUR BRAND<br>FROM: ELIZAVETA</span><span>LET’S MAKE<br>SOMETHING BEAUTIFUL ↗</span></div>
  <h2 id="contact-title">Давайте создадим<br><em>что-то классное.</em></h2><div class="letter-intro"><div class="letter-copy"><p>Если вам близка моя эстетика и формат контента — буду рада обсудить сотрудничество.</p></div><figure class="contact-photo">${photo('portrait','(min-width: 761px) 180px, 36vw')}</figure></div>
  <div class="contact-links"><a data-cursor="OPEN" href="https://instagram.com/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('instagram')}<span class="platform-name">Instagram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="mailto:lbritakina@gmail.com"><span class="contact-platform">${socialIcon('gmail')}<span class="platform-name">Gmail</span></span><strong>lbritakina@gmail.com</strong><span aria-hidden="true">↗</span></a><a data-cursor="OPEN" href="https://t.me/waniloow" target="_blank" rel="noopener noreferrer"><span class="contact-platform">${socialIcon('telegram')}<span class="platform-name">Telegram</span></span><strong>@waniloow</strong><span aria-hidden="true">↗</span></a></div>
@@ -85,4 +107,4 @@ function Connect(){return `<section class="connect" id="contact" data-chapter="c
  <footer class="footer"><a class="footer-logo" href="#home" aria-label="waniloow — на главную">waniloow</a><span>LIFESTYLE CREATOR & UGC<br><small>С ЛЮБОВЬЮ К МАЛЕНЬКИМ ДЕТАЛЯМ</small></span><a href="#home" class="back-top">В НАЧАЛО ↑</a>${asset('editorial/fawn','footer-fawn',350,500)}</footer>
  </div></section>`;}
 
-export function mountSections(target){target.innerHTML=[About(),Film(),Contents(),World(),Work(),Create(),Connect()].join('');}
+export function mountSections(target){target.innerHTML=[About(),Film(),Contents(),World(),Work(),Create(),ServiceIndex(),Connect()].join('');}
