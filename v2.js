@@ -1,6 +1,6 @@
-import {mountSections} from './v2-components.js';
-import {initInteractions,initMediaDialog} from './v2-interactions.js';
-import {initMotion} from './v2-motion.js';
+import {mountSections} from './v2-components.js?v=services-20261007';
+import {initInteractions,initMediaDialog} from './v2-interactions.js?v=ugc-20261005';
+import {initMotion} from './v2-motion.js?v=services-20261007-5';
 
 mountSections(document.querySelector('#sections'));
 initMediaDialog();

@@ -1,3 +1,6 @@
+import { setupWorld } from './v2-world.js';
+import { setupServices } from './v2-services.js?v=services-20261007-5';
+
 /* V2 motion: the document is readable before GSAP loads and with motion disabled. */
 const INTRO_KEY = 'liza-portfolio-v2-intro';
 const clamp = (value, minimum, maximum) => Math.min(maximum, Math.max(minimum, value));
@@ -225,43 +228,6 @@ function setupScenes(gsap, compact) {
     });
   });
 
-  const map = query('.world-map');
-  if (map) {
-    const bubbles = [...map.querySelectorAll('.world-bubble')];
-    if (compact) {
-      const portrait = map.querySelector('.world-portrait');
-      if (portrait) gsap.from(portrait, { y: 18, duration: 0.65,
-        scrollTrigger: { trigger: portrait, start: 'top 96%', once: true } });
-      bubbles.forEach(bubble => gsap.from(bubble, { y: 22, autoAlpha: 0, duration: 0.6,
-        scrollTrigger: { trigger: bubble, start: 'top 96%', once: true } }));
-    } else {
-      const timeline = gsap.timeline({ scrollTrigger: {
-        trigger: map, start: 'top 82%', end: 'bottom 72%', scrub: 0.6,
-      } });
-      const face = map.querySelector('.world-face');
-      const frame = map.querySelector('.world-frame');
-      if (face) timeline.from(face, { scale: 0.78, autoAlpha: 0, duration: 0.55 }, 0);
-      if (frame) timeline.from(frame, { scale: 0.82, rotation: -9, autoAlpha: 0, duration: 0.6 }, 0.16);
-      bubbles.forEach((bubble, index) => {
-        const path = [...map.querySelectorAll('.world-path')].find(line => line.dataset.category === bubble.dataset.category);
-        const start = 0.55 + index * 0.22;
-        if (path) {
-          let length = 1;
-          try { length = path.getTotalLength() || 1; } catch { /* SVG may not yet have geometry. */ }
-          if (path.getAttribute('pathLength')) length = Number(path.getAttribute('pathLength')) || length;
-          const finalDash = getComputedStyle(path).strokeDasharray;
-          timeline.fromTo(path, { strokeDasharray: length, strokeDashoffset: length }, {
-            strokeDashoffset: 0, duration: 0.5, ease: 'none',
-          }, start);
-          timeline.set(path, { strokeDasharray: finalDash }, start + 0.51);
-        }
-        timeline.from(bubble, { scale: 0.76, y: 24, autoAlpha: 0, duration: 0.55 }, start + 0.25);
-        const content = bubble.querySelectorAll('img, .bubble-copy');
-        if (content.length) timeline.from(content, { y: 8, autoAlpha: 0, duration: 0.35, stagger: 0.035 }, start + 0.42);
-      });
-    }
-  }
-
   if (!compact) all('#services .format-row').forEach((row, index) => {
     const word = row.querySelector('.format-word');
     if (word) gsap.from(word, { x: index % 2 ? 35 : -35, ease: 'none',
@@ -283,7 +249,10 @@ export function initMotion() {
   if (!gsap || !ScrollTrigger) {
     const reveal = document.querySelector('.hero-reveal');
     if (reveal) reveal.style.visibility = 'hidden';
-    return setupWork(null, { desktop: false, reduced: true });
+    const cleanupWorld = setupWorld(null, null, { desktop: false, reduced: true });
+    const cleanupWork = setupWork(null, { desktop: false, reduced: true });
+    const cleanupServices = setupServices(null, null, { reduced: true });
+    return () => { cleanupServices(); cleanupWork(); cleanupWorld(); };
   }
   gsap.registerPlugin(ScrollTrigger);
   const media = gsap.matchMedia();
@@ -299,15 +268,19 @@ export function initMotion() {
   media.add({
     reduced: '(prefers-reduced-motion: reduce)',
     desktop: '(min-width: 1100px) and (min-height: 680px)',
+    worldDesktop: '(min-width: 1024px) and (min-height: 700px)',
+    servicesDesktop: '(min-width: 1100px) and (min-height: 820px)',
     wide: '(min-width: 768px)',
     compact: '(max-width: 767px)',
   }, context => {
-    const { reduced, desktop, compact } = context.conditions;
+    const { reduced, desktop, compact, worldDesktop, servicesDesktop } = context.conditions;
     intro(gsap, reduced);
+    const cleanupWorld = setupWorld(gsap, ScrollTrigger, { desktop: worldDesktop, reduced });
     const cleanupWork = setupWork(gsap, { desktop, reduced });
+    const cleanupServices = setupServices(gsap, ScrollTrigger, { desktop: servicesDesktop, reduced });
     if (!reduced) setupScenes(gsap, compact);
     refresh();
-    return cleanupWork;
+    return () => { cleanupServices(); cleanupWork(); cleanupWorld(); };
   });
   const pendingImages = [...document.images].filter(image => !image.complete);
   pendingImages.forEach(image => image.addEventListener('load', refresh, { once: true }));

@@ -1,5 +1,4 @@
 // EDIT HERE. Sources can be local /assets/videos/*.mp4 paths or HTTPS CDN URLs.
-// Empty src is intentional: the supplied MP4 is an animation reference, not Liza's work.
 export const photos = {
   portrait: { id: '2681', alt: 'Лиза в бордовой рубашке' },
   beauty: { id: '0994', alt: 'Лиза с жемчужным колье, портрет крупным планом' },
@@ -17,20 +16,18 @@ export const niches = [
   {name:'WELLNESS', imageAlt:'Розовый спортивный коврик, бутылка и аксессуары для тренировок', description:'Забота о себе, здоровье, спорт и баланс', photo:'summer'},
   {name:'TRAVEL', imageAlt:'Крыло самолёта и небо за иллюминатором', description:'Путешествия, места, отели и новые впечатления', photo:'fashion'},
 ];
-// Draft titles describe the intended slots, not completed or published projects.
+// Real UGC works. MP4 sources are attached only after an explicit selection.
 export const videos = [
-  {id:'01',title:'Демонстрация косметики',category:'BEAUTY · UGC',poster:'flowers',src:'',description:''},
-  {id:'02',title:'Собираемся вместе',category:'FASHION · GRWM',poster:'mirror',src:'',description:''},
-  {id:'03',title:'Маленький влог',category:'LIFESTYLE · VLOG',poster:'cafe',src:'',description:''},
-  {id:'04',title:'Любимый уход',category:'BEAUTY · ROUTINE',poster:'beauty',src:'',description:''},
-  {id:'05',title:'Детали образа',category:'FASHION · STYLE',poster:'street',src:'',description:''},
-  {id:'06',title:'Один день со мной',category:'LIFESTYLE · UGC',poster:'summer',src:'',description:''},
-  {id:'07',title:'Распаковка',category:'BEAUTY · UNBOXING',poster:'portrait',src:'',description:''},
-  {id:'08',title:'Городская история',category:'FASHION · UGC',poster:'fashion',src:'',description:''},
-  {id:'09',title:'Новые места',category:'TRAVEL · VLOG',poster:'cafe',src:'',description:''},
-  {id:'10',title:'Бьюти-находка',category:'BEAUTY · REVIEW',poster:'flowers',src:'',description:''},
-  {id:'11',title:'Примерка настроения',category:'FASHION · TRY-ON',poster:'mirror',src:'',description:''},
-  {id:'12',title:'История в деталях',category:'LIFESTYLE · UGC',poster:'summer',src:'',description:''},
+  {id:'01',title:'Нативная демонстрация патчей во влоге',category:'BEAUTY · UGC',poster:'/assets/videos/posters/patches-vlog.webp',src:'/assets/videos/patches-vlog.mp4',sourceFile:'нативная демонстрация патчей во влоге.mp4',description:''},
+  {id:'02',title:'Демонстрация косметики · короткая',category:'BEAUTY · UGC',poster:'/assets/videos/posters/makeup-short.webp',src:'/assets/videos/makeup-short.mp4',sourceFile:'демонстрация косметики короткая.mp4',description:''},
+  {id:'03',title:'Нативная демонстрация косметики',category:'BEAUTY · UGC',poster:'/assets/videos/posters/makeup-native.webp',src:'/assets/videos/makeup-native.mp4',sourceFile:'нативная демонстрация косметики.mp4',description:''},
+  {id:'04',title:'Нативная демонстрация крема',category:'BEAUTY · UGC',poster:'/assets/videos/posters/cream-native.webp',src:'/assets/videos/cream-native.mp4',sourceFile:'нативная демонстрация крема.mp4',description:''},
+  {id:'05',title:'Демонстрация bubble tea',category:'FOOD · UGC',poster:'/assets/videos/posters/bubble-tea.webp',src:'/assets/videos/bubble-tea.mp4',sourceFile:'демонстрация бабл ти.mp4',description:''},
+  {id:'06',title:'Демонстрация одежды · короткая',category:'FASHION · UGC',poster:'/assets/videos/posters/fashion-short.webp',src:'/assets/videos/fashion-short.mp4',sourceFile:'демонстрация одежды короткая.mp4',description:''},
+  {id:'07',title:'Демонстрация одежды · полная версия',category:'FASHION · UGC',poster:'/assets/videos/posters/fashion-long.webp',src:'/assets/videos/fashion-long.mp4',sourceFile:'демонстрация одежды длинная.mp4',description:''},
+  {id:'08',title:'Демонстрация косметики · 60 секунд',category:'BEAUTY · UGC',poster:'/assets/videos/posters/makeup-60s.webp',src:'/assets/videos/makeup-60s.mp4',parts:['/assets/videos/makeup-60s.part-1.bin','/assets/videos/makeup-60s.part-2.bin'],sourceFile:'демонстрация косметики 60с.mp4',description:''},
+  {id:'09',title:'Креативная распаковка',category:'UNBOXING · UGC',poster:'/assets/videos/posters/creative-unboxing.webp',src:'/assets/videos/creative-unboxing.mp4',sourceFile:'креативная распаковка.mp4',description:''},
+  {id:'10',title:'Демонстрация обуви',category:'FASHION · UGC',poster:'/assets/videos/posters/footwear.webp',src:'/assets/videos/footwear.mp4',sourceFile:'демонстрация обуви.mp4',description:''},
 ];
 export const services = ['UGC-видео','GRWM','Разговорные видео','Видео с закадровой озвучкой','Обзоры продукции','Распаковки','Лайфстайл-влоги','Нативные интеграции','Фото для социальных сетей'];
 export const gallery = ['summer','flowers','street','cafe','fashion','mirror'];

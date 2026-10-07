@@ -1,5 +1,5 @@
-import { videos, photos } from './content.js';
-import { photo, esc } from './v2-components.js';
+import { videos, photos } from './content.js?v=ugc-20261005';
+import { photo, esc } from './v2-components.js?v=ugc-20261005';
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
@@ -62,6 +62,8 @@ export function initMediaDialog() {
   let unlock;
   let generation = 0;
   let entrance;
+  let pendingFetch;
+  let objectURL;
 
   const releaseVideo = (video) => {
     video.pause();
@@ -71,8 +73,18 @@ export function initMediaDialog() {
   };
   const clean = () => {
     generation += 1;
+    pendingFetch?.abort();
+    pendingFetch = null;
     media.querySelectorAll('video').forEach(releaseVideo);
+    if (objectURL) URL.revokeObjectURL(objectURL);
+    objectURL = null;
     media.replaceChildren();
+    media.classList.remove('is-loading', 'is-ready', 'is-play-blocked');
+    media.setAttribute('aria-busy', 'false');
+  };
+  const describe = (text = '') => {
+    description.textContent = text;
+    description.hidden = !text.trim();
   };
   const preview = (key, label = '') => {
     media.innerHTML = photo(key, '(min-width: 800px) 520px, 90vw') +
@@ -84,15 +96,17 @@ export function initMediaDialog() {
     clean();
     const item = videos[index];
     const source = item.src?.trim() || '';
+    const parts = Array.isArray(item.parts) ? item.parts : [];
     const currentGeneration = generation;
     counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(videos.length).padStart(2, '0')}`;
     meta.textContent = item.category;
     title.textContent = item.title;
-    description.textContent = source ? item.description : 'Это превью будущей работы. Видео скоро появится в портфолио.';
+    describe(item.description || '');
     previousButton.disabled = nextButton.disabled = videos.length < 2;
 
-    if (!source) {
-      preview(item.poster, 'ПРЕВЬЮ · ВИДЕО СКОРО');
+    if (!source && !parts.length) {
+      preview(item.poster, 'ВИДЕО НЕДОСТУПНО');
+      describe('Видео пока недоступно. Попробуйте открыть его позже.');
       return;
     }
 
@@ -105,18 +119,89 @@ export function initMediaDialog() {
     video.setAttribute('aria-label', item.title);
     video.poster = photos[item.poster]
       ? `/assets/photos/liza-${photos[item.poster].id}-960.webp`
-      : item.poster;
-    video.addEventListener('error', () => {
-      if (currentGeneration !== generation || !media.contains(video)) return;
+      : item.poster || '';
+    const loading = document.createElement('div');
+    loading.className = 'video-loading';
+    // Loading artwork never intercepts native controls, including on iOS.
+    loading.style.pointerEvents = 'none';
+    if (video.poster) {
+      const poster = document.createElement('img');
+      poster.className = 'video-loading-poster';
+      poster.src = video.poster;
+      poster.alt = '';
+      poster.setAttribute('aria-hidden', 'true');
+      loading.append(poster);
+    }
+    const status = document.createElement('span');
+    status.className = 'video-loading-status';
+    status.setAttribute('role', 'status');
+    status.textContent = 'Загрузка видео…';
+    loading.append(status);
+
+    const current = () => currentGeneration === generation && dialog.open && media.contains(video);
+    const revealPlayer = (blocked = false) => {
+      if (!current()) return;
+      media.classList.remove('is-loading');
+      media.classList.add(blocked ? 'is-play-blocked' : 'is-ready');
+      media.setAttribute('aria-busy', 'false');
+      status.hidden = true;
+      loading.setAttribute('aria-hidden', 'true');
+      // A rejected autoplay attempt can happen before canplay. Remove the
+      // overlay immediately so the native poster and play control are exposed.
+      if (blocked) loading.hidden = true;
+    };
+    const fail = () => {
+      if (!current()) return;
       clean();
       preview(item.poster, 'ВИДЕО НЕДОСТУПНО');
-      description.textContent = 'Не удалось загрузить видео. Попробуйте открыть его позже.';
-    }, { once: true });
-    video.src = source;
-    media.append(video);
-    // A rejected play request is normal on some devices; native controls remain.
-    const playRequest = video.play();
-    playRequest?.catch(() => {});
+      describe('Не удалось загрузить видео. Попробуйте открыть его позже.');
+    };
+    video.addEventListener('canplay', () => revealPlayer(), { once: true });
+    video.addEventListener('playing', () => {
+      if (!current()) return;
+      media.classList.remove('is-play-blocked');
+      revealPlayer();
+    });
+    video.addEventListener('error', fail, { once: true });
+    media.append(video, loading);
+    media.classList.add('is-loading');
+    media.setAttribute('aria-busy', 'true');
+    const playRejected = (error) => {
+      if (!current()) return;
+      if (error?.name === 'NotSupportedError') fail();
+      else revealPlayer(true);
+    };
+    const requestPlayback = () => {
+      // Safari may require a native Play tap after async source preparation;
+      // neither that rejection nor an old promise breaks the viewer.
+      try {
+        video.play()?.catch(playRejected);
+      } catch (error) {
+        playRejected(error);
+      }
+    };
+    if (parts.length) {
+      // One original exceeds the static host's per-file limit. Its byte-exact
+      // parts are fetched only for this selection, then joined without encoding.
+      const controller = new AbortController();
+      pendingFetch = controller;
+      Promise.all(parts.map(async path => {
+        const response = await fetch(path, { signal: controller.signal });
+        if (!response.ok) throw new Error(`Video part failed: ${response.status}`);
+        return response.arrayBuffer();
+      })).then(buffers => {
+        if (!current() || controller.signal.aborted) return;
+        pendingFetch = null;
+        objectURL = URL.createObjectURL(new Blob(buffers, { type: 'video/mp4' }));
+        video.src = objectURL;
+        requestPlayback();
+      }).catch(() => {
+        if (!controller.signal.aborted) fail();
+      });
+    } else {
+      video.src = source;
+      requestPlayback();
+    }
   };
   const open = (requestedIndex, button) => {
     if (!Number.isInteger(requestedIndex) || !videos[requestedIndex]) return;
@@ -150,7 +235,10 @@ export function initMediaDialog() {
     render();
   };
   const close = () => {
-    if (dialog.open) dialog.close();
+    if (dialog.open) {
+      clean();
+      dialog.close();
+    }
   };
 
   document.addEventListener('click', (event) => {
@@ -199,50 +287,6 @@ export function initMediaDialog() {
     if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
   });
   reducedMotion.addEventListener('change', () => entrance?.cancel());
-}
-
-function initWorldMap() {
-  document.querySelectorAll('.world-map').forEach((map) => {
-    const buttons = [...map.querySelectorAll('.world-bubble[data-category]')];
-    const paths = [...map.querySelectorAll('path[data-category]')];
-    let selected = '';
-    let hovered = '';
-    let focused = '';
-    const paint = () => {
-      const active = hovered || focused || selected;
-      if (active) map.dataset.active = active;
-      else delete map.dataset.active;
-      [...buttons, ...paths].forEach((element) => {
-        const matches = element.dataset.category === active;
-        element.classList.toggle('is-active', Boolean(active && matches));
-        element.classList.toggle('is-muted', Boolean(active && !matches));
-      });
-      buttons.forEach((button) => {
-        const chosen = button.dataset.category === selected;
-        button.classList.toggle('is-selected', chosen);
-        button.setAttribute('aria-pressed', String(chosen));
-      });
-    };
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        selected = selected === button.dataset.category ? '' : button.dataset.category;
-        paint();
-      });
-      button.addEventListener('pointerenter', (event) => {
-        if (event.pointerType === 'touch' || !finePointer.matches) return;
-        hovered = button.dataset.category;
-        paint();
-      });
-      button.addEventListener('pointerleave', () => { hovered = ''; paint(); });
-      button.addEventListener('focus', () => {
-        // Pointer focus should not persist as a second selection on touch.
-        focused = button.matches(':focus-visible') ? button.dataset.category : '';
-        paint();
-      });
-      button.addEventListener('blur', () => { focused = ''; paint(); });
-    });
-    paint();
-  });
 }
 
 function initChapters() {
@@ -387,7 +431,6 @@ function initPointerEnhancements() {
 export function initInteractions() {
   if (interactionsReady) return;
   interactionsReady = true;
-  initWorldMap();
   initChapters();
   initPointerEnhancements();
 }

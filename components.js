@@ -1,4 +1,4 @@
-import {photos,niches,videos,services,gallery,socials} from './content.js?v=20261004-corrections';
+import {photos,niches,videos,services,gallery,socials} from './content-v1.js?v=20261004-corrections';
 export const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function photo(key,sizes='(min-width: 900px) 35vw, 80vw',className=''){
  const p=photos[key];
