@@ -1,4 +1,5 @@
 import { serviceOffers } from './v2-services-content.js';
+import { carouselPhotos, ugcPhotos } from './v2-photo-content.js';
 import {photos,niches,videos,services} from './content.js?v=ugc-20261005';
 
 export const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -38,7 +39,8 @@ function About(){return `<section class="about" id="about" data-chapter="about" 
   </div>
 </section>`;}
 
-function Film(){return `<div class="film-scene" aria-label="Кадры из жизни Лизы"><div class="film-track">${['beauty','street','cafe','mirror','flowers','summer','portrait','fashion'].map((key,i)=>`<figure class="film-frame">${photo(key,'(min-width: 900px) 220px, 140px')}<figcaption><span>LIZA / PERSONAL ARCHIVE</span><span>${String(i+1).padStart(2,'0')} ▸</span></figcaption></figure>`).join('')}</div><p class="film-caption handwritten">немного моего вайба</p></div>`;}
+const suppliedPhoto = (p, sizes) => `<img src="${esc(p.src)}" srcset="${esc(p.srcset)}" sizes="${sizes}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" style="object-position:${p.position}" loading="lazy" decoding="async">`;
+function Film(){return `<div class="film-scene" aria-label="Кадры из жизни Лизы"><div class="film-track">${carouselPhotos.map((p,i)=>`<figure class="film-frame">${suppliedPhoto(p,'(min-width: 900px) 220px, 140px')}<figcaption><span>LIZA / PERSONAL ARCHIVE</span><span>${String(i+1).padStart(2,'0')} ▸</span></figcaption></figure>`).join('')}</div><p class="film-caption handwritten">немного моего вайба</p></div>`;}
 
 function Contents(){
  const prop=(name,file,depth)=>`<span class="desk-object desk-${name}" data-depth="${depth}">${asset(file)}</span>`;
@@ -90,7 +92,7 @@ function serviceVisual(offer, index) {
   return `<figure class="service-story service-story-${i+1}"><img src="${esc(work.poster)}" alt="Кадр: ${esc(work.title)}" width="540" height="960" loading="lazy" decoding="async"><figcaption>STORY 0${i+1}</figcaption></figure>`;
  };
  let content='';
- if(offer.kind==='photo') content=`<div class="service-photo service-photo-1">${photo('portrait','(min-width: 1100px) 260px, 52vw')}</div><div class="service-photo service-photo-2"><img src="/assets/editorial/beauty.webp" alt="Предметная фотография косметики e.l.f." width="480" height="640" loading="lazy" decoding="async"></div><div class="service-photo service-photo-3">${photo('street','(min-width: 1100px) 210px, 44vw')}</div>`;
+ if(offer.kind==='photo') content=ugcPhotos.map((p,i)=>`<div class="service-photo service-photo-${i+1}">${suppliedPhoto(p,'(min-width: 1100px) 260px, 52vw')}</div>`).join('');
  else content=reel(offer.work)+(offer.stories?offer.stories.map(story).join(''):'');
  const decor=offer.kind==='video'?asset('decor/objects/silver-camera','service-decor service-camera',500,337):offer.kind==='native'?asset('editorial/rose-petals','service-decor service-petals',399,400):offer.kind==='stories'?asset('decor/stars/star-handdrawn','service-decor service-star',220,207):'';
  return `<div class="service-visual service-visual-${offer.kind}"><span class="service-watermark" aria-hidden="true">0${index+1}</span><div class="service-composition">${content}${decor}</div><p class="service-visual-label">${offer.kind==='photo'?'LIFESTYLE / PRODUCT / DETAILS':offer.kind==='stories'?'REEL + STORIES':offer.kind==='native'?'В МОЁМ ПРИВЫЧНОМ ФОРМАТЕ':'ДЛЯ ВАШЕГО БРЕНДА · 9:16'}</p></div>`;

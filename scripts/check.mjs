@@ -7,7 +7,7 @@ for(const file of ['app.js','components.js','content.js','content-v1.js','intera
   const result=spawnSync(process.execPath,['--check',`dist/${file}`],{stdio:'inherit'});
   assert.equal(result.status,0,`${file} syntax`);
 }
-assert.equal(videos.length,10,'10 real UGC videos');
+assert.equal(videos.length,15,'15 real UGC videos');
 assert.equal(new Set(videos.map(v=>v.id)).size,videos.length,'unique video ids');
 for(const v of videos){assert.ok(v.title?.trim()&&v.category?.trim(),'video labels');assert.ok(v.src?.trim(),'each work has a real video source');assert.ok(v.poster?.startsWith('/assets/videos/posters/'),'each work has its own video poster');assert.ok(existsSync(`dist${v.poster}`),v.poster);if(v.parts?.length){for(const part of v.parts)assert.ok(existsSync(`dist${part}`),part)}else if(v.src.startsWith('/'))assert.ok(existsSync(`dist${v.src}`),v.src)}
 assert.equal(archivedVideos.length,12,'V1 retains its historical 12 slots');
@@ -20,4 +20,4 @@ const html=readFileSync('dist/index.html','utf8');assert.ok(html.includes('lang=
 for(const match of html.matchAll(/(?:src|href)="(\/[^"#]*)"/g))assert.ok(existsSync(`dist${match[1].split('?')[0]}`),match[1]);
 const css=readFileSync('dist/assets/fonts/fonts.css','utf8');assert.ok(css.includes('U+0400'),'Cyrillic font subset');
 for(const m of css.matchAll(/url\(\.\/([^)]+)\)/g))assert.ok(existsSync(`dist/assets/fonts/${m[1]}`),'font asset');
-console.log('PASS: JavaScript syntax, 10 real UGC videos, all photos/fonts, local references, metadata. Static site is ready; no compile step required.');
+console.log('PASS: JavaScript syntax, 15 real UGC videos, all photos/fonts, local references, metadata. Static site is ready; no compile step required.');

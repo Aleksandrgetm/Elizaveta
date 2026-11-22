@@ -1,0 +1,18 @@
+/* Keep the desktop text rasterization, spacing and hover wrappers intact.
+   FE0E requests text presentation; touch layouts use the same glyph outlines
+   as SVG so iOS never needs a system emoji fallback (including landscape). */
+.arrow-text{display:contents;font-variant-emoji:text}
+.text-arrow{display:none;overflow:visible;fill:currentColor;pointer-events:none}
+@media(max-width:768px),(hover:none) and (pointer:coarse){
+ .arrow-text{display:none}
+ .text-arrow{display:inline-block}
+ .arrow-ne{width:1em;height:1em;vertical-align:-.12em}
+ .site-header nav .arrow-ne{margin-inline-end:.02em}
+ .text-link .arrow-ne{display:block;margin-inline-end:1.203125px}
+ .letter-meta .arrow-ne{margin-inline-end:.12em}
+ .arrow-play{width:.879883em;height:1.177734em;vertical-align:-.210937em}
+}
+@media(max-width:760px){
+ .text-link .arrow-ne{margin-inline-end:1.08px}
+ .letter-meta .arrow-ne{margin-inline-end:.09em}
+}

@@ -1,4 +1,4 @@
-import {mountSections} from './v2-components.js?v=arrow-fix-20261007-2';
+import {mountSections} from './v2-components.js?v=photos-20261011';
 import {initInteractions,initMediaDialog,lockPage} from './v2-interactions.js?v=mobile-nav-20261007-4';
 import {initMotion} from './v2-motion.js?v=services-20261007-5';
 import {initMobileNavigation} from './v2-navigation.js?v=mobile-nav-20261007-4';

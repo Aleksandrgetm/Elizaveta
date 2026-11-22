@@ -1,0 +1,192 @@
+[
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_0715.HEIC",
+    "sha256": "8858afaf17b3a678572b82a75b77552c025249f7f15aa3190b494502e01020a6",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_0715-360.webp",
+        "width": 360,
+        "height": 640,
+        "bytes": 37622
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_0715-720.webp",
+        "width": 720,
+        "height": 1280,
+        "bytes": 135574
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_1647.HEIC",
+    "sha256": "7396104e2cee477bae1bc17a6862ca64e88044451d3c9bee7904d3fcaad4e0dd",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_1647-360.webp",
+        "width": 360,
+        "height": 640,
+        "bytes": 57974
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_1647-720.webp",
+        "width": 720,
+        "height": 1280,
+        "bytes": 206150
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_1712.HEIC",
+    "sha256": "e85be1aaecdaceb068ef5e2fa9d668c2640b34e1be63a9aff7f0fb3b52cb6630",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_1712-360.webp",
+        "width": 360,
+        "height": 640,
+        "bytes": 57154
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_1712-720.webp",
+        "width": 720,
+        "height": 1280,
+        "bytes": 183942
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_1902.HEIC",
+    "sha256": "4a7f04b9528d0f1a1734a31b1c229d59d2732673cfaef67953aa43e38cf39a7b",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_1902-360.webp",
+        "width": 360,
+        "height": 640,
+        "bytes": 45948
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_1902-720.webp",
+        "width": 720,
+        "height": 1280,
+        "bytes": 123284
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_1980.HEIC",
+    "sha256": "ee39477fc46f14ba21c73805ea6c4330e86e0c7b981fec9d25cd5846473352c2",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_1980-360.webp",
+        "width": 360,
+        "height": 480,
+        "bytes": 47496
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_1980-720.webp",
+        "width": 720,
+        "height": 960,
+        "bytes": 148074
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_6769.JPG",
+    "sha256": "28d63f7e1f6505882ab87c2efa1b9df71ca754440929e11dc18209d24f69b122",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_6769-360.webp",
+        "width": 360,
+        "height": 480,
+        "bytes": 17526
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_6769-720.webp",
+        "width": 720,
+        "height": 960,
+        "bytes": 43380
+      }
+    ]
+  },
+  {
+    "group": "carousel",
+    "source": "assets/images/new-photos/carousel/IMG_7208.JPG",
+    "sha256": "8257fb171bc204fa8b13895726c727d4d27c020fa49fc414347a2e43ab6d299b",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/carousel/img_7208-360.webp",
+        "width": 360,
+        "height": 480,
+        "bytes": 27614
+      },
+      {
+        "path": "/assets/images/new-photos/carousel/img_7208-720.webp",
+        "width": 720,
+        "height": 960,
+        "bytes": 66634
+      }
+    ]
+  },
+  {
+    "group": "ugc",
+    "source": "assets/images/new-photos/ugc/2026-10-11 14.43.55.jpg",
+    "sha256": "647d8bf8e24866bb627f0b4b2c68628c202ed53a812b222feda21611098132c1",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-43-55-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 78820
+      },
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-43-55-960.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 243218
+      }
+    ]
+  },
+  {
+    "group": "ugc",
+    "source": "assets/images/new-photos/ugc/2026-10-11 14.44.24.jpg",
+    "sha256": "bdd5b607ec660e5e3f512c70567768c05ffca70e0b3752190be19ac9bc70ac15",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-44-24-480.webp",
+        "width": 480,
+        "height": 853,
+        "bytes": 99504
+      },
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-44-24-960.webp",
+        "width": 960,
+        "height": 1707,
+        "bytes": 299394
+      }
+    ]
+  },
+  {
+    "group": "ugc",
+    "source": "assets/images/new-photos/ugc/2026-10-11 14.44.39.jpg",
+    "sha256": "b3c27c945fe1ae7853fe9876e321faecd8aa0f869ac8e857fd609594b44018e6",
+    "outputs": [
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-44-39-480.webp",
+        "width": 480,
+        "height": 853,
+        "bytes": 100046
+      },
+      {
+        "path": "/assets/images/new-photos/ugc/2026-10-11-14-44-39-960.webp",
+        "width": 960,
+        "height": 1707,
+        "bytes": 356340
+      }
+    ]
+  }
+]

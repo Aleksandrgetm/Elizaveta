@@ -3,3 +3,6 @@ node_modules/
 .sites-runtime/
 *.tar.gz
 *.tar
+
+# Deployment archives
+beget-*.zip

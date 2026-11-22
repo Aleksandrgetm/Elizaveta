@@ -1,0 +1,66 @@
+{
+  "changedExistingSourceFiles": [
+    "dist/index.html",
+    "dist/v2.js",
+    "dist/v2-components.js"
+  ],
+  "originalsUnchanged": true,
+  "productionGet": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html",
+      "bytes": 8921,
+      "sha256": "9fc30c593de5e7123ab3e93660fbb2649c8ab2e97db87546bc1c031c4ae2defd"
+    },
+    {
+      "path": "/assets/photos/liza-5788-960.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 184758,
+      "sha256": "5a8dcbf34e73803a2b7d3ea0a9326b572f99c039d4fa60c35a6e161d7db5d509"
+    },
+    {
+      "path": "/assets/editorial/restaurant-1280.webp",
+      "status": 200,
+      "type": "image/webp",
+      "bytes": 149024,
+      "sha256": "185c699ec518c04c1286ab98873f16d0d004bed65bcc277914b711b196ec167a"
+    }
+  ],
+  "diagnosis": "Exact failure on the reported iPhone could not be reproduced. Default curl requests received 403 HTML; GET with iPhone Safari User-Agent returned 200 image/webp, complete bytes identical to local originals. No evidence of wrong paths, corruption, HEIC/AVIF or animation opacity failure. A failed image request/decode/cache on the device remains possible but unconfirmed.",
+  "heroBefore": {
+    "mobile": {
+      "format": "WebP",
+      "width": 900,
+      "height": 1600,
+      "bytes": 184758
+    },
+    "desktop": {
+      "format": "WebP",
+      "width": 1280,
+      "height": 720,
+      "bytes": 149024
+    }
+  },
+  "heroAfter": "Baseline RGB JPEG at the same composition, responsive source sets, eager loading and high fetch priority. Static HTML works without JavaScript.",
+  "carouselCount": 7,
+  "ugcCount": 3,
+  "checks": [
+    "npm run build",
+    "npm run check (eight suites)",
+    "git diff --check",
+    "Source SHA-256 preservation and strict group separation",
+    "GET status/MIME/full bytes/decode of 25 new production images",
+    "Hero reloads, film and UGC visual checks at 320/375/390/430 px",
+    "Desktop 1440px, film scroll transform and UGC open animation",
+    "Hero rendered in script-free test HTML",
+    "Empty browser error console",
+    "ZIP CRC and byte equality"
+  ],
+  "limitations": [
+    "No physical iPhone Safari or Android device test",
+    "No cellular network test",
+    "New JPEG URLs not yet uploaded to Beget; post-deploy verification required"
+  ]
+}

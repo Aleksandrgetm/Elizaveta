@@ -7,7 +7,7 @@ import { videos } from '../dist/content.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const audit = JSON.parse(readFileSync(resolve(root, 'docs/video-assets.json'), 'utf8'));
-const expectedCount = 10;
+const expectedCount = 15;
 const maximumStaticAssetBytes = 25 * 1024 * 1024;
 const sha256 = buffer => createHash('sha256').update(buffer).digest('hex');
 const inside = (directory, name) => {
@@ -34,11 +34,11 @@ const readDeliveryAsset = url => {
 
 assert.equal(audit.sourceDirectory, 'assets/videos', 'audit identifies the supplied optimized MP4 folder');
 assert.equal(audit.reencoded, false, 'supplied videos must not be reencoded');
-assert.equal(videos.length, expectedCount, 'exactly ten real works replace the placeholders');
+assert.equal(videos.length, expectedCount, 'exactly fifteen real works are available');
 assert.equal(audit.videos.length, expectedCount, 'every supplied video is audited');
 const sourceDirectory = resolve(root, audit.sourceDirectory);
 const originals = readdirSync(sourceDirectory).filter(name => /\.mp4$/i.test(name)).sort();
-assert.equal(originals.length, expectedCount, 'exactly ten optimized original MP4s are present');
+assert.equal(originals.length, expectedCount, 'exactly fifteen optimized original MP4s are present');
 assert.deepEqual(audit.videos.map(video => basename(video.sourcePath)).sort(), originals, 'audit includes every supplied MP4 exactly once');
 unique(videos.map(video => video.id), 'work IDs');
 unique(videos.map(video => video.src), 'video sources');
@@ -107,4 +107,4 @@ for (const name of readdirSync(deliveryDirectory, { recursive: true })) {
   assert.notEqual(extname(name).toLowerCase(), '.mov', `heavy MOV originals must not enter the published assets: ${name}`);
   assert.ok(statSync(file).size <= maximumStaticAssetBytes, `every packaged video asset fits the 25 MiB hosting limit: ${name}`);
 }
-console.log('PASS: ten supplied MP4s, ten unique videos/posters, source-to-work mapping, audited dimensions/durations, byte-identical original/delivery checksums and individual delivery assets within 25 MiB.');
+console.log('PASS: fifteen supplied MP4s, fifteen unique videos/posters, source-to-work mapping, audited dimensions/durations, byte-identical original/delivery checksums and individual delivery assets within 25 MiB.');
